@@ -36,7 +36,7 @@ See `.env.example`. Without these:
 ## Copy placeholders (from COPY.md)
 
 ### Global
-- [ ] EIN (footer, Give page, donation receipt email)
+- [ ] EIN is set to 83-4697894, derived from the IRS e-Postcard URL Matt supplied (the filename begins with the EIN). It appears in the footer, the Give page, the About Financials block, and the donation receipt email. Confirm it against the 990 before launch.
 
 ### Header and contact details
 - [ ] ELC phone: is 918-340-5024 correct for the ELC?
@@ -51,7 +51,7 @@ See `.env.example`. Without these:
 - [ ] Director of Interactive Center name
 - [ ] Three additional board members' names and one-line affiliations
 - [ ] Whether to name campus partners (physical therapy practice, fencing organization, American Legion Post 1776)
-- [ ] Link to most recent Form 990 or annual report, or omit the Financials block
+- [x] Financials block links to ProPublica's Nonprofit Explorer by EIN (lists every year automatically) and the IRS Tax Exempt Organization Search.
 
 ### Early Learning Center
 - [ ] Is a summer program still offered? If not, drop the second button.
