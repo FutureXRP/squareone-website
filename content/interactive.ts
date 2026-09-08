@@ -49,8 +49,8 @@ export const ZONES: Zone[] = [
   {
     id: 'multisport',
     name: 'MultiSport Zone',
-    photo: null, // CONFIRM: no MultiSport photo in the brief
-    photoAlt: 'Sports simulator lounge in the MultiSport Zone',
+    photo: '/photos/interactive/multisport.webp',
+    photoAlt: 'The MultiSport Zone simulator: a large screen showing game choices above a turf hitting area, with string lights and a rack of sports gear',
     body: [
       'Experience the excitement of your favorite sports in a whole new way in our MultiSport Zone. Powered by simulator technology, this immersive space lets you play and enjoy a variety of interactive sports and games, all indoors, all year long.',
       'Whether you are perfecting your pickleball swing, challenging friends to a bowling competition, or enjoying one of the many available sports and skill games, the MultiSport Zone offers fun for beginners, seasoned athletes, and everyone in between.',
@@ -78,7 +78,7 @@ export const ZONES: Zone[] = [
     id: 'billiards',
     name: 'Billiards Zone',
     photo: '/photos/interactive/billiards.webp',
-    photoAlt: 'Pool tables with blue felt and lounge seating in the Billiards Zone',
+    photoAlt: 'The Billiards Zone at night: an LED-lit pool table, foosball, air hockey, and arcade cabinets under neon lighting',
     body: [
       'Slow things down and enjoy the timeless game of billiards in our Billiards Zone. Designed with a modern lounge atmosphere, this space combines pool tables, shuffleboard, air hockey, darts, comfortable seating, and a relaxed environment that is perfect for friendly competition and meaningful conversation.',
       'Whether you are a seasoned player looking to sharpen your skills or just learning the game, the Billiards Zone offers the perfect setting to rack up a match, unwind with friends, or enjoy a casual night out. It is an ideal destination for families, coworkers, youth groups, and anyone looking to connect over a classic game.',
