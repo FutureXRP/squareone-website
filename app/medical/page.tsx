@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import { PageIntro, Section } from '@/components/Section'
 import { FAQ } from '@/components/FAQ'
 import { StaffCard } from '@/components/StaffCard'
+import { PageBanner } from '@/components/PageBanner'
 import { Confirm } from '@/components/Confirm'
 import { telHref } from '@/lib/site'
 import { photo } from '@/lib/photos'
@@ -21,6 +22,7 @@ const INTAKE_FORMS = [
 export default function MedicalPage() {
   return (
     <>
+      <PageBanner src="/photos/medical/banner.webp" alt="SquareOne Medical Center: the waiting room with blue sofas and an exam room, with a portrait of Dr. Abel Lau" priority full />
       <PageIntro title="Primary care for every age, from all walks of life.">
         <p className="text-ink">SquareOne Medical Center offers primary care and pediatrics for the whole family: physicals, well visits, sick visits, chronic care, and diagnostic exams.</p>
       </PageIntro>
