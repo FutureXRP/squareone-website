@@ -55,7 +55,7 @@ export function Header({ division, pathname }: { division: DivisionKey; pathname
         <nav id="site-nav" aria-label="Main" className={`${open ? 'block' : 'hidden'} pb-4 lg:block lg:pb-0`}>
           <ul className="flex flex-col gap-1 lg:flex-row lg:items-center lg:gap-1 lg:pb-3">
             {NAV.map((item) => {
-              const active = pathname === item.href || pathname.startsWith(`${item.href}/`)
+              const active = item.href === '/' ? pathname === '/' : pathname === item.href || pathname.startsWith(`${item.href}/`)
               return (
                 <li key={item.href}>
                   <Link

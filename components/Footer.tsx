@@ -27,6 +27,9 @@ export function Footer({ division }: { division: DivisionKey }) {
             <p className="font-display text-lg font-semibold">On this campus</p>
             <ul className="mt-3 space-y-2">
               <li>
+                <Link href="/">Home</Link>
+              </li>
+              <li>
                 <Link href="/early-learning">Early Learning Center</Link>
               </li>
               <li>
