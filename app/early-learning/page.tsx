@@ -3,6 +3,7 @@ import { PageIntro, Section } from '@/components/Section'
 import { FAQ } from '@/components/FAQ'
 import { Confirm } from '@/components/Confirm'
 import { EnrollmentForm } from '@/components/Form/EnrollmentForm'
+import { PageBanner } from '@/components/PageBanner'
 import faq from '@/content/faq/elc.json'
 
 export const metadata: Metadata = { title: 'Early Learning Center', description: 'SquareOne ELC serves children six weeks through four years old with an emergent, play-based curriculum and low ratios. Open Monday through Friday, 7:15 am to 5:45 pm.' }
@@ -10,6 +11,14 @@ export const metadata: Metadata = { title: 'Early Learning Center', description:
 export default function EarlyLearningPage() {
   return (
     <>
+      <PageBanner
+        src="/photos/elc/banner.webp"
+        alt="Children at SquareOne Early Learning Center playing in a mud kitchen outdoors and sorting pinecones and stones with a teacher indoors. Confident, capable, lifelong learners."
+        priority
+        full
+        width={1600}
+        height={900}
+      />
       <PageIntro title="Play is the highest form of research.">
         <p className="text-base text-muted">Albert Einstein</p>
         <p className="mt-6 text-ink">SquareOne ELC serves children six weeks through four years old. Open Monday through Friday, 7:15 am to 5:45 pm.</p>
