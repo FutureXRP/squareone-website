@@ -1,0 +1,108 @@
+export type DivisionKey = 'sq1' | 'elc' | 'med' | 'int'
+
+export interface Division {
+  key: DivisionKey
+  name: string
+  shortName: string
+  logo: string
+  email: string
+  emailConfirm?: boolean
+  phone: string
+  phoneConfirm?: boolean
+  home: string
+  social: { instagram?: string; facebook?: string }
+}
+
+export const ORG = {
+  name: 'SquareOne Compassion',
+  tagline: 'Rebuilding lives. Revitalizing communities.',
+  address: { street: '5323 S 65th West Ave', city: 'Tulsa', state: 'OK', zip: '74107' },
+  addressLine: '5323 S 65th West Ave, Tulsa, OK 74107',
+  phone: '918-340-5024',
+  email: 'connect@squareonecompassion.com',
+  ein: '[CONFIRM: EIN]', // CONFIRM
+  instagram: 'https://instagram.com/squareonecompassion',
+  facebook: 'https://facebook.com/squareonecompassion',
+}
+
+export const DIVISIONS: Record<DivisionKey, Division> = {
+  sq1: {
+    key: 'sq1',
+    name: 'SquareOne Compassion',
+    shortName: 'SquareOne',
+    logo: '/logos/sq1.svg',
+    email: 'connect@squareonecompassion.com',
+    phone: '918-340-5024',
+    home: '/',
+    social: { instagram: ORG.instagram, facebook: ORG.facebook },
+  },
+  elc: {
+    key: 'elc',
+    name: 'SquareOne Early Learning Center',
+    shortName: 'Early Learning Center',
+    logo: '/logos/elc.svg',
+    email: 'connect@squareoneelc.com',
+    phone: '918-340-5024',
+    phoneConfirm: true, // CONFIRM
+    home: '/early-learning',
+    social: {
+      instagram: 'https://instagram.com/squareoneelc5323',
+      facebook: 'https://facebook.com/SquareOne-Early-Learning-Center-109876720764150',
+    },
+  },
+  med: {
+    key: 'med',
+    name: 'SquareOne Medical Center',
+    shortName: 'Medical Center',
+    logo: '/logos/medical.svg',
+    email: 'connect@squareonemedicalcenter.com',
+    phone: '918-340-5400',
+    home: '/medical',
+    social: {},
+  },
+  int: {
+    key: 'int',
+    name: 'SquareOne Interactive',
+    shortName: 'Interactive',
+    logo: '/logos/interactive.svg',
+    email: '[CONFIRM: email]', // CONFIRM
+    emailConfirm: true,
+    phone: '918-340-5400',
+    phoneConfirm: true, // CONFIRM
+    home: '/interactive',
+    social: {
+      instagram: 'https://instagram.com/squareonecompassion',
+      facebook: 'https://facebook.com/squareone.interactive',
+    },
+  },
+}
+
+/** Map a pathname to the division whose chrome the header should show. */
+export function divisionForPath(pathname: string): DivisionKey {
+  if (pathname.startsWith('/early-learning')) return 'elc'
+  if (pathname.startsWith('/medical')) return 'med'
+  if (pathname.startsWith('/interactive')) return 'int'
+  return 'sq1'
+}
+
+export const NAV = [
+  { href: '/early-learning', label: 'Early Learning' },
+  { href: '/medical', label: 'Medical' },
+  { href: '/interactive', label: 'Interactive' },
+  { href: '/events', label: 'Events' },
+  { href: '/about', label: 'About' },
+  { href: '/contact', label: 'Contact' },
+] as const
+
+/** The Interactive app's base URL, referenced in copy as {APP}. */
+export const APP = (process.env.NEXT_PUBLIC_INTERACTIVE_APP_URL || 'https://square-one-interactive.vercel.app').replace(/\/$/, '')
+
+export const SITE_URL = (process.env.NEXT_PUBLIC_SITE_URL || 'https://squareonecompassion.com').replace(/\/$/, '')
+
+export function appUrl(path: string): string {
+  return `${APP}${path.startsWith('/') ? path : `/${path}`}`
+}
+
+export function telHref(phone: string): string {
+  return `tel:+1${phone.replace(/\D/g, '')}`
+}

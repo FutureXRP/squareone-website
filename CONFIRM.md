@@ -1,0 +1,68 @@
+# CONFIRM.md
+
+Everything unresolved, in one place, so it can be cleared in a single pass. Each item renders on the site as bracketed placeholder text and is marked with a `// CONFIRM` comment in the component (`grep -rn CONFIRM app components lib content`).
+
+## Blocking for launch
+
+### Assets that could not be pulled from the current site
+The build environment could not reach squareonecompassion.com (network policy), so nothing was copied from it. The site ships with placeholders:
+
+- [ ] **Logos.** `public/logos/sq1.svg`, `elc.svg`, `medical.svg`, `interactive.svg` are placeholders built from the real SquareOne mark (the Interactive app's `public/logo.svg`) plus a text wordmark. Drop the four real PNGs into `public/logos/` as `sq1.png`, `elc.png`, `medical.png`, `interactive.png`, then change the `logo` paths in `lib/site.ts` to `.png`.
+- [ ] **Palette.** Run `npm run palette` after the PNGs are in place and paste the extracted colors into `tailwind.config.ts` (`brand.sq1`, `brand.elc`, `brand.med`) and the matching `--accent` variables in `app/globals.css`. The current values are provisional: sq1 `#0B5591` / navy `#12233F` come from the SquareOne mark, ELC `#2E7D4F` and Medical `#0B6B7A` are guesses chosen to pass 4.5:1 contrast. `brand.int` is fixed to the Interactive app's navy `#182740` and must not be changed. Also update `themeColor` in `app/layout.tsx` if sq1 changes.
+- [ ] **Hero photo.** `public/photos/campus.webp` is a generated placeholder. Replace with a real campus photo, WebP, max 1600px wide, and update the alt text in `components/Hero.tsx` if needed.
+- [ ] **Medical intake PDFs.** Place the five files in `public/docs/` with these exact names (linked from `/medical` and `/privacy`): `privacy-practices.pdf`, `patient-contact-information.pdf`, `assignment-of-benefits.pdf`, `medical-records-request.pdf`, `patient-information-and-office-policies.pdf`. The `vercel.json` redirect maps `/wp-content/uploads/2021/10/<name>.pdf` to `/docs/<name>.pdf` one-to-one; if the old filenames differ, add five explicit redirects.
+- [ ] **Event photos.** games.jpg, bounce.jpg, event-rental-space.jpg, event-rental-1.jpg, event-rental-2.jpg: reuse on `/events` if they still reflect the rooms. The page currently has no photos.
+
+### Environment variables (Vercel > Settings > Environment Variables)
+See `.env.example`. Without these:
+- `SUPABASE_URL` + `SUPABASE_SERVICE_ROLE_KEY`: contact and enrollment forms return a "not available" error. Run `supabase/migrations/0001_forms.sql` and `0002_donations.sql` in that project first.
+- `RESEND_API_KEY` + `RESEND_FROM`: submissions are stored but no notification email is sent.
+- `INTERACTIVE_SUPABASE_URL` + `INTERACTIVE_SUPABASE_ANON_KEY`: "What's on the floor" and the Events room list are hidden and only the four static tiles show. RLS in the app already allows anon reads of active facilities and packages, so no policy change is needed.
+- `STRIPE_SECRET_KEY` + `STRIPE_WEBHOOK_SECRET`: `/give` shows the "Online giving is coming soon" fallback. Webhook endpoint: `/api/stripe/webhook`, event `checkout.session.completed`.
+- `NEXT_PUBLIC_INTERACTIVE_APP_URL`: defaults to `https://square-one-interactive.vercel.app`.
+
+## Copy placeholders (from COPY.md)
+
+### Global
+- [ ] EIN (footer, Give page, donation receipt email)
+
+### Header and contact details
+- [ ] ELC phone: is 918-340-5024 correct for the ELC?
+- [ ] Interactive email address
+- [ ] Interactive phone: is 918-340-5400 correct?
+
+### Home
+- [ ] Impact numbers to publish (suggested: ~3,000 patient visits a year, children enrolled in the ELC, active Interactive members)
+
+### About
+- [ ] Year founded
+- [ ] Director of Interactive Center name
+- [ ] Three additional board members' names and one-line affiliations
+- [ ] Whether to name campus partners (physical therapy practice, fencing organization, American Legion Post 1776)
+- [ ] Link to most recent Form 990 or annual report, or omit the Financials block
+
+### Early Learning Center
+- [ ] Is a summer program still offered? If not, drop the second button.
+- [ ] Tuition rates: publish, or keep "Contact us for current rates"
+- [ ] Phone number in the "How do I get started?" FAQ answer
+
+### Medical Center
+- [ ] "We do not accept CommunityCare": still true?
+- [ ] Jennifer Blair: credentials, role, and bio
+- [ ] Any other providers to list, including Matt
+
+### Interactive
+- [ ] Final domain for the app (e.g. interactive.squareonecompassion.com)
+- [ ] Hours still current? (Mon to Sat 5:30 am to 10 pm, Sun 1 pm to 10 pm)
+- [ ] Whether to list fitness membership prices here (old site: $25 individual / $75 family)
+
+### Events
+- [ ] Are inflatables and A/V still offered? Are weddings and fundraisers booked through the app or by a person?
+- [ ] Alexis Henson, 918-720-3032: still the events contact?
+
+### Privacy and Terms
+- [ ] Both pages are placeholders until Matt supplies text.
+
+## Not done in this pass
+- Lighthouse was not run (no Chrome DevTools in the build environment). Run it on the Vercel preview: Home, mobile, target performance 90+ and accessibility 100.
+- Vercel preview deploy was not created from here. Push the branch and let the Vercel Git integration build it.

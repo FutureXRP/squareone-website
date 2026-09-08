@@ -1,4 +1,4 @@
-# CLAUDE.md — squareone-site
+# CLAUDE.md — squareone-website
 
 Public website for SquareOne Compassion, a Tulsa 501(c)(3) campus with three operating divisions: SquareOne Early Learning Center (ELC), SquareOne Medical Center, and SquareOne Interactive (fitness center + family entertainment center). This repo replaces the WordPress site at squareonecompassion.com.
 
@@ -53,7 +53,7 @@ content/
   COPY.md               source of truth for all copy
   faq/*.json            per-division FAQ arrays
 public/
-  logos/                sq1.png, elc.png, interactive.png, medical.png (pulled from current site)
+  logos/                sq1, elc, interactive, medical (currently placeholder SVGs, see CONFIRM.md; replace with the PNGs pulled from the current site)
   photos/               reused campus photos, WebP, max 1600px wide
   docs/                 medical intake PDFs (5 files, see COPY.md)
 lib/
@@ -84,6 +84,8 @@ Each division page uses its own accent for links, buttons, and the header stripe
 
 ### Type
 Two families, clearly distinct: a humanist sans for body and UI, and a rounded or geometric display face for headlines that reads warm without reading childish (the ELC page pulls this direction, Medical needs to still look credible in it). Load from Google Fonts via `next/font`. Pick once, document the choice in this file, do not change per page.
+
+**Chosen (phase 1):** body and UI are **Source Sans 3** (400/600/700), headlines are **Plus Jakarta Sans** (500/600/700). Both load in `app/layout.tsx` through `next/font/google` and are exposed as `--font-body` and `--font-display`, mapped to `font-sans` and `font-display` in `tailwind.config.ts`.
 
 Type scale: 16px base, 1.25 ratio. Body line length under 75 characters. Sentence case everywhere. No all-caps labels, no eyebrow labels above headings, no single-word color accents inside headlines.
 

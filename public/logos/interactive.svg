@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 160" width="640" height="160" role="img" aria-label="SquareOne Interactive">
+  <title>SquareOne Interactive</title>
+  <g transform="translate(0,8) scale(0.254)">
+    <rect width="567" height="567" fill="#12233F"/>
+    <polygon points="258,143 425,0 567,0 567,567 430,567 430,143" fill="#0B5591"/>
+    <rect x="145" y="143" width="285" height="289" fill="#FFFFFF"/>
+  </g>
+  <text x="168" y="74" font-family="Helvetica, Arial, sans-serif" font-size="46" font-weight="700" fill="#12233F">SquareOne</text>
+  <text x="168" y="124" font-family="Helvetica, Arial, sans-serif" font-size="34" font-weight="500" fill="#182740">Interactive</text>
+</svg>

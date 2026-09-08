@@ -1,0 +1,95 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Per-division accent. The Shell component sets data-division on the page
+   wrapper; umbrella pages use sq1. Never mix two accents on one page. */
+:root,
+[data-division='sq1'] {
+  --accent: #0b5591;
+  --accent-hover: #094a7e;
+  --accent-ink: #0b5591;
+  --accent-soft: #eaf1f8;
+}
+[data-division='elc'] {
+  --accent: #2e7d4f;
+  --accent-hover: #256a42;
+  --accent-ink: #256a42;
+  --accent-soft: #ecf5ef;
+}
+[data-division='med'] {
+  --accent: #0b6b7a;
+  --accent-hover: #095a67;
+  --accent-ink: #0b6b7a;
+  --accent-soft: #e9f3f5;
+}
+[data-division='int'] {
+  --accent: #182740;
+  --accent-hover: #0f1a2c;
+  --accent-ink: #182740;
+  --accent-soft: #eef4fb;
+}
+
+@layer base {
+  html {
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+  body {
+    @apply bg-paper text-ink font-sans text-base;
+  }
+  h1,
+  h2,
+  h3,
+  h4 {
+    @apply font-display font-semibold tracking-tight text-ink;
+    text-wrap: balance;
+  }
+  p {
+    text-wrap: pretty;
+  }
+  a {
+    @apply underline-offset-4;
+  }
+  :focus-visible {
+    @apply outline-none ring-2 ring-offset-2 ring-accent ring-offset-paper;
+  }
+  summary::-webkit-details-marker {
+    display: none;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+}
+
+@layer components {
+  .section {
+    @apply py-section-sm md:py-section;
+  }
+  .prose-block {
+    @apply max-w-prose;
+  }
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 rounded-md px-5 py-3 font-sans text-base font-semibold no-underline transition-colors;
+  }
+  .btn-primary {
+    @apply btn bg-accent text-white hover:bg-accent-hover;
+  }
+  .btn-secondary {
+    @apply btn border-2 border-accent bg-transparent text-accent-ink hover:bg-accent-soft;
+  }
+  .link {
+    @apply font-semibold text-accent-ink underline hover:no-underline;
+  }
+  .field {
+    @apply block w-full rounded-md border border-line bg-paper px-3 py-2.5 text-base text-ink placeholder:text-muted/70 focus:border-accent;
+  }
+  .label {
+    @apply mb-1.5 block text-base font-semibold text-ink;
+  }
+}
