@@ -99,6 +99,7 @@ export function divisionForPath(pathname: string): DivisionKey {
 }
 
 export const NAV = [
+  { href: '/', label: 'Home' },
   { href: '/early-learning', label: 'Early Learning' },
   { href: '/medical', label: 'Medical' },
   { href: '/interactive', label: 'Interactive' },
