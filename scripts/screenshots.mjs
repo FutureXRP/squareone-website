@@ -14,6 +14,15 @@ for (const width of WIDTHS) {
   const page = await browser.newPage({ viewport: { width, height: 900 } })
   for (const path of PAGES) {
     await page.goto(`${BASE}${path}`, { waitUntil: 'networkidle' })
+    // Scroll through the page so lazily loaded images below the fold are fetched before the capture.
+    await page.evaluate(async () => {
+      for (let y = 0; y < document.body.scrollHeight; y += 600) {
+        window.scrollTo(0, y)
+        await new Promise((r) => setTimeout(r, 60))
+      }
+      window.scrollTo(0, 0)
+    })
+    await page.waitForLoadState('networkidle')
     const name = (path === '/' ? 'home' : path.slice(1).replace(/\//g, '-')) + `-${width}.png`
     await page.screenshot({ path: `screenshots/${name}`, fullPage: true })
     console.log('saved', name)
