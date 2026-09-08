@@ -38,7 +38,7 @@ export default async function EventsPage() {
 
   return (
     <>
-      <PageBanner src="/photos/interactive/party-arcade.webp" alt="The Arcade Party Room at SquareOne Interactive, with a long party table surrounded by arcade games" priority />
+      <PageBanner src="/photos/events/banner.webp" alt="SquareOne Events: a graduation party in the Gym and Multipurpose Room with guests at decorated tables. Parties, showers, celebrations." priority full width={1600} height={800} />
       <PageIntro title="Host it at SquareOne.">
         <p className="text-ink">
           Our gym, party rooms, and event spaces host birthday parties, showers, indoor practices, meetings, weddings, and fundraisers. Book online with live availability, or start with a party package that includes a host and setup.
