@@ -3,7 +3,7 @@ import { Hero } from '@/components/Hero'
 import { Section } from '@/components/Section'
 import { DivisionCard } from '@/components/DivisionCard'
 import { Confirm } from '@/components/Confirm'
-import { appUrl } from '@/lib/site'
+import { appUrl, ORG } from '@/lib/site'
 
 export default function HomePage() {
   return (
@@ -12,6 +12,12 @@ export default function HomePage() {
         headline="One campus. Three ways to care for a family."
         subhead="SquareOne Compassion is a nonprofit campus in west Tulsa where a child can learn, a family can see a doctor, and a neighborhood can get active, all in one place."
       />
+
+      <section className="bg-tint py-12 md:py-16" aria-label="Our mission">
+        <div className="container">
+          <p className="max-w-4xl font-display text-2xl font-semibold tracking-tight text-ink md:text-3xl">{ORG.tagline}</p>
+        </div>
+      </section>
 
       <Section>
         <h2 className="text-2xl">What we do</h2>
