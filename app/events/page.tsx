@@ -1,7 +1,9 @@
 import type { Metadata } from 'next'
+import Image from 'next/image'
 import { PageIntro, Section } from '@/components/Section'
 import { Confirm } from '@/components/Confirm'
 import { ZoneCard } from '@/components/ZoneCard'
+import { PageBanner } from '@/components/PageBanner'
 import { appUrl, telHref } from '@/lib/site'
 import { getActiveFacilities } from '@/lib/interactive'
 import { EVENT_SPACES, PARTY_PACKAGES, CORPORATE_PACKAGES, CORPORATE_CONTACT, type Package } from '@/content/interactive'
@@ -13,6 +15,7 @@ function PackageList({ packages }: { packages: Package[] }) {
     <ul className="mt-8 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
       {packages.map((p) => (
         <li key={p.name} className="border-t-4 border-accent pt-5">
+          <Image src={p.photo} alt={p.photoAlt} width={800} height={533} sizes="(min-width: 1024px) 360px, (min-width: 640px) 50vw, 100vw" className="mb-4 aspect-[3/2] w-full object-cover" />
           <h3 className="text-xl">{p.name}</h3>
           <p className="mt-1 text-lg font-semibold text-accent-ink">{p.price}</p>
           <ul className="mt-3 list-disc space-y-1 pl-5 text-muted">
@@ -35,6 +38,7 @@ export default async function EventsPage() {
 
   return (
     <>
+      <PageBanner src="/photos/interactive/party-arcade.webp" alt="The Arcade Party Room at SquareOne Interactive, with a long party table surrounded by arcade games" priority />
       <PageIntro title="Host it at SquareOne.">
         <p className="text-ink">
           Our gym, party rooms, and event spaces host birthday parties, showers, indoor practices, meetings, weddings, and fundraisers. Book online with live availability, or start with a party package that includes a host and setup.

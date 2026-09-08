@@ -159,21 +159,23 @@ export interface Package {
   name: string
   price: string
   items: string[]
+  photo: string
+  photoAlt: string
 }
 
 export const PARTY_PACKAGES: Package[] = [
-  { name: 'Package 1', price: '$350', items: ['3-hour party', 'Gym and Multipurpose Room', 'Large inflatable', 'Gaming Zone', '20 roller coaster VR experiences', 'Up to 75 guests', 'Includes 1 hour setup and 30 minute clean-up period'] },
-  { name: 'Package 2', price: '$350', items: ['3-hour party', 'Gym and Multipurpose Room', 'Large inflatable', 'Small inflatable', 'Up to 125 guests', 'Includes 1 hour setup and 30 minute clean-up period'] },
-  { name: 'Package 3', price: '$250', items: ['3-hour party', 'Dining Hall', 'Gaming Zone', '20 roller coaster VR experiences', 'Up to 100 guests', 'Includes 1 hour setup and 30 minute clean-up period'] },
-  { name: 'Package 4', price: '$300', items: ['3-hour party', 'Dining Hall', 'Gaming Zone', 'MultiBall Zone', 'Up to 100 guests', 'Includes 1 hour setup and 30 minute clean-up period'] },
-  { name: 'Package 5', price: '$200', items: ['2-hour party', 'Arcade Party Room', '25 photo booth prints', 'Game led by party host', 'Up to 40 guests', 'Includes 30 minute setup and 30 minute clean-up period'] },
-  { name: 'Package 6', price: '$225', items: ['2-hour party', 'Arcade Party Room', '25 photo booth prints', 'Up to 40 guests', 'Includes 30 minute setup and 30 minute clean-up period'] },
+  { name: 'Package 1', price: '$350', photo: '/photos/interactive/gym.webp', photoAlt: 'The Gym and Multipurpose Room', items: ['3-hour party', 'Gym and Multipurpose Room', 'Large inflatable', 'Gaming Zone', '20 roller coaster VR experiences', 'Up to 75 guests', 'Includes 1 hour setup and 30 minute clean-up period'] },
+  { name: 'Package 2', price: '$350', photo: '/photos/interactive/gym.webp', photoAlt: 'The Gym and Multipurpose Room', items: ['3-hour party', 'Gym and Multipurpose Room', 'Large inflatable', 'Small inflatable', 'Up to 125 guests', 'Includes 1 hour setup and 30 minute clean-up period'] },
+  { name: 'Package 3', price: '$250', photo: '/photos/interactive/dining-hall.webp', photoAlt: 'The Dining Hall set for a party', items: ['3-hour party', 'Dining Hall', 'Gaming Zone', '20 roller coaster VR experiences', 'Up to 100 guests', 'Includes 1 hour setup and 30 minute clean-up period'] },
+  { name: 'Package 4', price: '$300', photo: '/photos/interactive/multiball.webp', photoAlt: 'Children playing in the MultiBall Zone', items: ['3-hour party', 'Dining Hall', 'Gaming Zone', 'MultiBall Zone', 'Up to 100 guests', 'Includes 1 hour setup and 30 minute clean-up period'] },
+  { name: 'Package 5', price: '$200', photo: '/photos/interactive/party-arcade.webp', photoAlt: 'The Arcade Party Room with its party table', items: ['2-hour party', 'Arcade Party Room', '25 photo booth prints', 'Game led by party host', 'Up to 40 guests', 'Includes 30 minute setup and 30 minute clean-up period'] },
+  { name: 'Package 6', price: '$225', photo: '/photos/interactive/party-arcade.webp', photoAlt: 'The Arcade Party Room with its party table', items: ['2-hour party', 'Arcade Party Room', '25 photo booth prints', 'Up to 40 guests', 'Includes 30 minute setup and 30 minute clean-up period'] },
 ]
 
 export const CORPORATE_PACKAGES: Package[] = [
-  { name: 'Corporate package 1', price: '$450', items: ['Dining Hall', 'Gym', 'Tables and chairs', 'Restrooms', 'Half-day rental period, 8 am to 3 pm or 3 pm to 10 pm'] },
-  { name: 'Corporate package 2', price: '$750', items: ['Dining Hall', 'Gym', 'Interactive Zones: gaming, MultiBall, billiards, MultiSport', 'Restrooms', 'Event staff on site', 'Half-day rental period, 8 am to 3 pm or 3 pm to 10 pm'] },
-  { name: 'Corporate package 3', price: '$1,000', items: ['Dining Hall', 'Gym', 'Interactive Zones: gaming, MultiBall, billiards, MultiSport', 'Party Arcade Room', 'Restrooms', 'Event staff on site', 'Full-day rental period, 8 am to 10 pm'] },
+  { name: 'Corporate package 1', price: '$450', photo: '/photos/interactive/dining-hall.webp', photoAlt: 'The Dining Hall set with banquet tables', items: ['Dining Hall', 'Gym', 'Tables and chairs', 'Restrooms', 'Half-day rental period, 8 am to 3 pm or 3 pm to 10 pm'] },
+  { name: 'Corporate package 2', price: '$750', photo: '/photos/interactive/gaming.webp', photoAlt: 'Gaming stations and simulators in the Gaming Zone', items: ['Dining Hall', 'Gym', 'Interactive Zones: gaming, MultiBall, billiards, MultiSport', 'Restrooms', 'Event staff on site', 'Half-day rental period, 8 am to 3 pm or 3 pm to 10 pm'] },
+  { name: 'Corporate package 3', price: '$1,000', photo: '/photos/interactive/banner.webp', photoAlt: 'The full SquareOne Interactive floor', items: ['Dining Hall', 'Gym', 'Interactive Zones: gaming, MultiBall, billiards, MultiSport', 'Party Arcade Room', 'Restrooms', 'Event staff on site', 'Full-day rental period, 8 am to 10 pm'] },
 ]
 
 export const CORPORATE_CONTACT = { name: 'Christina Barrington', phone: '918-706-2682' }
