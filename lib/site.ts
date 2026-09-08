@@ -4,7 +4,12 @@ export interface Division {
   key: DivisionKey
   name: string
   shortName: string
+  /** Full supplied logo (mark plus wordmark where the artwork has one). */
   logo: string
+  /** Square mark only, used in the header and hero tiles next to an HTML wordmark so the division name stays legible at small sizes. */
+  mark: string
+  /** Wordmark second line shown under "SquareOne" in the chrome. */
+  wordmark: string
   email: string
   emailConfirm?: boolean
   phone: string
@@ -31,6 +36,8 @@ export const DIVISIONS: Record<DivisionKey, Division> = {
     name: 'SquareOne Compassion',
     shortName: 'SquareOne',
     logo: '/logos/sq1.svg',
+    mark: '/logos/sq1.svg',
+    wordmark: 'Compassion',
     email: 'connect@squareonecompassion.com',
     phone: '918-340-5024',
     home: '/',
@@ -41,6 +48,8 @@ export const DIVISIONS: Record<DivisionKey, Division> = {
     name: 'SquareOne Early Learning Center',
     shortName: 'Early Learning Center',
     logo: '/logos/elc.svg',
+    mark: '/logos/elc-mark.svg',
+    wordmark: 'Early Learning Center',
     email: 'connect@squareoneelc.com',
     phone: '918-340-5024',
     phoneConfirm: true, // CONFIRM
@@ -55,6 +64,8 @@ export const DIVISIONS: Record<DivisionKey, Division> = {
     name: 'SquareOne Medical Center',
     shortName: 'Medical Center',
     logo: '/logos/medical.svg',
+    mark: '/logos/medical-mark.svg',
+    wordmark: 'Medical Center',
     email: 'connect@squareonemedicalcenter.com',
     phone: '918-340-5400',
     home: '/medical',
@@ -65,6 +76,8 @@ export const DIVISIONS: Record<DivisionKey, Division> = {
     name: 'SquareOne Interactive',
     shortName: 'Interactive',
     logo: '/logos/interactive.svg',
+    mark: '/logos/interactive.svg',
+    wordmark: 'Interactive',
     email: '[CONFIRM: email]', // CONFIRM
     emailConfirm: true,
     phone: '918-340-5400',

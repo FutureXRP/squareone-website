@@ -17,9 +17,14 @@ export function Header({ division, pathname }: { division: DivisionKey; pathname
       <div className="h-1.5 bg-accent" aria-hidden="true" />
       <div className="container">
         <div className="flex items-center justify-between gap-6 py-4">
-          <Link href={d.home} className="shrink-0" aria-label={`${d.name} home`}>
+          <Link href={d.home} className="flex shrink-0 items-center gap-3 no-underline" aria-label={`${d.name} home`}>
             {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src={d.logo} alt={d.name} width={640} height={160} className="h-12 w-auto md:h-14" />
+            <img src={d.mark} alt="" width={567} height={567} className="h-12 w-12 md:h-14 md:w-14" />
+            <span className="font-display text-lg font-semibold leading-tight text-ink">
+              SquareOne
+              <br />
+              <span className="text-base font-medium text-accent-ink">{d.wordmark}</span>
+            </span>
           </Link>
 
           <div className="hidden items-center gap-6 text-base lg:flex">

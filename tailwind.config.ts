@@ -14,10 +14,10 @@ const config: Config = {
     extend: {
       colors: {
         brand: {
-          sq1: '#0B5591', // CONFIRM: provisional, from the SquareOne mark (Interactive app logo.svg). Re-extract from sq1.png.
-          navy: '#12233F', // secondary from the same mark
-          elc: '#2E7D4F', // CONFIRM: provisional. Extract from elc.png.
-          med: '#0B6B7A', // CONFIRM: provisional. Extract from medical.png.
+          sq1: '#05528F', // umbrella mark blue (read from supplied logo; confirm with `npm run palette` on sq1.png)
+          navy: '#0E2140', // umbrella mark navy
+          elc: '#1A6AB6', // ELC wordmark blue (read from supplied logo)
+          med: '#1163AE', // Medical mark blue (read from supplied logo)
           int: '#182740', // Interactive app navy, fixed
         },
         ink: '#2A2724',
