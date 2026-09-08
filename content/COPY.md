@@ -217,7 +217,15 @@ Arcade party packages with a host and setup included. Birthdays, team parties, a
 Tees, hoodies, and more. Every purchase supports SquareOne Compassion.
 → {APP}/shop
 
-**What's on the floor** — rendered live from the Interactive app's Supabase project (see CLAUDE.md, "Interactive catalog"). Show each active facility's name and one-line description, then the active event packages with name and starting price. No hard-coded room list in this file.
+**Section: Explore the Interactive Zones** (from Matt's brief, docs-source/interactive-brief.pdf; full zone copy, pricing, and photos live in content/interactive.ts)
+
+At SquareOne Interactive, every zone is designed to bring people together through fun, connection, and memorable experiences. Whether you are planning a family outing, birthday party, corporate team-building event, youth group, or just a night out with friends, our Interactive Zones offer something for every age and interest.
+
+From competitive gaming and classic arcade experiences to immersive attractions and hands-on activities, each zone delivers a unique adventure. Explore one zone or experience them all. There is always something new to discover at SquareOne Interactive.
+
+Zones, in order: MultiBall Zone, Gaming Zone, MultiSport Zone, Party Arcade Zone, Billiards Zone, Adventure Zone (coming soon), Fitness Zone. Hourly zones: $25 per hour Monday through Friday 9 am to 5 pm, $35 per hour Monday through Friday 5 pm to 10 pm, $35 per hour Saturday and Sunday. Party Arcade: $175 for a 2-hour party, $225 for a 3-hour party. Fitness: $25 per month individual membership. Each zone links to {APP}/facilities/{id}; Fitness links to {APP}/memberships. Live prices from the app override the static lines when the catalog is reachable.
+
+Edits from the brief for house style: "cutting-edge" and "journey" removed, em dashes replaced, "unforgettable" softened to "memorable".
 
 **Buttons:** Become a member · Rent a room
 
@@ -253,7 +261,26 @@ Room rentals and party packages now book directly in the Interactive app with li
 
 **Contact:** Planning something bigger or unusual? Contact Alexis Henson at 918-720-3032 `[CONFIRM: still the events contact]`.
 
-**Photos:** reuse games.jpg, bounce.jpg, event-rental-space.jpg, event-rental-1.jpg, event-rental-2.jpg if they still reflect the rooms `[CONFIRM]`.
+**Section: Event rental spaces** (from Matt's brief; copy in content/interactive.ts)
+- Dining Hall: $125 for a 2-hour event, $150 for a 3-hour event
+- Gym and Multipurpose Room: $125 for a 2-hour event, $150 for a 3-hour event
+
+**Section: Party packages** (six, from the brief; each books in {APP}/packages)
+1. $350: 3-hour party, Gym and Multipurpose Room, large inflatable, Gaming Zone, 20 roller coaster VR experiences, up to 75 guests, 1 hour setup and 30 minute clean-up included
+2. $350: 3-hour party, Gym and Multipurpose Room, large and small inflatable, up to 125 guests, 1 hour setup and 30 minute clean-up included
+3. $250: 3-hour party, Dining Hall, Gaming Zone, 20 roller coaster VR experiences, up to 100 guests, 1 hour setup and 30 minute clean-up included
+4. $300: 3-hour party, Dining Hall, Gaming Zone, MultiBall Zone, up to 100 guests, 1 hour setup and 30 minute clean-up included
+5. $200: 2-hour party, Arcade Party Room, 25 photo booth prints, game led by party host, up to 40 guests, 30 minute setup and 30 minute clean-up included
+6. $225: 2-hour party, Arcade Party Room, 25 photo booth prints, up to 40 guests, 30 minute setup and 30 minute clean-up included
+
+**Section: Corporate events** (from the brief)
+Looking for a unique space for your next company gathering? SquareOne Interactive offers a private, flexible facility designed for corporate events, employee appreciation, team building, trainings, meetings, and celebrations. Enjoy interactive gaming experiences, team challenges and activities, a private event space, and a unique environment designed for connection. When you host your event at SquareOne Interactive, you are helping fuel the mission of SquareOne Compassion. Revenue generated through our facility helps us invest back into our surrounding communities through programs that provide support, resources, and opportunities for those in need.
+- Corporate package 1, $450: Dining Hall, Gym, tables and chairs, restrooms, half-day rental period (8 am to 3 pm or 3 pm to 10 pm)
+- Corporate package 2, $750: Dining Hall, Gym, Interactive Zones (gaming, MultiBall, billiards, MultiSport), restrooms, event staff on site, half-day rental period
+- Corporate package 3, $1,000: Dining Hall, Gym, Interactive Zones, Party Arcade Room, restrooms, event staff on site, full-day rental period (8 am to 10 pm)
+Prices are subject to change based on number of guests. Questions: Christina Barrington, 918-706-2682.
+
+**Photos:** zone and room photos from the brief are in public/photos/interactive/. The old site's games.jpg, bounce.jpg, event-rental-*.jpg are no longer needed.
 
 ---
 

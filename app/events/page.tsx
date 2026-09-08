@@ -1,13 +1,38 @@
 import type { Metadata } from 'next'
 import { PageIntro, Section } from '@/components/Section'
 import { Confirm } from '@/components/Confirm'
+import { ZoneCard } from '@/components/ZoneCard'
 import { appUrl, telHref } from '@/lib/site'
 import { getActiveFacilities } from '@/lib/interactive'
+import { EVENT_SPACES, PARTY_PACKAGES, CORPORATE_PACKAGES, CORPORATE_CONTACT, type Package } from '@/content/interactive'
 
 export const metadata: Metadata = { title: 'Events', description: 'Our gym, party rooms, and event spaces host birthday parties, showers, indoor practices, meetings, weddings, and fundraisers. Book online with live availability.' }
 
+function PackageList({ packages }: { packages: Package[] }) {
+  return (
+    <ul className="mt-8 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+      {packages.map((p) => (
+        <li key={p.name} className="border-t-4 border-accent pt-5">
+          <h3 className="text-xl">{p.name}</h3>
+          <p className="mt-1 text-lg font-semibold text-accent-ink">{p.price}</p>
+          <ul className="mt-3 list-disc space-y-1 pl-5 text-muted">
+            {p.items.map((it) => (
+              <li key={it}>{it}</li>
+            ))}
+          </ul>
+        </li>
+      ))}
+    </ul>
+  )
+}
+
 export default async function EventsPage() {
-  const rooms = await getActiveFacilities()
+  const live = await getActiveFacilities()
+  const livePrice = (id: string) => {
+    const row = live.find((f) => f.id === id)
+    return row?.price ? `${row.price} per hour, live pricing in the app` : undefined
+  }
+
   return (
     <>
       <PageIntro title="Host it at SquareOne.">
@@ -33,30 +58,58 @@ export default async function EventsPage() {
         </p>
       </Section>
 
-      {rooms.length > 0 ? (
-        <Section tint>
-          <h2 className="text-2xl">Rooms you can book</h2>
-          <ul className="mt-8 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
-            {rooms.map((r) => (
-              <li key={r.id}>
-                <h3 className="text-lg">
-                  <a href={r.href} className="text-ink no-underline hover:underline">
-                    {r.name}
-                  </a>
-                </h3>
-                {r.blurb ? <p className="mt-1 text-muted">{r.blurb}</p> : null}
-              </li>
-            ))}
-          </ul>
-        </Section>
-      ) : null}
+      <Section tint id="spaces">
+        <h2 className="text-2xl">Event rental spaces</h2>
+        <div className="mt-10 space-y-16 md:space-y-20">
+          {EVENT_SPACES.map((s, i) => (
+            <ZoneCard
+              key={s.id}
+              name={s.name}
+              photo={s.photo}
+              photoAlt={s.photoAlt}
+              body={s.body}
+              pricing={s.pricing}
+              livePrice={livePrice(s.id)}
+              reserveHref={appUrl(`/facilities/${s.id}`)}
+              reserveLabel={`Reserve the ${s.name}`}
+              flip={i % 2 === 1}
+            />
+          ))}
+        </div>
+      </Section>
 
-      <Section tint={rooms.length === 0}>
+      <Section id="party-packages">
+        <h2 className="text-2xl">Party packages</h2>
+        <p className="prose-block mt-3 text-muted">Every package books online in the Interactive app.</p>
+        <PackageList packages={PARTY_PACKAGES} />
+        <p className="mt-10">
+          <a href={appUrl('/packages')} className="btn-primary">
+            Book a party package
+          </a>
+        </p>
+      </Section>
+
+      <Section tint id="corporate">
+        <h2 className="text-2xl">Corporate events</h2>
+        <div className="prose-block mt-5 space-y-4 text-lg">
+          <p>Looking for a unique space for your next company gathering? SquareOne Interactive offers a private, flexible facility designed for corporate events, employee appreciation, team building, trainings, meetings, and celebrations.</p>
+          <p>Enjoy interactive gaming experiences, team challenges and activities, a private event space, and a unique environment designed for connection.</p>
+          <p>
+            When you host your event at SquareOne Interactive, you are helping fuel the mission of SquareOne Compassion. Revenue generated through our facility helps us invest back into our surrounding communities through programs that provide support, resources, and opportunities for those in need.
+          </p>
+        </div>
+        <PackageList packages={CORPORATE_PACKAGES} />
+        <p className="mt-6 text-sm text-muted">Prices are subject to change based on number of guests.</p>
+        <p className="prose-block mt-8 text-lg">
+          Questions about corporate events? Contact {CORPORATE_CONTACT.name} at <a href={telHref(CORPORATE_CONTACT.phone)} className="link">{CORPORATE_CONTACT.phone}</a>.
+        </p>
+      </Section>
+
+      <Section>
         <h2 className="text-2xl">Planning something bigger or unusual?</h2>
         <p className="prose-block mt-4 text-lg">
           Contact Alexis Henson at <a href={telHref('918-720-3032')} className="link">918-720-3032</a> <Confirm>still the events contact</Confirm>.
         </p>
-        {/* CONFIRM: photos. Reuse games.jpg, bounce.jpg, event-rental-space.jpg, event-rental-1.jpg, event-rental-2.jpg from the old site if they still reflect the rooms. */}
       </Section>
     </>
   )
