@@ -3,6 +3,7 @@ import { PageIntro, Section } from '@/components/Section'
 import { StaffCard } from '@/components/StaffCard'
 import { Confirm } from '@/components/Confirm'
 import { photo } from '@/lib/photos'
+import { ORG } from '@/lib/site'
 
 export const metadata: Metadata = { title: 'About', description: 'SquareOne Compassion is a 501(c)(3) nonprofit campus in west Tulsa, home to an early learning center, a primary care clinic, and a fitness and family entertainment center.' }
 
@@ -52,7 +53,15 @@ export default function AboutPage() {
           <div>
             <h2 className="text-xl">Financials</h2>
             <p className="mt-3">
-              <Confirm>link to most recent Form 990 or annual report, or omit this block</Confirm>
+              Our Form 990 filings are public.{' '}
+              <a href={ORG.financialsUrl} className="link" rel="noopener">
+                See every year on ProPublica&apos;s Nonprofit Explorer
+              </a>
+              , or search the{' '}
+              <a href={ORG.irsSearchUrl} className="link" rel="noopener">
+                IRS Tax Exempt Organization Search
+              </a>{' '}
+              by our EIN, {ORG.ein}.
             </p>
           </div>
         </div>

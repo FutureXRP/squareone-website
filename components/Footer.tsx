@@ -72,7 +72,7 @@ export function Footer({ division }: { division: DivisionKey }) {
 
         <div className="mt-10 flex flex-col gap-2 border-t border-line pt-6 text-sm text-muted md:flex-row md:items-center md:justify-between">
           <p>
-            © 2026 SquareOne Compassion. SquareOne Compassion is a 501(c)(3) nonprofit. EIN {ORG.ein}. {/* CONFIRM */}
+            © 2026 SquareOne Compassion. SquareOne Compassion is a 501(c)(3) nonprofit. EIN {ORG.ein}.
           </p>
           <p>
             <Link href="/privacy">Privacy</Link> · <Link href="/terms">Terms</Link>

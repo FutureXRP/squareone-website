@@ -38,7 +38,7 @@ export default function GivePage() {
               {ORG.address.city}, {ORG.address.state} {ORG.address.zip}
             </address>
             <p className="mt-6 text-sm text-muted">
-              SquareOne Compassion is a 501(c)(3) nonprofit. EIN {ORG.ein}. {/* CONFIRM */}
+              SquareOne Compassion is a 501(c)(3) nonprofit. EIN {ORG.ein}.
             </p>
           </div>
         </div>

@@ -25,7 +25,10 @@ export const ORG = {
   addressLine: '5323 S 65th West Ave, Tulsa, OK 74107',
   phone: '918-340-5024',
   email: 'connect@squareonecompassion.com',
-  ein: '[CONFIRM: EIN]', // CONFIRM
+  ein: '83-4697894', // CONFIRM: derived from the IRS e-Postcard URL Matt supplied (834697894_202512_990...). Confirm before launch.
+  // Form 990 filings by EIN. ProPublica's Nonprofit Explorer lists every year and updates itself as the IRS releases new filings.
+  financialsUrl: 'https://projects.propublica.org/nonprofits/organizations/834697894',
+  irsSearchUrl: 'https://apps.irs.gov/app/eos/',
   instagram: 'https://instagram.com/squareonecompassion',
   facebook: 'https://facebook.com/squareonecompassion',
 }

@@ -13,7 +13,7 @@ Things deliberately removed from the old site because they are not current opera
 **Main phone:** 918-340-5024
 **Main email:** connect@squareonecompassion.com
 **Social:** instagram.com/squareonecompassion, facebook.com/squareonecompassion
-**Footer:** © 2026 SquareOne Compassion. SquareOne Compassion is a 501(c)(3) nonprofit. EIN `[CONFIRM: EIN]`. Privacy · Terms
+**Footer:** © 2026 SquareOne Compassion. SquareOne Compassion is a 501(c)(3) nonprofit. EIN 83-4697894 `[CONFIRM: derived from the IRS 990 URL Matt supplied; confirm]`. Privacy · Terms
 **Tagline:** Rebuilding lives. Revitalizing communities.
 
 ---
@@ -87,7 +87,7 @@ We are a 501(c)(3) nonprofit governed by a volunteer board. `[CONFIRM: year foun
 `[CONFIRM: whether to name the physical therapy practice, the fencing organization, and American Legion Post 1776]`
 
 **Financials**
-`[CONFIRM: link to most recent Form 990 or annual report, or omit this block]`
+Our Form 990 filings are public. See every year on ProPublica's Nonprofit Explorer (https://projects.propublica.org/nonprofits/organizations/834697894), or search the IRS Tax Exempt Organization Search (https://apps.irs.gov/app/eos/) by our EIN, 83-4697894.
 
 ---
 
@@ -301,7 +301,7 @@ SquareOne Compassion
 5323 S 65th West Ave
 Tulsa, OK 74107
 
-**Receipt copy (email):** Thank you for your gift of {amount} to SquareOne Compassion, a 501(c)(3) nonprofit, EIN `[CONFIRM]`. No goods or services were provided in exchange for this contribution. Keep this email for your records.
+**Receipt copy (email):** Thank you for your gift of {amount} to SquareOne Compassion, a 501(c)(3) nonprofit, EIN 83-4697894. No goods or services were provided in exchange for this contribution. Keep this email for your records.
 
 **Thank-you page:** Thank you. Your gift is already at work on our campus. A receipt is on its way to your inbox.
 
