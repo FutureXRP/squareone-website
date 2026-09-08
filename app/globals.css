@@ -6,22 +6,22 @@
    wrapper; umbrella pages use sq1. Never mix two accents on one page. */
 :root,
 [data-division='sq1'] {
-  --accent: #0b5591;
-  --accent-hover: #094a7e;
-  --accent-ink: #0b5591;
-  --accent-soft: #eaf1f8;
+  --accent: #05528f;
+  --accent-hover: #04437a;
+  --accent-ink: #05528f;
+  --accent-soft: #e9f0f8;
 }
 [data-division='elc'] {
-  --accent: #2e7d4f;
-  --accent-hover: #256a42;
-  --accent-ink: #256a42;
-  --accent-soft: #ecf5ef;
+  --accent: #1a6ab6;
+  --accent-hover: #155a9c;
+  --accent-ink: #1a6ab6;
+  --accent-soft: #eaf2fb;
 }
 [data-division='med'] {
-  --accent: #0b6b7a;
-  --accent-hover: #095a67;
-  --accent-ink: #0b6b7a;
-  --accent-soft: #e9f3f5;
+  --accent: #1163ae;
+  --accent-hover: #0d5292;
+  --accent-ink: #1163ae;
+  --accent-soft: #e9f1f9;
 }
 [data-division='int'] {
   --accent: #182740;

@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 567 567" role="img" aria-label="SquareOne Medical Center"><title>SquareOne Medical Center</title>
+  <defs>
+    <linearGradient id="g1" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#1163AE"/><stop offset="1" stop-color="#0B4F94"/></linearGradient>
+    <linearGradient id="g2" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#1163AE"/><stop offset="1" stop-color="#1E8ADB"/></linearGradient>
+  </defs>
+  <rect width="567" height="567" fill="url(#g1)"/>
+  <polygon points="258,143 425,0 567,0 567,567 430,567 430,143" fill="url(#g2)"/>
+  <rect x="145" y="143" width="285" height="289" fill="#FFFFFF"/>
+</svg>

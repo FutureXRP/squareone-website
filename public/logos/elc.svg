@@ -1,10 +1,13 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 160" width="640" height="160" role="img" aria-label="SquareOne Early Learning Center">
-  <title>SquareOne Early Learning Center</title>
-  <g transform="translate(0,8) scale(0.254)">
-    <rect width="567" height="567" fill="#12233F"/>
-    <polygon points="258,143 425,0 567,0 567,567 430,567 430,143" fill="#0B5591"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1420" role="img" aria-label="SquareOne Early Learning Center"><title>SquareOne Early Learning Center</title>
+  <defs>
+    <linearGradient id="g1" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#1163AE"/><stop offset="1" stop-color="#0B4F94"/></linearGradient>
+    <linearGradient id="g2" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#1163AE"/><stop offset="1" stop-color="#1E8ADB"/></linearGradient>
+  </defs>
+  <g transform="translate(18,18) scale(1.7)">
+    <rect width="567" height="567" fill="url(#g1)"/>
+    <polygon points="258,143 425,0 567,0 567,567 430,567 430,143" fill="url(#g2)"/>
     <rect x="145" y="143" width="285" height="289" fill="#FFFFFF"/>
   </g>
-  <text x="168" y="74" font-family="Helvetica, Arial, sans-serif" font-size="46" font-weight="700" fill="#12233F">SquareOne</text>
-  <text x="168" y="124" font-family="Helvetica, Arial, sans-serif" font-size="34" font-weight="500" fill="#2E7D4F">Early Learning Center</text>
+  <text x="500" y="1180" text-anchor="middle" font-family="'Plus Jakarta Sans', 'Avenir Next', 'Century Gothic', Arial, sans-serif" font-size="150" font-weight="600" letter-spacing="-2" fill="#1A6AB6">SquareOne</text>
+  <text x="500" y="1330" text-anchor="middle" font-family="'Plus Jakarta Sans', 'Avenir Next', 'Century Gothic', Arial, sans-serif" font-size="96" font-weight="500" letter-spacing="-1" fill="#1A6AB6">Early Learning Center</text>
 </svg>

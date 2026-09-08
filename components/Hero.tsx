@@ -33,10 +33,15 @@ export function Hero({ headline, subhead }: { headline: string; subhead: string 
               <li key={t.key}>
                 <Link
                   href={t.href}
-                  className="flex h-full min-h-28 items-center justify-center rounded-md bg-paper p-5 no-underline ring-offset-brand-navy hover:bg-tint focus-visible:ring-white"
+                  className="flex h-full min-h-40 flex-col items-center justify-center gap-3 rounded-md bg-paper p-5 no-underline ring-offset-brand-navy hover:bg-tint focus-visible:ring-white"
                 >
                   {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img src={d.logo} alt={t.label} width={640} height={160} className="h-14 w-auto md:h-16" />
+                  <img src={d.mark} alt="" width={567} height={567} className="h-16 w-16" />
+                  <span className="text-center font-display text-lg font-semibold leading-tight text-ink">
+                    SquareOne
+                    <br />
+                    <span className="text-base font-medium text-accent-ink">{t.label}</span>
+                  </span>
                 </Link>
               </li>
             )
