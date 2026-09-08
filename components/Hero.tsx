@@ -10,7 +10,7 @@ const TILES = [
 ] as const
 
 /** The one memorable element: a single large campus photo with the three division logos as tappable tiles. */
-export function Hero({ headline, subhead }: { headline: string; subhead: string }) {
+export function Hero({ headline, subhead }: { headline: string; subhead?: string }) {
   const campus = photo('campus')
   return (
     <section className="relative isolate bg-brand-navy text-white">
@@ -26,9 +26,9 @@ export function Hero({ headline, subhead }: { headline: string; subhead: string 
       <div className="container flex min-h-[70vh] flex-col justify-end py-14 md:py-20">
         <div className="mx-auto max-w-3xl text-center">
           <h1 className="text-3xl text-white md:text-4xl">{headline}</h1>
-          <p className="mx-auto mt-5 max-w-prose text-lg text-white/90">{subhead}</p>
+          {subhead ? <p className="mx-auto mt-5 max-w-prose text-lg text-white/90">{subhead}</p> : null}
         </div>
-        <ul className="mx-auto mt-10 grid w-full max-w-4xl gap-4 sm:grid-cols-3">
+        <ul className="mx-auto mt-8 grid w-full max-w-4xl gap-4 sm:grid-cols-3">
           {TILES.map((t) => {
             const d = DIVISIONS[t.key]
             return (

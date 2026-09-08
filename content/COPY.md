@@ -20,9 +20,9 @@ Things deliberately removed from the old site because they are not current opera
 
 ## Home
 
-**Hero headline:** A community hub that offers
+**Hero headline:** A Community Hub That Offers (title case by Matt's request; the three tiles complete the sentence)
 
-**Hero subhead:** SquareOne Compassion is a nonprofit campus in west Tulsa where a child can learn, a family can see a doctor, and a neighborhood can get active, all in one place.
+**Hero subhead:** none. The tiles sit directly under the headline. The former subhead ("SquareOne Compassion is a nonprofit campus in west Tulsa where a child can learn, a family can see a doctor, and a neighborhood can get active, all in one place.") remains the site's meta description in app/layout.tsx.
 
 **Hero tiles (three, each shows a division logo):**
 - Early Learning Center → /early-learning
