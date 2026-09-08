@@ -20,7 +20,7 @@ Things deliberately removed from the old site because they are not current opera
 
 ## Home
 
-**Hero headline:** One campus. Three ways to care for a family.
+**Hero headline:** A community hub that offers
 
 **Hero subhead:** SquareOne Compassion is a nonprofit campus in west Tulsa where a child can learn, a family can see a doctor, and a neighborhood can get active, all in one place.
 

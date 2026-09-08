@@ -9,7 +9,7 @@ export default function HomePage() {
   return (
     <>
       <Hero
-        headline="One campus. Three ways to care for a family."
+        headline="A community hub that offers"
         subhead="SquareOne Compassion is a nonprofit campus in west Tulsa where a child can learn, a family can see a doctor, and a neighborhood can get active, all in one place."
       />
 
