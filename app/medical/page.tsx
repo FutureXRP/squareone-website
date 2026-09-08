@@ -4,6 +4,7 @@ import { FAQ } from '@/components/FAQ'
 import { StaffCard } from '@/components/StaffCard'
 import { Confirm } from '@/components/Confirm'
 import { telHref } from '@/lib/site'
+import { photo } from '@/lib/photos'
 import faq from '@/content/faq/medical.json'
 
 export const metadata: Metadata = { title: 'Medical Center', description: 'SquareOne Medical Center offers primary care and pediatrics for the whole family in west Tulsa. Medicare, SoonerCare, most private insurance, and a sliding scale.' }
@@ -78,11 +79,12 @@ export default function MedicalPage() {
         <h2 className="text-2xl">Providers</h2>
         <div className="mt-8 space-y-10">
           <StaffCard
+            photo={photo('abel-lau')}
             name="Abel Lau, MD"
             role="Medical Director"
             bio="Dr. Lau was born in Tennessee and raised in Malaysia. He graduated from Regents University Medical College in Georgia and trained in Oklahoma. With more than 25 years in practice, he focuses on finding the root causes of his patients' health challenges and treating them with compassion, kindness, patience, and competence. Outside the clinic he fixes cars and broken things, works with wood, and skis. He and his wife Emily live in the Sand Springs area."
           />
-          <StaffCard name="Jennifer Blair" role="[CONFIRM: credentials and role]" bio="[CONFIRM: bio. The current site shows her photo with no text.]" /> {/* CONFIRM */}
+          <StaffCard photo={photo('jennifer-blair')} name="Jennifer Blair" role="[CONFIRM: credentials and role]" bio="[CONFIRM: bio. The current site shows her photo with no text.]" /> {/* CONFIRM */}
           <p className="text-muted">
             <Confirm>any other providers to list, including Matt</Confirm>
           </p>

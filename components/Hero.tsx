@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import { DIVISIONS } from '@/lib/site'
+import { photo } from '@/lib/photos'
 
 const TILES = [
   { key: 'elc', label: 'Early Learning Center', href: '/early-learning' },
@@ -10,10 +11,11 @@ const TILES = [
 
 /** The one memorable element: a single large campus photo with the three division logos as tappable tiles. */
 export function Hero({ headline, subhead }: { headline: string; subhead: string }) {
+  const campus = photo('campus') // CONFIRM: real campus photo, see CONFIRM.md
   return (
     <section className="relative isolate bg-brand-navy text-white">
       <Image
-        src="/photos/campus.webp" // CONFIRM: placeholder image, replace with a real campus photo (max 1600px wide, WebP)
+        src={campus || "/photos/placeholder-campus.webp"}
         alt="The SquareOne Compassion campus at 5323 S 65th West Ave in west Tulsa"
         fill
         priority

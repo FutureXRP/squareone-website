@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import { PageIntro, Section } from '@/components/Section'
 import { StaffCard } from '@/components/StaffCard'
 import { Confirm } from '@/components/Confirm'
+import { photo } from '@/lib/photos'
 
 export const metadata: Metadata = { title: 'About', description: 'SquareOne Compassion is a 501(c)(3) nonprofit campus in west Tulsa, home to an early learning center, a primary care clinic, and a fitness and family entertainment center.' }
 
@@ -26,10 +27,10 @@ export default function AboutPage() {
       <Section tint>
         <h2 className="text-2xl">Leadership</h2>
         <div className="mt-8 grid gap-8 md:grid-cols-2">
-          <StaffCard name="Matt Blair, MD" role="Chairman of the Board and Chief Executive Officer" />
-          <StaffCard name="Abel Lau, MD" role="Medical Director, SquareOne Medical Center" />
-          <StaffCard name="Stephanie Rowe" role="Director, SquareOne Early Learning Center" />
-          <StaffCard name="Christina Barrington" role="Director of Community Engagement and Growth" />
+          <StaffCard photo={photo('matt-blair')} name="Matt Blair, MD" role="Chairman of the Board and Chief Executive Officer" />
+          <StaffCard photo={photo('abel-lau')} name="Abel Lau, MD" role="Medical Director, SquareOne Medical Center" />
+          <StaffCard photo={photo('stephanie-rowe')} name="Stephanie Rowe" role="Director, SquareOne Early Learning Center" />
+          <StaffCard photo={photo('christina-barrington')} name="Christina Barrington" role="Director of Community Engagement and Growth" />
           <StaffCard name="[CONFIRM: Director of Interactive Center name]" role="Director, SquareOne Interactive" /> {/* CONFIRM */}
         </div>
       </Section>
