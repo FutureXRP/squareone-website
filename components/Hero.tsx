@@ -11,11 +11,11 @@ const TILES = [
 
 /** The one memorable element: a single large campus photo with the three division logos as tappable tiles. */
 export function Hero({ headline, subhead }: { headline: string; subhead: string }) {
-  const campus = photo('campus') // CONFIRM: real campus photo, see CONFIRM.md
+  const campus = photo('campus')
   return (
     <section className="relative isolate bg-brand-navy text-white">
       <Image
-        src={campus || "/photos/placeholder-campus.webp"}
+        src={campus || "/photos/campus.webp"}
         alt="The SquareOne Compassion campus at 5323 S 65th West Ave in west Tulsa"
         fill
         priority
