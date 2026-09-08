@@ -29,6 +29,9 @@ Things deliberately removed from the old site because they are not current opera
 - Medical Center → /medical
 - Interactive → /interactive
 
+**Section: Mission (band directly under the hero)**
+Rebuilding lives. Revitalizing communities.
+
 **Section: What we do**
 
 *Early Learning Center*
