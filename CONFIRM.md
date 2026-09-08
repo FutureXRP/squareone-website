@@ -26,6 +26,7 @@ See `.env.example`. Without these:
 ## From the Interactive brief (docs-source/interactive-brief.pdf)
 - [ ] **Prices now live in two places.** The zone, room, and package prices from the brief are typed into this site (`content/interactive.ts`). The Interactive app's database holds its own prices for the same rooms and packages, and the app is where people actually pay. Keep them in sync, or set `INTERACTIVE_SUPABASE_URL` and `INTERACTIVE_SUPABASE_ANON_KEY` so the app's live per-hour price shows above the static lines on each zone.
 - [ ] **Two event contacts.** The corporate flyer names Christina Barrington, 918-706-2682. COPY.md names Alexis Henson, 918-720-3032, for larger events. Both are shown on /events. Confirm which applies to what, or whether one should go.
+- [ ] **Billiards Zone photo.** Matt chose a real photo of the room (lights on, blue-felt table, foosball, air hockey, boxing machine) to replace the PDF image, which was not the actual room. It has not been uploaded to the repo yet; when it lands in `public/photos/interactive/`, convert it to `billiards.webp`.
 - [ ] **MultiSport Zone has no photo** in the brief; it shows a tinted placeholder block. Send one.
 - [ ] **Low-resolution photos.** The Gaming (767x354), Adventure (435x326), Billiards (580x435), and Dining Hall (615x461) images came out of the PDF small and will look soft on large screens. Higher-resolution originals would help.
 - [ ] **Adventure Zone** is marked "Coming soon" per the brief and has no reserve button. Remove the flag in `content/interactive.ts` when it opens.

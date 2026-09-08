@@ -3,6 +3,7 @@ import { PageIntro, Section } from '@/components/Section'
 import { FAQ } from '@/components/FAQ'
 import { Confirm } from '@/components/Confirm'
 import { ZoneCard } from '@/components/ZoneCard'
+import { PageBanner } from '@/components/PageBanner'
 import { appUrl } from '@/lib/site'
 import { getActiveFacilities } from '@/lib/interactive'
 import { ZONES } from '@/content/interactive'
@@ -28,6 +29,7 @@ export default async function InteractivePage() {
 
   return (
     <>
+      <PageBanner src="/photos/interactive/banner.webp" alt="The SquareOne Interactive floor: a glowing pool table, air hockey, arcade cabinets, gaming stations, a golf simulator screen, and a lounge" priority />
       <PageIntro title="One place for your family to move, play, and celebrate.">
         <p className="text-ink">SquareOne Interactive is the fitness and family entertainment center on the SquareOne campus. Join the gym, rent a room, or book a party, all online.</p>
         <p className="mt-4 text-base">
