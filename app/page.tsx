@@ -8,10 +8,7 @@ import { appUrl, ORG } from '@/lib/site'
 export default function HomePage() {
   return (
     <>
-      <Hero
-        headline="A community hub that offers"
-        subhead="SquareOne Compassion is a nonprofit campus in west Tulsa where a child can learn, a family can see a doctor, and a neighborhood can get active, all in one place."
-      />
+      <Hero headline="A Community Hub That Offers" />
 
       <section className="bg-tint py-12 md:py-16" aria-label="Our mission">
         <div className="container">
