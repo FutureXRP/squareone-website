@@ -48,9 +48,11 @@ Link: Explore Interactive
 
 **Section: Why it matters**
 
-Our clinic sits inside a federally designated Health Professional Shortage Area for primary care, mental health, and dental care. More than half of our patients are covered by Medicare or Medicaid. Keeping the doors open for them is the work, and it is why we run everything else on this campus.
+Everything on this campus exists for the same reason: to bring important services to the people who live around it. The Early Learning Center, the Medical Center, and Interactive each serve the community in their own way, and each one matters on its own.
 
-`[CONFIRM: any impact numbers you want public. Suggested: ~3,000 patient visits a year, number of children enrolled in the ELC, number of active Interactive members.]`
+As they grow, our goal is to use surplus revenue to begin revitalizing west Tulsa and eastern Creek County.
+
+(Per Matt: no Medical Center statistics on the landing page. The three divisions are peers; none exists to keep another open.)
 
 **Section: Rent the space**
 Gym, party rooms, and event spaces are available for birthdays, showers, practices, meetings, and fundraisers. Live availability, book online.
@@ -133,7 +135,7 @@ Yes. We accept DHS and tribal childcare reimbursement, and we offer a tuition as
 `[CONFIRM: publish rates, or keep "Contact us for current rates"]`. A $100 per-family enrollment fee holds your child's place. We accept check or cash at the front desk during business hours or at your tour.
 
 *How do I get started?*
-Fill out the enrollment interest form below or call 918-340-5511 to schedule a tour.
+Fill out the enrollment interest form below or call 918-623-4377 to schedule a tour.
 
 **Enrollment interest form fields:** parent name, email, phone, child's name, child's date of birth, desired start date, questions.
 **Form success:** Thanks. We'll reach out within two business days to schedule a tour.

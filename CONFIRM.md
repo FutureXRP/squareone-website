@@ -43,7 +43,7 @@ See `.env.example`. Without these:
 - [x] Interactive direct line: 918-706-2682
 
 ### Home
-- [ ] Impact numbers to publish (suggested: ~3,000 patient visits a year, children enrolled in the ELC, active Interactive members)
+- [x] No statistics on the landing page; "Why it matters" rewritten around the whole-campus mission
 
 ### About
 - [ ] Year founded
@@ -55,7 +55,7 @@ See `.env.example`. Without these:
 ### Early Learning Center
 - [x] No summer program; button dropped.
 - [ ] Tuition rates: publish, or keep "Contact us for current rates"
-- [x] FAQ "How do I get started?" uses 918-340-5511
+- [x] FAQ "How do I get started?" uses 918-623-4377
 
 ### Medical Center
 - [ ] "We do not accept CommunityCare": still true?

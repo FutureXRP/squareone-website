@@ -2,7 +2,6 @@ import Link from 'next/link'
 import { Hero } from '@/components/Hero'
 import { Section } from '@/components/Section'
 import { DivisionCard } from '@/components/DivisionCard'
-import { Confirm } from '@/components/Confirm'
 import { appUrl, ORG } from '@/lib/site'
 
 export default function HomePage() {
@@ -44,11 +43,9 @@ export default function HomePage() {
         <h2 className="text-2xl">Why it matters</h2>
         <div className="prose-block mt-5 space-y-4 text-lg">
           <p>
-            Our clinic sits inside a federally designated Health Professional Shortage Area for primary care, mental health, and dental care. More than half of our patients are covered by Medicare or Medicaid. Keeping the doors open for them is the work, and it is why we run everything else on this campus.
+            Everything on this campus exists for the same reason: to bring important services to the people who live around it. The Early Learning Center, the Medical Center, and Interactive each serve the community in their own way, and each one matters on its own.
           </p>
-          <p className="text-base">
-            <Confirm>any impact numbers you want public. Suggested: ~3,000 patient visits a year, number of children enrolled in the ELC, number of active Interactive members.</Confirm>
-          </p>
+          <p>As they grow, our goal is to use surplus revenue to begin revitalizing west Tulsa and eastern Creek County.</p>
         </div>
       </Section>
 
