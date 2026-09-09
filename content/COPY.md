@@ -314,7 +314,9 @@ Tulsa, OK 74107
 
 **Thank-you page:** Thank you. Your gift is already at work on our campus. A receipt is on its way to your inbox.
 
-**Fallback when Stripe is not configured:** Online giving is coming soon. In the meantime, gifts by mail are welcome at the address below.
+**PayPal (live now):** Give securely through PayPal. You can use a PayPal account or a card, and PayPal emails your receipt. Button: Give with PayPal → https://www.paypal.com/ncp/payment/ZNYFBGZVG3V3G. Gifts by mail are also welcome.
+
+When Stripe is configured, the Stripe form shows first and PayPal appears beneath it as "Prefer PayPal? Give with PayPal."
 
 ---
 
