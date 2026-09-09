@@ -22,9 +22,25 @@ export default function GivePage() {
             <h2 className="text-2xl">Give online</h2>
             <div className="mt-6">
               {online ? (
-                <DonateForm />
+                <>
+                  <DonateForm />
+                  <p className="mt-8 text-muted">
+                    Prefer PayPal?{' '}
+                    <a href={ORG.paypalUrl} className="link" rel="noopener">
+                      Give with PayPal
+                    </a>
+                  </p>
+                </>
               ) : (
-                <p className="max-w-prose rounded-md bg-accent-soft p-5 text-lg">Online giving is coming soon. In the meantime, gifts by mail are welcome at the address below.</p>
+                <div className="max-w-prose">
+                  <p className="text-lg">Give securely through PayPal. You can use a PayPal account or a card, and PayPal emails your receipt.</p>
+                  <p className="mt-6">
+                    <a href={ORG.paypalUrl} className="btn-primary" rel="noopener">
+                      Give with PayPal
+                    </a>
+                  </p>
+                  <p className="mt-6 text-muted">Gifts by mail are also welcome.</p>
+                </div>
               )}
             </div>
           </div>

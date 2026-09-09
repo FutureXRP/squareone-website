@@ -20,7 +20,7 @@ See `.env.example`. Without these:
 - `SUPABASE_URL` + `SUPABASE_SERVICE_ROLE_KEY`: contact and enrollment forms return a "not available" error. Run `supabase/migrations/0001_forms.sql` and `0002_donations.sql` in that project first.
 - `RESEND_API_KEY` + `RESEND_FROM`: submissions are stored but no notification email is sent.
 - `INTERACTIVE_SUPABASE_URL` + `INTERACTIVE_SUPABASE_ANON_KEY`: "What's on the floor" and the Events room list are hidden and only the four static tiles show. RLS in the app already allows anon reads of active facilities and packages, so no policy change is needed.
-- `STRIPE_SECRET_KEY` + `STRIPE_WEBHOOK_SECRET`: `/give` shows the "Online giving is coming soon" fallback. Webhook endpoint: `/api/stripe/webhook`, event `checkout.session.completed`.
+- `STRIPE_SECRET_KEY` + `STRIPE_WEBHOOK_SECRET`: without them, `/give` shows the PayPal button (live) instead of the Stripe form. PayPal gifts are not recorded in this site's database and get PayPal's receipt rather than ours. Webhook endpoint: `/api/stripe/webhook`, event `checkout.session.completed`.
 - `NEXT_PUBLIC_INTERACTIVE_APP_URL`: defaults to `https://square-one-interactive.vercel.app`.
 
 ## From the Interactive brief (docs-source/interactive-brief.pdf)
