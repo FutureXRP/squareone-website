@@ -182,7 +182,7 @@ Fill out the enrollment interest form below or call 918-623-4377 to schedule a t
 **Tour request form fields:** parent or guardian name, email, phone, child's age, preferred days and times, questions or comments. Intro: Tell us when works for you and we will get back to you to set a time. You can also call 918-623-4377.
 **Tour form success:** Thanks. We'll reach out within two business days to set up your tour.
 
-**Enrollment interest form fields** (shortened per the ELC director): parent or guardian name, email, phone, child's birth date, desired start date, how will you pay (DHS, Tribal, or private pay), questions or comments.
+**Enrollment interest form fields** (the longer form, restored per Matt; matches the old site's enrollment wait list form and supports several children): parent or guardian first and last name, email, phone, street address, city, ZIP code, "Will you be needing any assistance?" (No, DHS, Tribal), number of children to enroll (1 to 4), then per child: name, date of birth, gender (Male, Female); desired enrollment date; days of interest (Monday to Friday); additional comments.
 **Form success:** Thanks. We'll reach out within two business days to schedule a tour.
 
 **Closing:** Square One Early Learning is a nurturing community. Our commitment to a respectful, holistic environment is the foundation for everything we do, from inquiry-based exploration to hands-on projects to authentic play.
