@@ -227,7 +227,7 @@ This page is a short front door. Booking, memberships, packages, and the shop al
 
 **Intro:** SquareOne Interactive is the fitness and family entertainment center on the SquareOne campus. Join the gym, rent a room, or book a party, all online.
 
-**Hours:** Monday through Saturday 5:30 am to 10 pm. Sunday 1 pm to 10 pm. `[CONFIRM: still current]`
+**Hours:** Monday through Saturday 5:30 am to 10 pm. Sunday 1 pm to 10 pm.
 
 **Four tiles (each links into the app):**
 

@@ -1,7 +1,6 @@
 import type { Metadata } from 'next'
 import { PageIntro, Section } from '@/components/Section'
 import { FAQ } from '@/components/FAQ'
-import { Confirm } from '@/components/Confirm'
 import { ZoneCard } from '@/components/ZoneCard'
 import { PageBanner } from '@/components/PageBanner'
 import { appUrl } from '@/lib/site'
@@ -33,7 +32,7 @@ export default async function InteractivePage() {
       <PageIntro title="One place for your family to move, play, and celebrate.">
         <p className="text-ink">SquareOne Interactive is the fitness and family entertainment center on the SquareOne campus. Join the gym, rent a room, or book a party, all online.</p>
         <p className="mt-4 text-base">
-          Hours: Monday through Saturday 5:30 am to 10 pm. Sunday 1 pm to 10 pm. <Confirm>still current</Confirm>
+          Hours: Monday through Saturday 5:30 am to 10 pm. Sunday 1 pm to 10 pm.
         </p>
       </PageIntro>
 
