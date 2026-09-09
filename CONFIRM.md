@@ -25,7 +25,7 @@ See `.env.example`. Without these:
 
 ## From the Interactive brief (docs-source/interactive-brief.pdf)
 - [ ] **Prices now live in two places.** The zone, room, and package prices from the brief are typed into this site (`content/interactive.ts`). The Interactive app's database holds its own prices for the same rooms and packages, and the app is where people actually pay. Keep them in sync, or set `INTERACTIVE_SUPABASE_URL` and `INTERACTIVE_SUPABASE_ANON_KEY` so the app's live per-hour price shows above the static lines on each zone.
-- [ ] **Two event contacts.** The corporate flyer names Christina Barrington, 918-706-2682. COPY.md names Alexis Henson, 918-720-3032, for larger events. Both are shown on /events. Confirm which applies to what, or whether one should go.
+- [x] Events contact is Christina Barrington, 918-706-2682, everywhere (Alexis Henson removed).
 - [x] Billiards Zone and MultiSport Zone photos supplied by Matt and in place.
 - [ ] **Low-resolution photos.** The Gaming (767x354), Adventure (435x326), and Dining Hall (615x461) images came out of the PDF small and will look soft on large screens. Higher-resolution originals would help.
 - [ ] **Adventure Zone** is marked "Coming soon" per the brief and has no reserve button. Remove the flag in `content/interactive.ts` when it opens.
@@ -38,9 +38,9 @@ See `.env.example`. Without these:
 - [ ] EIN is set to 83-4697894, derived from the IRS e-Postcard URL Matt supplied (the filename begins with the EIN). It appears in the footer, the Give page, the About Financials block, and the donation receipt email. Confirm it against the 990 before launch.
 
 ### Header and contact details
-- [ ] ELC phone: is 918-340-5024 correct for the ELC?
+- [x] ELC direct lines: 918-340-5511 and 918-623-4377
 - [ ] Interactive email address
-- [ ] Interactive phone: is 918-340-5400 correct?
+- [x] Interactive direct line: 918-706-2682
 
 ### Home
 - [ ] Impact numbers to publish (suggested: ~3,000 patient visits a year, children enrolled in the ELC, active Interactive members)
@@ -53,9 +53,9 @@ See `.env.example`. Without these:
 - [x] Financials block links to ProPublica's Nonprofit Explorer by EIN (lists every year automatically) and the IRS Tax Exempt Organization Search.
 
 ### Early Learning Center
-- [ ] Is a summer program still offered? If not, drop the second button.
+- [x] No summer program; button dropped.
 - [ ] Tuition rates: publish, or keep "Contact us for current rates"
-- [ ] Phone number in the "How do I get started?" FAQ answer
+- [x] FAQ "How do I get started?" uses 918-340-5511
 
 ### Medical Center
 - [ ] "We do not accept CommunityCare": still true?
@@ -69,7 +69,6 @@ See `.env.example`. Without these:
 
 ### Events
 - [ ] Are inflatables and A/V still offered? Are weddings and fundraisers booked through the app or by a person?
-- [ ] Alexis Henson, 918-720-3032: still the events contact?
 
 ### Privacy and Terms
 - [ ] Both pages are placeholders until Matt supplies text.

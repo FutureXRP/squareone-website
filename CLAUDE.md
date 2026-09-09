@@ -107,9 +107,9 @@ The current site swaps logo, email, and phone per division. Keep that.
 | Route | Logo | Email | Phone |
 |---|---|---|---|
 | /, /about, /give, /events, /contact | sq1 | connect@squareonecompassion.com | 918-340-5024 |
-| /early-learning | elc | connect@squareoneelc.com | 918-340-5024 `[CONFIRM]` |
+| /early-learning | elc | connect@squareoneelc.com | 918-340-5511 |
 | /medical | medical | connect@squareonemedicalcenter.com | 918-340-5400 |
-| /interactive | interactive | `[CONFIRM]` | 918-340-5400 `[CONFIRM]` |
+| /interactive | interactive | `[CONFIRM]` | 918-706-2682 |
 
 Nav (same on every page): Early Learning · Medical · Interactive · Events · Give · About · Contact. "Give" is the visually primary button.
 

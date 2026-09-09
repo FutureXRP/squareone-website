@@ -4,7 +4,7 @@ import { PageIntro, Section } from '@/components/Section'
 import { Confirm } from '@/components/Confirm'
 import { ZoneCard } from '@/components/ZoneCard'
 import { PageBanner } from '@/components/PageBanner'
-import { appUrl, telHref } from '@/lib/site'
+import { appUrl, telHref, EVENTS_CONTACT } from '@/lib/site'
 import { getActiveFacilities } from '@/lib/interactive'
 import { EVENT_SPACES, PARTY_PACKAGES, CORPORATE_PACKAGES, CORPORATE_CONTACT, type Package } from '@/content/interactive'
 
@@ -112,7 +112,7 @@ export default async function EventsPage() {
       <Section>
         <h2 className="text-2xl">Planning something bigger or unusual?</h2>
         <p className="prose-block mt-4 text-lg">
-          Contact Alexis Henson at <a href={telHref('918-720-3032')} className="link">918-720-3032</a> <Confirm>still the events contact</Confirm>.
+          Contact {EVENTS_CONTACT.name} at <a href={telHref(EVENTS_CONTACT.phone)} className="link">{EVENTS_CONTACT.phone}</a>.
         </p>
       </Section>
     </>

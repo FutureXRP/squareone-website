@@ -1,7 +1,6 @@
 import type { Metadata } from 'next'
 import { PageIntro, Section } from '@/components/Section'
 import { FAQ } from '@/components/FAQ'
-import { Confirm } from '@/components/Confirm'
 import { EnrollmentForm } from '@/components/Form/EnrollmentForm'
 import { PageBanner } from '@/components/PageBanner'
 import faq from '@/content/faq/elc.json'
@@ -33,13 +32,10 @@ export default function EarlyLearningPage() {
           </p>
           <p>We respect the voice and opinion of every child. The educator&apos;s job is to make exploration possible. The child&apos;s job is to investigate everything.</p>
         </div>
-        <div className="mt-8 flex flex-wrap items-center gap-4">
+        <div className="mt-8">
           <a href="#enroll" className="btn-primary">
             Ask about enrollment
           </a>
-          <span className="text-base">
-            <Confirm>is a summer program still offered? The old link went to a page called &quot;virtual-learning-after-school&quot;. If not, drop the button.</Confirm>
-          </span>
         </div>
       </Section>
 

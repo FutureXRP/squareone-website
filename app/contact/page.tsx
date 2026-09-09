@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 import { PageIntro, Section } from '@/components/Section'
 import { ContactForm } from '@/components/Form/ContactForm'
-import { ORG, telHref } from '@/lib/site'
+import { ORG, DIVISIONS, EVENTS_CONTACT, telHref } from '@/lib/site'
 
 export const metadata: Metadata = { title: 'Contact', description: 'Call, email, or stop by SquareOne Compassion at 5323 S 65th West Ave, Tulsa, OK 74107. We reply within one business day.' }
 
@@ -52,7 +52,7 @@ export default function ContactPage() {
           <div>
             <dt className="font-semibold">Early Learning Center</dt>
             <dd className="text-muted">
-              <a href="mailto:connect@squareoneelc.com">connect@squareoneelc.com</a> · <a href={telHref('918-340-5024')}>918-340-5024</a> [CONFIRM] {/* CONFIRM */}
+              <a href={`mailto:${DIVISIONS.elc.email}`}>{DIVISIONS.elc.email}</a> · <a href={telHref(DIVISIONS.elc.phone)}>{DIVISIONS.elc.phone}</a> or <a href={telHref(DIVISIONS.elc.phone2!)}>{DIVISIONS.elc.phone2}</a>
             </dd>
           </div>
           <div>
@@ -64,13 +64,13 @@ export default function ContactPage() {
           <div>
             <dt className="font-semibold">Interactive</dt>
             <dd className="text-muted">
-              [CONFIRM email] · <a href={telHref('918-340-5400')}>918-340-5400</a> [CONFIRM] {/* CONFIRM */}
+              [CONFIRM email] · <a href={telHref(DIVISIONS.int.phone)}>{DIVISIONS.int.phone}</a> {/* CONFIRM: Interactive email */}
             </dd>
           </div>
           <div>
             <dt className="font-semibold">Event rentals</dt>
             <dd className="text-muted">
-              Alexis Henson · <a href={telHref('918-720-3032')}>918-720-3032</a>
+              {EVENTS_CONTACT.name} · <a href={telHref(EVENTS_CONTACT.phone)}>{EVENTS_CONTACT.phone}</a>
             </dd>
           </div>
         </dl>
