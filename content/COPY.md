@@ -132,6 +132,8 @@ Our Form 990 filings are public. See every year on ProPublica's Nonprofit Explor
 
 **Facts line:** Serving children six weeks through age five · Monday through Friday · 7:15 am to 5:45 pm
 
+**Quality bar (under the intro, from the ELC director):** APPLE Accredited · Oklahoma 5-Star Program · Certified Healthy · Nature-based · Reggio-inspired · Conscious Discipline
+
 **Our approach**
 Our goal is a community of confident, capable, lifelong learners.
 
@@ -177,7 +179,7 @@ Yes. We accept DHS and tribal childcare reimbursement, and we offer a tuition as
 *How do I get started?*
 Fill out the enrollment interest form below or call 918-623-4377 to schedule a tour.
 
-**Enrollment interest form fields** (matches the old site's enrollment wait list form): parent or guardian first and last name, email, phone, street address, city, ZIP code, "Will you be needing any assistance?" (No, DHS, Tribal), number of children to enroll (1 to 4), then per child: name, date of birth, gender (Male, Female); desired enrollment date; days of interest (Monday to Friday); additional comments.
+**Enrollment interest form fields** (shortened per the ELC director): parent or guardian name, email, phone, child's birth date, desired start date, how will you pay (DHS, Tribal, or private pay), questions or comments.
 **Form success:** Thanks. We'll reach out within two business days to schedule a tour.
 
 **Closing:** Square One Early Learning is a nurturing community. Our commitment to a respectful, holistic environment is the foundation for everything we do, from inquiry-based exploration to hands-on projects to authentic play.

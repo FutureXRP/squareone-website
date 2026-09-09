@@ -13,32 +13,18 @@ export const contactSchema = z.object({
   message: z.string().trim().min(1).max(5000),
 })
 
-export const ASSISTANCE_OPTIONS = ['No', 'DHS', 'Tribal'] as const
-export const GENDER_OPTIONS = ['Male', 'Female'] as const
-export const DAY_OPTIONS = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'] as const
-export const MAX_CHILDREN = 4
+export const PAYMENT_OPTIONS = ['DHS', 'Tribal', 'Private pay'] as const
 
-export const childSchema = z.object({
-  name: z.string().trim().min(1).max(120),
-  dob: z.string().trim().regex(/^\d{4}-\d{2}-\d{2}$/, 'Use YYYY-MM-DD'),
-  gender: z.enum(GENDER_OPTIONS).optional().or(z.literal('')),
-})
-
-// Matches the enrollment wait list form on the old site.
+// Enrollment interest form, shortened per the ELC director.
 export const elcEnrollmentSchema = z.object({
   kind: z.literal('elc-enrollment'),
   website: z.string().max(0).optional().or(z.literal('')), // honeypot
-  parentFirst: z.string().trim().min(1).max(80),
-  parentLast: z.string().trim().min(1).max(80),
+  parentName: z.string().trim().min(1).max(120),
   email,
   phone: phone.min(7),
-  street: optionalText(200),
-  city: optionalText(100),
-  zip: optionalText(20),
-  assistance: z.array(z.enum(ASSISTANCE_OPTIONS)).max(3).default([]),
-  children: z.array(childSchema).min(1).max(MAX_CHILDREN),
+  childDob: z.string().trim().regex(/^\d{4}-\d{2}-\d{2}$/, 'Use YYYY-MM-DD'),
   desiredStart: z.string().trim().min(1).max(60),
-  days: z.array(z.enum(DAY_OPTIONS)).max(5).default([]),
+  payment: z.enum(PAYMENT_OPTIONS),
   comments: optionalText(5000),
 })
 

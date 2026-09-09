@@ -24,7 +24,7 @@ export async function POST(req: Request) {
   }
   const { website: _honeypot, kind, ...payload } = parsed.data
   void _honeypot
-  const who = parsed.data.kind === 'contact' ? parsed.data.name : `${parsed.data.parentFirst} ${parsed.data.parentLast}`
+  const who = parsed.data.kind === 'contact' ? parsed.data.name : parsed.data.parentName
   const subject = kind === 'contact' ? `Website contact from ${who}` : `ELC enrollment interest from ${who}`
 
   const db = supabaseAdmin()

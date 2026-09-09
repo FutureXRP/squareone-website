@@ -5,7 +5,7 @@ import { EnrollmentForm } from '@/components/Form/EnrollmentForm'
 import Image from 'next/image'
 import { DIVISIONS, telHref } from '@/lib/site'
 import { photo } from '@/lib/photos'
-import { ELC_PILLARS } from '@/content/elc'
+import { ELC_PILLARS, ELC_CREDENTIALS } from '@/content/elc'
 import { PageBanner } from '@/components/PageBanner'
 import faq from '@/content/faq/elc.json'
 
@@ -36,6 +36,16 @@ export default function EarlyLearningPage() {
         </div>
         <p className="mt-3 text-sm text-muted">Tours are scheduled by phone at {DIVISIONS.elc.phone2}.</p>
       </PageIntro>
+
+      <div className="mt-section-sm border-y border-line bg-tint md:mt-section">
+        <div className="container">
+          <ul aria-label="Accreditations and approach" className="flex flex-wrap items-center gap-x-8 gap-y-2 py-5 font-semibold text-ink">
+            {ELC_CREDENTIALS.map((c) => (
+              <li key={c}>{c}</li>
+            ))}
+          </ul>
+        </div>
+      </div>
 
       <Section>
         <h2 className="text-2xl">Our approach</h2>

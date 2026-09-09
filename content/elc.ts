@@ -1,3 +1,6 @@
+// Quality and approach bar, from the ELC director. Program names keep their own capitalization.
+export const ELC_CREDENTIALS = ['APPLE Accredited', 'Oklahoma 5-Star Program', 'Certified Healthy', 'Nature-based', 'Reggio-inspired', 'Conscious Discipline']
+
 // "What makes SquareOne exceptional" cards, from the ELC director. Mirrored in COPY.md.
 // Each card shows a photo when public/photos/elc/<photo>.{webp,jpg,jpeg,png} exists.
 export interface ElcPillar {
