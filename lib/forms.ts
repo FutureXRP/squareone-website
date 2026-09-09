@@ -28,18 +28,32 @@ export const elcEnrollmentSchema = z.object({
   comments: optionalText(5000),
 })
 
-export const formSchema = z.discriminatedUnion('kind', [contactSchema, elcEnrollmentSchema])
+// Tour request, from the Schedule a tour button on the ELC page.
+export const elcTourSchema = z.object({
+  kind: z.literal('elc-tour'),
+  website: z.string().max(0).optional().or(z.literal('')), // honeypot
+  parentName: z.string().trim().min(1).max(120),
+  email,
+  phone: phone.min(7),
+  childAge: optionalText(60),
+  preferredTimes: z.string().trim().min(1).max(300),
+  comments: optionalText(5000),
+})
+
+export const formSchema = z.discriminatedUnion('kind', [contactSchema, elcEnrollmentSchema, elcTourSchema])
 export type FormPayload = z.infer<typeof formSchema>
 export type FormKind = FormPayload['kind']
 
 export const FORM_ROUTING: Record<FormKind, string> = {
   contact: 'connect@squareonecompassion.com',
   'elc-enrollment': 'connect@squareoneelc.com',
+  'elc-tour': 'connect@squareoneelc.com',
 }
 
 export const FORM_SUCCESS: Record<FormKind, string> = {
   contact: "Message sent. We'll reply within one business day.",
   'elc-enrollment': "Thanks. We'll reach out within two business days to schedule a tour.",
+  'elc-tour': "Thanks. We'll reach out within two business days to set up your tour.",
 }
 
 /** Plain-text rendering of a submission for the notification email. */

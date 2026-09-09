@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import { PageIntro, Section } from '@/components/Section'
 import { FAQ } from '@/components/FAQ'
 import { EnrollmentForm } from '@/components/Form/EnrollmentForm'
+import { TourForm } from '@/components/Form/TourForm'
 import Image from 'next/image'
 import { DIVISIONS, telHref } from '@/lib/site'
 import { photo } from '@/lib/photos'
@@ -27,14 +28,13 @@ export default function EarlyLearningPage() {
         <p className="mt-6 text-ink">Nature-based, Reggio-inspired early learning where relationships come first and children are encouraged to explore, create, question, and belong.</p>
         <p className="mt-4 text-base font-semibold text-ink">Serving children six weeks through age five · Monday through Friday · 7:15 am to 5:45 pm</p>
         <div className="mt-8 flex flex-wrap gap-4">
-          <a href={telHref(DIVISIONS.elc.phone2!)} className="btn-primary">
+          <a href="#tour" className="btn-primary">
             Schedule a tour
           </a>
           <a href="#enroll" className="btn-secondary">
             Ask about enrollment
           </a>
         </div>
-        <p className="mt-3 text-sm text-muted">Tours are scheduled by phone at {DIVISIONS.elc.phone2}.</p>
       </PageIntro>
 
       <div className="mt-section-sm border-y border-line bg-tint md:mt-section">
@@ -78,14 +78,24 @@ export default function EarlyLearningPage() {
         <FAQ items={faq} />
       </Section>
 
-      <Section tint id="enroll">
+      <Section tint id="tour">
+        <h2 className="text-2xl">Schedule a tour</h2>
+        <p className="prose-block mt-3 text-muted">
+          Tell us when works for you and we will get back to you to set a time. You can also call <a href={telHref(DIVISIONS.elc.phone2!)} className="link">{DIVISIONS.elc.phone2}</a>.
+        </p>
+        <div className="mt-8">
+          <TourForm />
+        </div>
+      </Section>
+
+      <Section id="enroll">
         <h2 className="text-2xl">Ask about enrollment</h2>
         <div className="mt-8">
           <EnrollmentForm />
         </div>
       </Section>
 
-      <Section>
+      <Section tint>
         <p className="prose-block text-lg">
           Square One Early Learning is a nurturing community. Our commitment to a respectful, holistic environment is the foundation for everything we do, from inquiry-based exploration to hands-on projects to authentic play.
         </p>
