@@ -49,7 +49,7 @@ See `.env.example`. Without these:
 - [ ] Year founded
 - [ ] Director of Interactive Center name
 - [x] Board of Directors listed (Matt Blair, Nick Klenovich, Wayne Davidson, Joe DeBerry)
-- [ ] Whether to name campus partners (physical therapy practice, fencing organization, American Legion Post 1776)
+- [x] Campus partners block removed; replaced with Philanthropic Partners (grant funders)
 - [x] Financials block links to ProPublica's Nonprofit Explorer by EIN (lists every year automatically) and the IRS Tax Exempt Organization Search.
 
 ### Early Learning Center

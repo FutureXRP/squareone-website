@@ -86,8 +86,15 @@ We are a 501(c)(3) nonprofit governed by a volunteer board. `[CONFIRM: year foun
 - Wayne Davidson, Member at large
 - Joe DeBerry, Member at large
 
-**Campus partners**
-`[CONFIRM: whether to name the physical therapy practice, the fencing organization, and American Legion Post 1776]`
+**Philanthropic Partners**
+We are grateful for the grant support of these partners.
+- Case and Associates
+- George Kaiser Family Foundation
+- Cherokee Nation
+- Creek Nation
+- Tulsa County ARPA
+
+(Campus partners block removed: no partner organizations are in the building at this time.)
 
 **Financials**
 Our Form 990 filings are public. See every year on ProPublica's Nonprofit Explorer (https://projects.propublica.org/nonprofits/organizations/834697894), or search the IRS Tax Exempt Organization Search (https://apps.irs.gov/app/eos/) by our EIN, 83-4697894.
