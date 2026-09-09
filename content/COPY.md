@@ -362,7 +362,11 @@ Tulsa, OK 74107
 
 **Thank-you page:** Thank you. Your gift is already at work on our campus. A receipt is on its way to your inbox.
 
-**PayPal (live now):** Give securely through PayPal, one time or monthly. You can use a PayPal account or a card, and PayPal emails your receipt. Button: Give with PayPal → https://www.paypal.com/donate/?hosted_button_id=9S8TBZ2Q3A8VU (Donate button; donors pick one-time or monthly on PayPal). Gifts by mail are also welcome.
+**PayPal (live now):** Give securely through PayPal, one time or monthly. You can use a PayPal account or a card, and PayPal emails your receipt. Button: Give with PayPal → https://www.paypal.com/donate/?hosted_button_id=9S8TBZ2Q3A8VU (Donate button; donors pick one-time or monthly on PayPal).
+
+**Cancellation note (under the PayPal button):** Monthly gifts can be changed or cancelled anytime from your PayPal account under Settings, Payments, Automatic payments. Or email connect@squareonecompassion.com and we will take care of it.
+
+Gifts by mail are also welcome.
 
 When Stripe is configured, the Stripe form shows first and PayPal appears beneath it as "Prefer PayPal? Give with PayPal."
 
