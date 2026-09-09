@@ -28,7 +28,7 @@ See `.env.example`. Without these:
 - [ ] **Prices now live in two places.** The zone, room, and package prices from the brief are typed into this site (`content/interactive.ts`). The Interactive app's database holds its own prices for the same rooms and packages, and the app is where people actually pay. Keep them in sync, or set `INTERACTIVE_SUPABASE_URL` and `INTERACTIVE_SUPABASE_ANON_KEY` so the app's live per-hour price shows above the static lines on each zone.
 - [x] Events contact is Christina Barrington, 918-706-2682, everywhere (Alexis Henson removed).
 - [x] Billiards Zone and MultiSport Zone photos supplied by Matt and in place.
-- [ ] **Low-resolution photos.** The Gaming (767x354), Adventure (435x326), and Dining Hall (615x461) images came out of the PDF small and will look soft on large screens. Higher-resolution originals would help.
+- [ ] **Low-resolution photos.** The Adventure (435x326) and Dining Hall (615x461) images came out of the PDF small and will look soft on large screens. Higher-resolution originals would help.
 - [ ] **Adventure Zone** is marked "Coming soon" per the brief and has no reserve button. Remove the flag in `content/interactive.ts` when it opens.
 - [ ] **Copy edits for house style:** "cutting-edge" and "journey" (banned words) removed, "unforgettable" softened to "memorable", em dashes replaced, "lazer" spelled "laser". Say if any of those should revert.
 - [ ] The Fitness Zone's "$25 per month individual membership" matches the old site's price that COPY.md flagged as possibly outdated. Confirm it is current.
