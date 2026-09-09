@@ -13,7 +13,8 @@ export interface Division {
   email: string
   emailConfirm?: boolean
   phone: string
-  phoneConfirm?: boolean
+  /** Additional direct line, shown on the Contact page. */
+  phone2?: string
   home: string
   social: { instagram?: string; facebook?: string }
 }
@@ -32,7 +33,7 @@ export const ORG = {
   // PayPal hosted payment link (public; only lets people send money to SquareOne).
   paypalUrl: 'https://www.paypal.com/ncp/payment/ZNYFBGZVG3V3G',
   instagram: 'https://instagram.com/squareonecompassion',
-  facebook: 'https://facebook.com/squareonecompassion',
+  facebook: 'https://www.facebook.com/squareonecompassion',
 }
 
 export const DIVISIONS: Record<DivisionKey, Division> = {
@@ -56,12 +57,12 @@ export const DIVISIONS: Record<DivisionKey, Division> = {
     mark: '/logos/elc-mark.svg',
     wordmark: 'Early Learning Center',
     email: 'connect@squareoneelc.com',
-    phone: '918-340-5024',
-    phoneConfirm: true, // CONFIRM
+    phone: '918-340-5511',
+    phone2: '918-623-4377',
     home: '/early-learning',
     social: {
       instagram: 'https://instagram.com/squareoneelc5323',
-      facebook: 'https://facebook.com/SquareOne-Early-Learning-Center-109876720764150',
+      facebook: 'https://www.facebook.com/profile.php?id=100063321524167',
     },
   },
   med: {
@@ -74,7 +75,7 @@ export const DIVISIONS: Record<DivisionKey, Division> = {
     email: 'connect@squareonemedicalcenter.com',
     phone: '918-340-5400',
     home: '/medical',
-    social: {},
+    social: { facebook: 'https://www.facebook.com/squareonemedicalcenter' },
   },
   int: {
     key: 'int',
@@ -85,12 +86,11 @@ export const DIVISIONS: Record<DivisionKey, Division> = {
     wordmark: 'Interactive',
     email: '[CONFIRM: email]', // CONFIRM
     emailConfirm: true,
-    phone: '918-340-5400',
-    phoneConfirm: true, // CONFIRM
+    phone: '918-706-2682',
     home: '/interactive',
     social: {
       instagram: 'https://instagram.com/squareonecompassion',
-      facebook: 'https://facebook.com/squareone.interactive',
+      facebook: 'https://www.facebook.com/profile.php?id=61552806026897',
     },
   },
 }
@@ -115,6 +115,8 @@ export const NAV = [
 
 /** The Interactive app's base URL, referenced in copy as {APP}. */
 export const APP = (process.env.NEXT_PUBLIC_INTERACTIVE_APP_URL || 'https://square-one-interactive.vercel.app').replace(/\/$/, '')
+
+export const EVENTS_CONTACT = { name: 'Christina Barrington', phone: '918-706-2682' }
 
 export const SITE_URL = (process.env.NEXT_PUBLIC_SITE_URL || 'https://squareonecompassion.com').replace(/\/$/, '')
 

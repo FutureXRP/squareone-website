@@ -12,7 +12,7 @@ Things deliberately removed from the old site because they are not current opera
 **Address:** 5323 S 65th West Ave, Tulsa, OK 74107
 **Main phone:** 918-340-5024
 **Main email:** connect@squareonecompassion.com
-**Social:** instagram.com/squareonecompassion, facebook.com/squareonecompassion
+**Social:** instagram.com/squareonecompassion, https://www.facebook.com/squareonecompassion
 **Footer:** © 2026 SquareOne Compassion. SquareOne Compassion is a 501(c)(3) nonprofit. EIN 83-4697894 `[CONFIRM: derived from the IRS 990 URL Matt supplied; confirm]`. Privacy · Terms
 **Tagline:** Rebuilding lives. Revitalizing communities.
 
@@ -102,8 +102,8 @@ Our Form 990 filings are public. See every year on ProPublica's Nonprofit Explor
 
 ## Early Learning Center
 
-**Header:** ELC logo · connect@squareoneelc.com · 918-340-5024 `[CONFIRM phone]`
-**Social:** instagram.com/squareoneelc5323, facebook.com/SquareOne-Early-Learning-Center-109876720764150
+**Header:** ELC logo · connect@squareoneelc.com · 918-340-5511 (second direct line 918-623-4377, shown on Contact)
+**Social:** instagram.com/squareoneelc5323, https://www.facebook.com/profile.php?id=100063321524167
 
 **Headline:** Play is the highest form of research.
 **Attribution:** Albert Einstein
@@ -119,7 +119,7 @@ We respect the voice and opinion of every child. The educator's job is to make e
 
 **Buttons:**
 - Ask about enrollment (opens the enrollment interest form on this page)
-- `[CONFIRM: is a summer program still offered? The old link went to a page called "virtual-learning-after-school". If not, drop the button.]`
+- (No summer program is offered; the old "virtual-learning-after-school" button is dropped.)
 
 **FAQ**
 
@@ -133,7 +133,7 @@ Yes. We accept DHS and tribal childcare reimbursement, and we offer a tuition as
 `[CONFIRM: publish rates, or keep "Contact us for current rates"]`. A $100 per-family enrollment fee holds your child's place. We accept check or cash at the front desk during business hours or at your tour.
 
 *How do I get started?*
-Fill out the enrollment interest form below or call 918-340-5024 `[CONFIRM]` to schedule a tour.
+Fill out the enrollment interest form below or call 918-340-5511 to schedule a tour.
 
 **Enrollment interest form fields:** parent name, email, phone, child's name, child's date of birth, desired start date, questions.
 **Form success:** Thanks. We'll reach out within two business days to schedule a tour.
@@ -145,6 +145,7 @@ Fill out the enrollment interest form below or call 918-340-5024 `[CONFIRM]` to 
 ## Medical Center
 
 **Header:** Medical logo · connect@squareonemedicalcenter.com · 918-340-5400
+**Social:** https://www.facebook.com/squareonemedicalcenter
 
 **Headline:** Primary care for every age, from all walks of life.
 
@@ -197,8 +198,8 @@ Dr. Lau was born in Tennessee and raised in Malaysia. He graduated from Regents 
 
 ## Interactive
 
-**Header:** Interactive logo · `[CONFIRM: email]` · 918-340-5400 `[CONFIRM]`
-**Social:** instagram.com/squareonecompassion, facebook.com/squareone.interactive
+**Header:** Interactive logo · `[CONFIRM: email]` · 918-706-2682
+**Social:** instagram.com/squareonecompassion, https://www.facebook.com/profile.php?id=61552806026897
 
 This page is a short front door. Booking, memberships, packages, and the shop all live in the Interactive app (currently square-one-interactive.vercel.app, `[CONFIRM: final domain, e.g. interactive.squareonecompassion.com]`). Do not duplicate the catalog here; it changes and the app is the source of truth. The old Amilia links are gone.
 
@@ -268,7 +269,7 @@ Room rentals and party packages now book directly in the Interactive app with li
 
 **Details:** Book 1 to 6 hours, at least 48 hours ahead. A hold keeps your slot for 24 hours while you pay the deposit. Members get member pricing. `[CONFIRM: are inflatables and A/V still offered, and are large events like weddings and fundraisers still handled through the app or by a person?]`
 
-**Contact:** Planning something bigger or unusual? Contact Alexis Henson at 918-720-3032 `[CONFIRM: still the events contact]`.
+**Contact:** Planning something bigger or unusual? Contact Christina Barrington at 918-706-2682.
 
 **Section: Event rental spaces** (from Matt's brief; copy in content/interactive.ts)
 - Dining Hall: $125 for a 2-hour event, $150 for a 3-hour event
@@ -336,10 +337,10 @@ connect@squareonecompassion.com
 Embedded map.
 
 **Direct lines**
-- Early Learning Center: connect@squareoneelc.com · 918-340-5024 `[CONFIRM]`
+- Early Learning Center: connect@squareoneelc.com · 918-340-5511 or 918-623-4377
 - Medical Center: connect@squareonemedicalcenter.com · 918-340-5400
-- Interactive: `[CONFIRM email]` · 918-340-5400 `[CONFIRM]`
-- Event rentals: Alexis Henson · 918-720-3032
+- Interactive: `[CONFIRM email]` · 918-706-2682
+- Event rentals: Christina Barrington · 918-706-2682
 
 ---
 

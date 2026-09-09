@@ -37,7 +37,6 @@ export function Header({ division, pathname }: { division: DivisionKey; pathname
             )}
             <a href={telHref(d.phone)} className="font-semibold text-ink hover:underline">
               {d.phone}
-              {d.phoneConfirm ? <span className="ml-1 font-normal text-muted">[CONFIRM]</span> : null /* CONFIRM */}
             </a>
           </div>
 
@@ -81,7 +80,6 @@ export function Header({ division, pathname }: { division: DivisionKey; pathname
                 <a href={telHref(d.phone)} className="font-semibold">
                   {d.phone}
                 </a>
-                {d.phoneConfirm ? <span className="ml-1 text-muted">[CONFIRM]</span> : null}
               </div>
             </li>
           </ul>
