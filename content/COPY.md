@@ -50,7 +50,7 @@ Link: Explore Interactive
 
 Everything on this campus exists for the same reason: to bring important services to the people who live around it. The Early Learning Center, the Medical Center, and Interactive each serve the community in their own way, and each one matters on its own.
 
-As they grow, our goal is to use surplus revenue to begin revitalizing west Tulsa and eastern Creek County.
+As they grow, our goal is to use surplus revenue to begin revitalizing the Western Tulsa and Eastern Creek County areas.
 
 (Per Matt: no Medical Center statistics on the landing page. The three divisions are peers; none exists to keep another open.)
 
