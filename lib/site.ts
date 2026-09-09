@@ -11,7 +11,6 @@ export interface Division {
   /** Wordmark second line shown under "SquareOne" in the chrome. */
   wordmark: string
   email: string
-  emailConfirm?: boolean
   phone: string
   /** Additional direct line, shown on the Contact page. */
   phone2?: string
@@ -84,8 +83,7 @@ export const DIVISIONS: Record<DivisionKey, Division> = {
     logo: '/logos/interactive.svg',
     mark: '/logos/interactive.svg',
     wordmark: 'Interactive',
-    email: '[CONFIRM: email]', // CONFIRM
-    emailConfirm: true,
+    email: 'info@squareoneinteractive.com',
     phone: '918-706-2682',
     home: '/interactive',
     social: {

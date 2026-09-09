@@ -218,7 +218,7 @@ Jennifer helped start SquareOne Medical Center and has been a primary care APRN 
 
 ## Interactive
 
-**Header:** Interactive logo · `[CONFIRM: email]` · 918-706-2682
+**Header:** Interactive logo · info@squareoneinteractive.com · 918-706-2682
 **Social:** instagram.com/squareonecompassion, https://www.facebook.com/profile.php?id=61552806026897
 
 This page is a short front door. Booking, memberships, packages, and the shop all live in the Interactive app (currently square-one-interactive.vercel.app, `[CONFIRM: final domain, e.g. interactive.squareonecompassion.com]`). Do not duplicate the catalog here; it changes and the app is the source of truth. The old Amilia links are gone.
@@ -359,7 +359,7 @@ Embedded map.
 **Direct lines**
 - Early Learning Center: connect@squareoneelc.com · 918-340-5511 or 918-623-4377
 - Medical Center: connect@squareonemedicalcenter.com · 918-340-5400
-- Interactive: `[CONFIRM email]` · 918-706-2682
+- Interactive: info@squareoneinteractive.com · 918-706-2682
 - Event rentals: Christina Barrington · 918-706-2682
 
 ---

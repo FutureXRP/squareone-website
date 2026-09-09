@@ -64,7 +64,7 @@ export default function ContactPage() {
           <div>
             <dt className="font-semibold">Interactive</dt>
             <dd className="text-muted">
-              [CONFIRM email] · <a href={telHref(DIVISIONS.int.phone)}>{DIVISIONS.int.phone}</a> {/* CONFIRM: Interactive email */}
+              <a href={`mailto:${DIVISIONS.int.email}`}>{DIVISIONS.int.email}</a> · <a href={telHref(DIVISIONS.int.phone)}>{DIVISIONS.int.phone}</a>
             </dd>
           </div>
           <div>

@@ -28,13 +28,9 @@ export function Header({ division, pathname }: { division: DivisionKey; pathname
           </Link>
 
           <div className="hidden items-center gap-6 text-base lg:flex">
-            {d.emailConfirm ? (
-              <span className="text-muted">{d.email}</span> // CONFIRM
-            ) : (
-              <a href={`mailto:${d.email}`} className="text-ink hover:underline">
-                {d.email}
-              </a>
-            )}
+            <a href={`mailto:${d.email}`} className="text-ink hover:underline">
+              {d.email}
+            </a>
             <a href={telHref(d.phone)} className="font-semibold text-ink hover:underline">
               {d.phone}
             </a>
@@ -74,7 +70,7 @@ export function Header({ division, pathname }: { division: DivisionKey; pathname
             </li>
             <li className="mt-3 border-t border-line pt-3 text-base lg:hidden">
               <div>
-                {d.emailConfirm ? <span className="text-muted">{d.email}</span> : <a href={`mailto:${d.email}`}>{d.email}</a>}
+                <a href={`mailto:${d.email}`}>{d.email}</a>
               </div>
               <div>
                 <a href={telHref(d.phone)} className="font-semibold">

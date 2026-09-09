@@ -39,7 +39,7 @@ See `.env.example`. Without these:
 
 ### Header and contact details
 - [x] ELC direct lines: 918-340-5511 and 918-623-4377
-- [ ] Interactive email address
+- [x] Interactive email: info@squareoneinteractive.com
 - [x] Interactive direct line: 918-706-2682
 
 ### Home
