@@ -12,7 +12,7 @@ The build environment could not reach squareonecompassion.com (network policy), 
 - [ ] **Photos.** Drop files into `public/photos/` with these names (`.jpg`, `.jpeg`, `.png`, or `.webp`) and redeploy; each page picks them up automatically and shows nothing if the file is missing:
   - Done: `campus.webp` (hero), `abel-lau.webp`, `jennifer-blair.webp` (Medical providers, and Dr. Lau on About).
   - Still wanted: `matt-blair`, `stephanie-rowe`, `christina-barrington` for About leadership; ELC, Medical, Interactive, and event-space photos for those pages.
-- [ ] **Medical intake PDFs.** Place the five files in `public/docs/` with these exact names (linked from `/medical` and `/privacy`): `privacy-practices.pdf`, `patient-contact-information.pdf`, `assignment-of-benefits.pdf`, `medical-records-request.pdf`, `patient-information-and-office-policies.pdf`. The `vercel.json` redirect maps `/wp-content/uploads/2021/10/<name>.pdf` to `/docs/<name>.pdf` one-to-one; if the old filenames differ, add five explicit redirects.
+- [x] **Medical intake PDFs** are in `public/docs/` under the five linked filenames. The `vercel.json` redirect from the old `/wp-content/uploads/2021/10/<name>.pdf` paths maps by filename; if the old filenames differed, add five explicit redirects.
 - [ ] **Event photos.** games.jpg, bounce.jpg, event-rental-space.jpg, event-rental-1.jpg, event-rental-2.jpg: reuse on `/events` if they still reflect the rooms. The page currently has no photos.
 
 ### Environment variables (Vercel > Settings > Environment Variables)
