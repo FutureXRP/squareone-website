@@ -46,6 +46,9 @@ See `.env.example`. Without these:
 - [x] No statistics on the landing page; "Why it matters" rewritten around the whole-campus mission
 
 ### About
+- [ ] **Our story figures are dated.** The Oakhurst numbers (about 2,700 people, $34,000 median household income, nearly half of households under $35,000) come from the 2018 proposal, which cited a 2013 study. The page says "when we began planning" so they are honest, but fresher census figures would be stronger.
+- [ ] **Building name.** The story uses "The Gene Case Family Center for Care and Compassion" to match the sign on the building; the proposal said "The Gene and Donna Case Family Center." Confirm which is official.
+- [ ] **"Gifts go to families in need" model line.** The proposal said 100% of contributions go to families because services cover operating costs. The page states it as the design intent, not a guarantee. Confirm the wording is one you can stand behind, or soften further.
 - [ ] Year founded
 - [x] Director of Interactive Center: Christina Barrington (also Director of Growth and Community Engagement)
 - [x] Board of Directors listed (Matt Blair, Nick Klenovich, Wayne Davidson, Joe DeBerry)
