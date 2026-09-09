@@ -30,8 +30,8 @@ export const ORG = {
   // Form 990 filings by EIN. ProPublica's Nonprofit Explorer lists every year and updates itself as the IRS releases new filings.
   financialsUrl: 'https://projects.propublica.org/nonprofits/organizations/834697894',
   irsSearchUrl: 'https://apps.irs.gov/app/eos/',
-  // PayPal hosted payment link (public; only lets people send money to SquareOne).
-  paypalUrl: 'https://www.paypal.com/ncp/payment/ZNYFBGZVG3V3G',
+  // PayPal Donate button (public; only lets people send money to SquareOne). Donors choose one-time or monthly on PayPal's page.
+  paypalUrl: 'https://www.paypal.com/donate/?hosted_button_id=9S8TBZ2Q3A8VU',
   instagram: 'https://instagram.com/squareonecompassion',
   facebook: 'https://www.facebook.com/squareonecompassion',
 }

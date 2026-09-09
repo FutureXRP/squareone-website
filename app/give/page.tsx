@@ -33,7 +33,7 @@ export default function GivePage() {
                 </>
               ) : (
                 <div className="max-w-prose">
-                  <p className="text-lg">Give securely through PayPal. You can use a PayPal account or a card, and PayPal emails your receipt.</p>
+                  <p className="text-lg">Give securely through PayPal, one time or monthly. You can use a PayPal account or a card, and PayPal emails your receipt.</p>
                   <p className="mt-6">
                     <a href={ORG.paypalUrl} className="btn-primary" rel="noopener">
                       Give with PayPal
