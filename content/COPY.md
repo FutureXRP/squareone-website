@@ -77,7 +77,7 @@ We are a 501(c)(3) nonprofit founded in 2019 and governed by a volunteer board.
 
 **Our story** (from the original proposal, docs-source/business-plan.pdf)
 
-Our campus is the former Jane Addams Elementary School, just north of Oakhurst and south of Berryhill, where west Tulsa County meets eastern Creek County. The school closed in 2011 and sat empty for years. It was named for Jane Addams, the founder of social work in the United States and the first American woman to win the Nobel Peace Prize, which turned out to be a fitting name for what came next.
+Our campus is the former Jane Addams Elementary School, just north of Oakhurst and south of Berryhill. The school closed in 2011 and sat empty for years. It was named for Jane Addams, the founder of social work in the United States and the first American woman to win the Nobel Peace Prize, which turned out to be a fitting name for what came next.
 
 Matt and Jennifer Blair grew up in Berryhill, went away to Oklahoma City for their degrees, and came home to start a church that became known as a place of refuge for people in need. In November 2018, Matt wrote down a phrase that would not leave him alone: a center for care and compassion. He began gathering a team who could make it real.
 
