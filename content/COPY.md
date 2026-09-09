@@ -73,7 +73,7 @@ SquareOne Compassion started with a simple conviction: people are physical, emot
 
 Today that campus is home to an early learning center, a primary care clinic, and a fitness and family entertainment center. Each one is run by its own director, and all three share one mission and one address at 5323 S 65th West Ave.
 
-We are a 501(c)(3) nonprofit governed by a volunteer board. `[CONFIRM: year founded]`
+We are a 501(c)(3) nonprofit founded in 2019 and governed by a volunteer board.
 
 **Our story** (from the original proposal, docs-source/business-plan.pdf)
 

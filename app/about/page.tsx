@@ -1,7 +1,6 @@
 import type { Metadata } from 'next'
 import { PageIntro, Section } from '@/components/Section'
 import { StaffCard } from '@/components/StaffCard'
-import { Confirm } from '@/components/Confirm'
 import { photo } from '@/lib/photos'
 import { ORG } from '@/lib/site'
 
@@ -29,7 +28,7 @@ export default function AboutPage() {
             Today that campus is home to an early learning center, a primary care clinic, and a fitness and family entertainment center. Each one is run by its own director, and all three share one mission and one address at 5323 S 65th West Ave.
           </p>
           <p>
-            We are a 501(c)(3) nonprofit governed by a volunteer board. <Confirm>year founded</Confirm>
+            We are a 501(c)(3) nonprofit founded in 2019 and governed by a volunteer board.
           </p>
         </div>
       </Section>
