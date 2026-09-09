@@ -39,7 +39,7 @@ See `.env.example`. Without these:
 
 ### Header and contact details
 - [x] ELC direct lines: 918-340-5511 and 918-623-4377
-- [ ] Interactive email address
+- [x] Interactive email: info@squareoneinteractive.com
 - [x] Interactive direct line: 918-706-2682
 
 ### Home
@@ -67,7 +67,7 @@ See `.env.example`. Without these:
 
 ### Interactive
 - [ ] Final domain for the app (e.g. interactive.squareonecompassion.com)
-- [ ] Hours still current? (Mon to Sat 5:30 am to 10 pm, Sun 1 pm to 10 pm)
+- [x] Hours confirmed (Mon to Sat 5:30 am to 10 pm, Sun 1 pm to 10 pm)
 - [ ] Whether to list fitness membership prices here (old site: $25 individual / $75 family)
 
 ### Events
