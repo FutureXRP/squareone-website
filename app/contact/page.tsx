@@ -58,7 +58,11 @@ export default function ContactPage() {
           <div>
             <dt className="font-semibold">Medical Center</dt>
             <dd className="text-muted">
-              <a href="mailto:connect@squareonemedicalcenter.com">connect@squareonemedicalcenter.com</a> · <a href={telHref('918-340-5400')}>918-340-5400</a>
+              <a href={telHref(DIVISIONS.med.phone)}>{DIVISIONS.med.phone}</a> · Current patients: use the{' '}
+              <a href={DIVISIONS.med.portal!.href} rel="noopener">
+                patient portal
+              </a>{' '}
+              to message your provider
             </dd>
           </div>
           <div>

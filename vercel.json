@@ -1,13 +1,69 @@
 {
   "redirects": [
-    { "source": "/elc", "destination": "/early-learning", "permanent": true },
-    { "source": "/elc-enrollment", "destination": "/early-learning#enroll", "permanent": true },
-    { "source": "/virtual-learning-after-school", "destination": "/early-learning", "permanent": true },
-    { "source": "/donate", "destination": "/give", "permanent": true },
-    { "source": "/event-request", "destination": "/events", "permanent": true },
-    { "source": "/contact-us", "destination": "/contact", "permanent": true },
-    { "source": "/wp-content/uploads/2021/10/:file(.*\\.pdf)", "destination": "/docs/:file", "permanent": true },
-    { "source": "/wp-content/:path*", "destination": "/", "permanent": true },
-    { "source": "/wp-:path*", "destination": "/", "permanent": true }
+    {
+      "source": "/docs/assignment-of-benefits.pdf",
+      "destination": "/medical",
+      "permanent": true
+    },
+    {
+      "source": "/docs/medical-records-request.pdf",
+      "destination": "/medical",
+      "permanent": true
+    },
+    {
+      "source": "/docs/patient-contact-information.pdf",
+      "destination": "/medical",
+      "permanent": true
+    },
+    {
+      "source": "/docs/patient-information-and-office-policies.pdf",
+      "destination": "/medical",
+      "permanent": true
+    },
+    {
+      "source": "/elc",
+      "destination": "/early-learning",
+      "permanent": true
+    },
+    {
+      "source": "/elc-enrollment",
+      "destination": "/early-learning#enroll",
+      "permanent": true
+    },
+    {
+      "source": "/virtual-learning-after-school",
+      "destination": "/early-learning",
+      "permanent": true
+    },
+    {
+      "source": "/donate",
+      "destination": "/give",
+      "permanent": true
+    },
+    {
+      "source": "/event-request",
+      "destination": "/events",
+      "permanent": true
+    },
+    {
+      "source": "/contact-us",
+      "destination": "/contact",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2021/10/:file(.*\\.pdf)",
+      "destination": "/docs/:file",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/:path*",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/wp-:path*",
+      "destination": "/",
+      "permanent": true
+    }
   ]
 }

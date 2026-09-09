@@ -13,7 +13,7 @@ The build environment could not reach squareonecompassion.com (network policy), 
   - Done: `campus.webp` (hero), `abel-lau.webp`, `jennifer-blair.webp` (Medical providers, and Dr. Lau on About).
   - Still wanted: `matt-blair`, `stephanie-rowe`, `christina-barrington` for About leadership.
   - ELC "What makes SquareOne exceptional" cards take a photo each, in `public/photos/elc/`: `nature-based-learning`, `reggio-inspired-curriculum`, `conscious-discipline`, `outdoor-classrooms`, `family-partnerships`. Cards render without a photo until the file exists.
-- [x] **Medical intake PDFs** are in `public/docs/` under the five linked filenames. The `vercel.json` redirect from the old `/wp-content/uploads/2021/10/<name>.pdf` paths maps by filename; if the old filenames differed, add five explicit redirects.
+- [x] **Medical intake PDFs.** Per medical staff, only `privacy-practices.pdf` stays online; the other four were outdated and are removed, with their old URLs redirecting to /medical. The `vercel.json` redirect from the old `/wp-content/uploads/2021/10/<name>.pdf` paths maps by filename; if the old filenames differed, add five explicit redirects.
 - [ ] **Event photos.** games.jpg, bounce.jpg, event-rental-space.jpg, event-rental-1.jpg, event-rental-2.jpg: reuse on `/events` if they still reflect the rooms. The page currently has no photos.
 
 ### Environment variables (Vercel > Settings > Environment Variables)
