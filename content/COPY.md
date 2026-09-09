@@ -74,14 +74,17 @@ Today that campus is home to an early learning center, a primary care clinic, an
 We are a 501(c)(3) nonprofit governed by a volunteer board. `[CONFIRM: year founded]`
 
 **Leadership**
-- Matt Blair, MD — Chairman of the Board and Chief Executive Officer
+- Matt Blair — Chairman of the Board and Chief Executive Officer
 - Abel Lau, MD — Medical Director, SquareOne Medical Center
 - Stephanie Rowe — Director, SquareOne Early Learning Center
 - Christina Barrington — Director of Community Engagement and Growth
 - `[CONFIRM: Director of Interactive Center name]`
 
 **Board of Directors**
-`[CONFIRM: three additional board members' names and one-line affiliations]`
+- Matt Blair, Chairman
+- Nick Klenovich, Secretary and Treasurer
+- Wayne Davidson, Member at large
+- Joe DeBerry, Member at large
 
 **Campus partners**
 `[CONFIRM: whether to name the physical therapy practice, the fencing organization, and American Legion Post 1776]`
