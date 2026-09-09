@@ -30,6 +30,13 @@ export default function GivePage() {
                       Give with PayPal
                     </a>
                   </p>
+                  <p className="mt-3 text-muted">
+                    Monthly gifts can be changed or cancelled anytime from your PayPal account under Settings, Payments, Automatic payments. Or email{' '}
+                    <a href={`mailto:${ORG.email}`} className="link">
+                      {ORG.email}
+                    </a>{' '}
+                    and we will take care of it.
+                  </p>
                 </>
               ) : (
                 <div className="max-w-prose">
@@ -39,7 +46,14 @@ export default function GivePage() {
                       Give with PayPal
                     </a>
                   </p>
-                  <p className="mt-6 text-muted">Gifts by mail are also welcome.</p>
+                  <p className="mt-6 text-muted">
+                    Monthly gifts can be changed or cancelled anytime from your PayPal account under Settings, Payments, Automatic payments. Or email{' '}
+                    <a href={`mailto:${ORG.email}`} className="link">
+                      {ORG.email}
+                    </a>{' '}
+                    and we will take care of it.
+                  </p>
+                  <p className="mt-4 text-muted">Gifts by mail are also welcome.</p>
                 </div>
               )}
             </div>
