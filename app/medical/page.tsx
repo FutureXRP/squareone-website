@@ -9,15 +9,6 @@ import faq from '@/content/faq/medical.json'
 
 export const metadata: Metadata = { title: 'Medical Center', description: 'SquareOne Medical Center offers primary care and pediatrics for the whole family in west Tulsa. Medicare, SoonerCare, most private insurance, and a sliding scale.' }
 
-// CONFIRM: the five PDFs below must be placed in public/docs/ (pulled from the old site's /wp-content/uploads/2021/10/).
-const INTAKE_FORMS = [
-  { label: 'Notice of Privacy Practices', href: '/docs/privacy-practices.pdf' },
-  { label: 'Patient Contact Information', href: '/docs/patient-contact-information.pdf' },
-  { label: 'Assignment of Benefits', href: '/docs/assignment-of-benefits.pdf' },
-  { label: 'Consent for Access to Medical Records', href: '/docs/medical-records-request.pdf' },
-  { label: 'Patient Information and Office Policies', href: '/docs/patient-information-and-office-policies.pdf' },
-]
-
 export default function MedicalPage() {
   return (
     <>
@@ -41,17 +32,14 @@ export default function MedicalPage() {
               Call <a href={telHref('918-340-5400')} className="link">918-340-5400</a> to schedule. We book same-day appointments and do not take walk-ins.
             </p>
             <p className="mt-3">Hours: Monday through Thursday 8 am to 5 pm, Friday 8 am to noon.</p>
-            <p className="mt-3">Bring a photo ID and your insurance card. You can save time by completing these forms first:</p>
-            <ul className="mt-3 list-disc space-y-1.5 pl-5">
-              {INTAKE_FORMS.map((f) => (
-                <li key={f.href}>
-                  <a href={f.href} className="link">
-                    {f.label}
-                  </a>{' '}
-                  <span className="text-sm text-muted">(PDF)</span>
-                </li>
-              ))}
-            </ul>
+            <p className="mt-3">Bring a photo ID and your insurance card. Intake paperwork is completed at your first visit.</p>
+            <p className="mt-3">
+              Our{' '}
+              <a href="/docs/privacy-practices.pdf" className="link">
+                Notice of Privacy Practices
+              </a>{' '}
+              <span className="text-sm text-muted">(PDF)</span> is available here at any time.
+            </p>
           </div>
           <div>
             <h2 className="text-2xl">Current patients</h2>

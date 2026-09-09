@@ -55,7 +55,7 @@ content/
 public/
   logos/                sq1, elc, interactive, medical (currently placeholder SVGs, see CONFIRM.md; replace with the PNGs pulled from the current site)
   photos/               reused campus photos, WebP, max 1600px wide
-  docs/                 medical intake PDFs (5 files, see COPY.md)
+  docs/                 Notice of Privacy Practices PDF (the only medical form online, per medical staff)
 lib/
   supabase.ts, stripe.ts, email.ts, redirects.ts
 supabase/
@@ -108,7 +108,7 @@ The current site swaps logo, email, and phone per division. Keep that.
 |---|---|---|---|
 | /, /about, /give, /events, /contact | sq1 | connect@squareonecompassion.com | 918-340-5024 |
 | /early-learning | elc | connect@squareoneelc.com | 918-340-5511 |
-| /medical | medical | connect@squareonemedicalcenter.com | 918-340-5400 |
+| /medical | medical | Patient portal link (no email, per medical staff) | 918-340-5400 |
 | /interactive | interactive | info@squareoneinteractive.com | 918-706-2682 |
 
 Nav (same on every page): Early Learning · Medical · Interactive · Events · Give · About · Contact. "Give" is the visually primary button.

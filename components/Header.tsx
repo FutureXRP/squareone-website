@@ -28,9 +28,15 @@ export function Header({ division, pathname }: { division: DivisionKey; pathname
           </Link>
 
           <div className="hidden items-center gap-6 text-base lg:flex">
-            <a href={`mailto:${d.email}`} className="text-ink hover:underline">
-              {d.email}
-            </a>
+            {d.email ? (
+              <a href={`mailto:${d.email}`} className="text-ink hover:underline">
+                {d.email}
+              </a>
+            ) : d.portal ? (
+              <a href={d.portal.href} className="text-ink hover:underline" rel="noopener">
+                {d.portal.label}
+              </a>
+            ) : null}
             <a href={telHref(d.phone)} className="font-semibold text-ink hover:underline">
               {d.phone}
             </a>
@@ -70,7 +76,7 @@ export function Header({ division, pathname }: { division: DivisionKey; pathname
             </li>
             <li className="mt-3 border-t border-line pt-3 text-base lg:hidden">
               <div>
-                <a href={`mailto:${d.email}`}>{d.email}</a>
+                {d.email ? <a href={`mailto:${d.email}`}>{d.email}</a> : d.portal ? <a href={d.portal.href} rel="noopener">{d.portal.label}</a> : null}
               </div>
               <div>
                 <a href={telHref(d.phone)} className="font-semibold">

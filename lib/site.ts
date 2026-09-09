@@ -10,7 +10,10 @@ export interface Division {
   mark: string
   /** Wordmark second line shown under "SquareOne" in the chrome. */
   wordmark: string
-  email: string
+  /** Shown in the header. Medical has none on purpose: patient communication goes through the portal. */
+  email?: string
+  /** Shown in the header in place of an email. */
+  portal?: { label: string; href: string }
   phone: string
   /** Additional direct line, shown on the Contact page. */
   phone2?: string
@@ -71,7 +74,7 @@ export const DIVISIONS: Record<DivisionKey, Division> = {
     logo: '/logos/medical.svg',
     mark: '/logos/medical-mark.svg',
     wordmark: 'Medical Center',
-    email: 'connect@squareonemedicalcenter.com',
+    portal: { label: 'Patient portal', href: 'https://21321.portal.athenahealth.com/' },
     phone: '918-340-5400',
     home: '/medical',
     social: { facebook: 'https://www.facebook.com/squareonemedicalcenter' },

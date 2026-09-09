@@ -191,7 +191,7 @@ Fill out the enrollment interest form below or call 918-623-4377 to schedule a t
 
 ## Medical Center
 
-**Header:** Medical logo · connect@squareonemedicalcenter.com · 918-340-5400
+**Header:** Medical logo · Patient portal link (no email, per medical staff: patient communication goes through the portal so it stays in the chart) · 918-340-5400
 **Social:** https://www.facebook.com/squareonemedicalcenter
 
 **Headline:** Primary care for every age, from all walks of life.
@@ -206,12 +206,9 @@ Family medicine is the science of treating the physical person and the art of un
 *New patients*
 Call 918-340-5400 to schedule. We book same-day appointments and do not take walk-ins.
 Hours: Monday through Thursday 8 am to 5 pm, Friday 8 am to noon.
-Bring a photo ID and your insurance card. You can save time by completing these forms first:
-- Notice of Privacy Practices → /docs/privacy-practices.pdf
-- Patient Contact Information → /docs/patient-contact-information.pdf
-- Assignment of Benefits → /docs/assignment-of-benefits.pdf
-- Consent for Access to Medical Records → /docs/medical-records-request.pdf
-- Patient Information and Office Policies → /docs/patient-information-and-office-policies.pdf
+Bring a photo ID and your insurance card. Intake paperwork is completed at your first visit.
+Our Notice of Privacy Practices (PDF, /docs/privacy-practices.pdf) is available here at any time.
+(Per medical staff: only the privacy notice stays online, since the check-in form says patients received a copy or can find it on the website. The other four forms were outdated and are removed.)
 
 *Current patients*
 Use the patient portal to book appointments, view results, pay a bill, or message your provider.
@@ -389,7 +386,7 @@ Embedded map.
 
 **Direct lines**
 - Early Learning Center: connect@squareoneelc.com · 918-340-5511 or 918-623-4377
-- Medical Center: connect@squareonemedicalcenter.com · 918-340-5400
+- Medical Center: 918-340-5400 · Current patients: use the patient portal to message your provider
 - Interactive: info@squareoneinteractive.com · 918-706-2682
 - Event rentals: Christina Barrington · 918-706-2682
 
