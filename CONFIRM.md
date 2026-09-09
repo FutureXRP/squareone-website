@@ -11,7 +11,8 @@ The build environment could not reach squareonecompassion.com (network policy), 
 - [ ] **Palette.** Colors were read from the supplied images, not extracted from files: umbrella `#05528F` / navy `#0E2140`, ELC wordmark `#1A6AB6`, Medical mark `#1163AE`. All four logos share one blue family, so the three division accents are deliberately close. Run `npm run palette` on the PNGs once committed and adjust `tailwind.config.ts` and the `--accent` variables in `app/globals.css` if the sampled values differ. `brand.int` stays fixed to the Interactive app's navy `#182740`.
 - [ ] **Photos.** Drop files into `public/photos/` with these names (`.jpg`, `.jpeg`, `.png`, or `.webp`) and redeploy; each page picks them up automatically and shows nothing if the file is missing:
   - Done: `campus.webp` (hero), `abel-lau.webp`, `jennifer-blair.webp` (Medical providers, and Dr. Lau on About).
-  - Still wanted: `matt-blair`, `stephanie-rowe`, `christina-barrington` for About leadership; ELC, Medical, Interactive, and event-space photos for those pages.
+  - Still wanted: `matt-blair`, `stephanie-rowe`, `christina-barrington` for About leadership.
+  - ELC "What makes SquareOne exceptional" cards take a photo each, in `public/photos/elc/`: `nature-based-learning`, `reggio-inspired-curriculum`, `conscious-discipline`, `outdoor-classrooms`, `family-partnerships`. Cards render without a photo until the file exists.
 - [x] **Medical intake PDFs** are in `public/docs/` under the five linked filenames. The `vercel.json` redirect from the old `/wp-content/uploads/2021/10/<name>.pdf` paths maps by filename; if the old filenames differed, add five explicit redirects.
 - [ ] **Event photos.** games.jpg, bounce.jpg, event-rental-space.jpg, event-rental-1.jpg, event-rental-2.jpg: reuse on `/events` if they still reflect the rooms. The page currently has no photos.
 
