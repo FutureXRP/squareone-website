@@ -43,7 +43,7 @@ Primary care and pediatrics for every age. Medicare, SoonerCare, most private in
 Link: See the Medical Center
 
 *Interactive*
-Fitness memberships, room rentals, and arcade party packages, all bookable online. Your phone unlocks the door.
+Fitness memberships, room rentals, and arcade party packages, all bookable online.
 Link: Explore Interactive
 
 **Section: Why it matters**

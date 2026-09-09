@@ -32,7 +32,7 @@ export default function HomePage() {
           />
           <DivisionCard
             title="Interactive"
-            body="Fitness memberships, room rentals, and arcade party packages, all bookable online. Your phone unlocks the door."
+            body="Fitness memberships, room rentals, and arcade party packages, all bookable online."
             linkLabel="Explore Interactive"
             href="/interactive"
           />
