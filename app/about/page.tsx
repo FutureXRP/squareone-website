@@ -12,6 +12,8 @@ const BOARD = [
   { name: 'Joe DeBerry', role: 'Member at large' },
 ]
 
+const PARTNERS = ['Case and Associates', 'George Kaiser Family Foundation', 'Cherokee Nation', 'Creek Nation', 'Tulsa County ARPA']
+
 export const metadata: Metadata = { title: 'About', description: 'SquareOne Compassion is a 501(c)(3) nonprofit campus in west Tulsa, home to an early learning center, a primary care clinic, and a fitness and family entertainment center.' }
 
 export default function AboutPage() {
@@ -58,10 +60,15 @@ export default function AboutPage() {
             </ul>
           </div>
           <div>
-            <h2 className="text-xl">Campus partners</h2>
-            <p className="mt-3">
-              <Confirm>whether to name the physical therapy practice, the fencing organization, and American Legion Post 1776</Confirm>
-            </p>
+            <h2 className="text-xl">Philanthropic Partners</h2>
+            <p className="mt-3 text-muted">We are grateful for the grant support of these partners.</p>
+            <ul className="mt-3 space-y-2">
+              {PARTNERS.map((p) => (
+                <li key={p} className="font-semibold text-ink">
+                  {p}
+                </li>
+              ))}
+            </ul>
           </div>
           <div>
             <h2 className="text-xl">Financials</h2>
