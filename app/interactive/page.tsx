@@ -28,7 +28,7 @@ export default async function InteractivePage() {
 
   return (
     <>
-      <PageBanner src="/photos/interactive/banner.webp" alt="The SquareOne Interactive floor: a glowing pool table, air hockey, arcade cabinets, gaming stations, a golf simulator screen, and a lounge" priority />
+      <PageBanner src="/photos/interactive/banner.webp" alt="Three views of SquareOne Interactive: the MultiSport simulator, the Party Arcade Zone with arcade cabinets, and the Gaming Zone with simulator seats and gaming stations" priority full width={1600} height={533} />
       <PageIntro title="One place for your family to move, play, and celebrate.">
         <p className="text-ink">SquareOne Interactive is the fitness and family entertainment center on the SquareOne campus. Join the gym, rent a room, or book a party, all online.</p>
         <p className="mt-4 text-base">
