@@ -36,7 +36,7 @@ export const ZONES: Zone[] = [
     id: 'gaming',
     name: 'Gaming Zone',
     photo: '/photos/interactive/gaming.webp',
-    photoAlt: 'Gaming stations, roller coaster simulator seats, and a large screen in the Gaming Zone',
+    photoAlt: 'The Gaming Zone: roller coaster simulator seats, a row of gaming stations, and the large interactive screen',
     body: [
       'Step into the Gaming Zone, where the latest technology meets nonstop entertainment. Whether you are a casual player or a serious competitor, this immersive space is designed for memorable experiences with friends, family, and coworkers.',
       'Challenge your group on high-performance gaming stations, experience immersive roller coaster simulators, or battle it out on our giant interactive gaming screen. With multiplayer games, competitive tournaments, and a variety of gaming experiences, there is something for every age and skill level.',
