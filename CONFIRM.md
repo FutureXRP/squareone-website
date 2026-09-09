@@ -55,7 +55,7 @@ See `.env.example`. Without these:
 ### Early Learning Center
 - [x] No summer program; button dropped.
 - [ ] Tuition rates: publish, or keep "Contact us for current rates"
-- [x] FAQ "How do I get started?" uses 918-340-5511
+- [x] FAQ "How do I get started?" uses 918-623-4377
 
 ### Medical Center
 - [ ] "We do not accept CommunityCare": still true?

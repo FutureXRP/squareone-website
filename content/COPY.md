@@ -135,7 +135,7 @@ Yes. We accept DHS and tribal childcare reimbursement, and we offer a tuition as
 `[CONFIRM: publish rates, or keep "Contact us for current rates"]`. A $100 per-family enrollment fee holds your child's place. We accept check or cash at the front desk during business hours or at your tour.
 
 *How do I get started?*
-Fill out the enrollment interest form below or call 918-340-5511 to schedule a tour.
+Fill out the enrollment interest form below or call 918-623-4377 to schedule a tour.
 
 **Enrollment interest form fields:** parent name, email, phone, child's name, child's date of birth, desired start date, questions.
 **Form success:** Thanks. We'll reach out within two business days to schedule a tour.
