@@ -11,11 +11,11 @@ import faq from '@/content/faq/interactive.json'
 export const metadata: Metadata = { title: 'Interactive', description: 'SquareOne Interactive is the fitness and family entertainment center on the SquareOne campus. Join the gym, rent a room, or book a party, all online.' }
 
 // The static tiles from COPY.md.
-const TILES = [
+const TILES: { title: string; body: string; href: string; comingSoon?: boolean }[] = [
   { title: 'Join the gym', body: 'Month-to-month fitness memberships, no joining fee, cancel anytime. Your phone unlocks the door. Family plans let everyone in the household check in under their own name.', href: '/memberships' },
   { title: 'Rent a room', body: 'Gym, party rooms, and more. Pick a space and a time, book 1 to 6 hours at least 48 hours ahead, and a hold keeps your slot while you pay the deposit.', href: '/facilities' },
   { title: 'Book a party', body: 'Arcade party packages with a host and setup included. Birthdays, team parties, and family nights.', href: '/packages' },
-  { title: 'Shop SquareOne gear', body: 'Tees, hoodies, and more. Every purchase supports SquareOne Compassion.', href: '/shop' },
+  { title: 'Shop SquareOne gear', body: 'Tees, hoodies, and more are on the way. Every purchase will support SquareOne Compassion.', href: '/shop', comingSoon: true },
 ]
 
 export default async function InteractivePage() {
@@ -41,9 +41,15 @@ export default async function InteractivePage() {
           {TILES.map((t) => (
             <li key={t.href} className="border-t-4 border-accent pt-5">
               <h2 className="text-xl">
-                <a href={appUrl(t.href)} className="text-ink no-underline hover:underline">
-                  {t.title}
-                </a>
+                {t.comingSoon ? (
+                  <>
+                    {t.title} <span className="ml-2 align-middle text-base font-medium text-accent-ink">Coming soon</span>
+                  </>
+                ) : (
+                  <a href={appUrl(t.href)} className="text-ink no-underline hover:underline">
+                    {t.title}
+                  </a>
+                )}
               </h2>
               <p className="mt-3 text-muted">{t.body}</p>
             </li>

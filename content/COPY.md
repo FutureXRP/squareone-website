@@ -267,9 +267,8 @@ Gym, party rooms, and more. Pick a space and a time, book 1 to 6 hours at least 
 Arcade party packages with a host and setup included. Birthdays, team parties, and family nights.
 → {APP}/packages
 
-*Shop SquareOne gear*
-Tees, hoodies, and more. Every purchase supports SquareOne Compassion.
-→ {APP}/shop
+*Shop SquareOne gear* (Coming soon, no link yet)
+Tees, hoodies, and more are on the way. Every purchase will support SquareOne Compassion.
 
 **Section: Explore the Interactive Zones** (from Matt's brief, docs-source/interactive-brief.pdf; full zone copy, pricing, and photos live in content/interactive.ts)
 
