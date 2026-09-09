@@ -13,7 +13,7 @@ export const metadata: Metadata = { title: 'Interactive', description: 'SquareOn
 // The static tiles from COPY.md.
 const TILES = [
   { title: 'Join the gym', body: 'Month-to-month fitness memberships, no joining fee, cancel anytime. Your phone unlocks the door. Family plans let everyone in the household check in under their own name.', href: '/memberships' },
-  { title: 'Rent a room', body: 'Gym, party rooms, and more. Pick a space and a time, book 1 to 6 hours at least 48 hours ahead, and a hold keeps your slot while you pay the deposit. Members get member pricing automatically.', href: '/facilities' },
+  { title: 'Rent a room', body: 'Gym, party rooms, and more. Pick a space and a time, book 1 to 6 hours at least 48 hours ahead, and a hold keeps your slot while you pay the deposit.', href: '/facilities' },
   { title: 'Book a party', body: 'Arcade party packages with a host and setup included. Birthdays, team parties, and family nights.', href: '/packages' },
   { title: 'Shop SquareOne gear', body: 'Tees, hoodies, and more. Every purchase supports SquareOne Compassion.', href: '/shop' },
 ]
