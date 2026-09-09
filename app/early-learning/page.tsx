@@ -2,10 +2,11 @@ import type { Metadata } from 'next'
 import { PageIntro, Section } from '@/components/Section'
 import { FAQ } from '@/components/FAQ'
 import { EnrollmentForm } from '@/components/Form/EnrollmentForm'
+import { DIVISIONS, telHref } from '@/lib/site'
 import { PageBanner } from '@/components/PageBanner'
 import faq from '@/content/faq/elc.json'
 
-export const metadata: Metadata = { title: 'Early Learning Center', description: 'SquareOne ELC serves children six weeks through four years old with an emergent, play-based curriculum and low ratios. Open Monday through Friday, 7:15 am to 5:45 pm.' }
+export const metadata: Metadata = { title: 'Early Learning Center', description: 'Nature-based, Reggio-inspired early learning in west Tulsa for children six weeks through age five. Monday through Friday, 7:15 am to 5:45 pm.' }
 
 export default function EarlyLearningPage() {
   return (
@@ -20,7 +21,17 @@ export default function EarlyLearningPage() {
       />
       <PageIntro title="Play is the highest form of research.">
         <p className="text-base text-muted">Albert Einstein</p>
-        <p className="mt-6 text-ink">SquareOne ELC serves children six weeks through four years old. Open Monday through Friday, 7:15 am to 5:45 pm.</p>
+        <p className="mt-6 text-ink">Nature-based, Reggio-inspired early learning where relationships come first and children are encouraged to explore, create, question, and belong.</p>
+        <p className="mt-4 text-base font-semibold text-ink">Serving children six weeks through age five · Monday through Friday · 7:15 am to 5:45 pm</p>
+        <div className="mt-8 flex flex-wrap gap-4">
+          <a href={telHref(DIVISIONS.elc.phone2!)} className="btn-primary">
+            Schedule a tour
+          </a>
+          <a href="#enroll" className="btn-secondary">
+            Ask about enrollment
+          </a>
+        </div>
+        <p className="mt-3 text-sm text-muted">Tours are scheduled by phone at {DIVISIONS.elc.phone2}.</p>
       </PageIntro>
 
       <Section>
@@ -31,11 +42,6 @@ export default function EarlyLearningPage() {
             We use an emergent curriculum. Teachers watch what children are curious about and build lessons around it, so children are participants in their learning rather than an audience for it. We keep ratios low so relationships can form, and we treat those relationships as the foundation for strong social and emotional skills.
           </p>
           <p>We respect the voice and opinion of every child. The educator&apos;s job is to make exploration possible. The child&apos;s job is to investigate everything.</p>
-        </div>
-        <div className="mt-8">
-          <a href="#enroll" className="btn-primary">
-            Ask about enrollment
-          </a>
         </div>
       </Section>
 

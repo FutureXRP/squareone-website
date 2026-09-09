@@ -35,7 +35,7 @@ Rebuilding lives. Revitalizing communities.
 **Section: What we do**
 
 *Early Learning Center*
-Full-day care and education for children six weeks through four years old. Emergent, play-based curriculum with low ratios.
+Full-day care and education for children six weeks through age five. Nature-based, Reggio-inspired curriculum with low ratios.
 Link: Learn about the ELC
 
 *Medical Center*
@@ -128,7 +128,9 @@ Our Form 990 filings are public. See every year on ProPublica's Nonprofit Explor
 **Headline:** Play is the highest form of research.
 **Attribution:** Albert Einstein
 
-**Intro:** SquareOne ELC serves children six weeks through four years old. Open Monday through Friday, 7:15 am to 5:45 pm.
+**Intro (from the ELC director):** Nature-based, Reggio-inspired early learning where relationships come first and children are encouraged to explore, create, question, and belong.
+
+**Facts line:** Serving children six weeks through age five · Monday through Friday · 7:15 am to 5:45 pm
 
 **Our approach**
 Our goal is a community of confident, capable, lifelong learners.
@@ -137,7 +139,8 @@ We use an emergent curriculum. Teachers watch what children are curious about an
 
 We respect the voice and opinion of every child. The educator's job is to make exploration possible. The child's job is to investigate everything.
 
-**Buttons:**
+**Buttons (top of page):**
+- Schedule a tour (calls 918-623-4377)
 - Ask about enrollment (opens the enrollment interest form on this page)
 - (No summer program is offered; the old "virtual-learning-after-school" button is dropped.)
 
