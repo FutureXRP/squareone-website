@@ -1,5 +1,5 @@
 import { NextResponse } from 'next/server'
-import { formSchema, FORM_ROUTING } from '@/lib/forms'
+import { formSchema, FORM_ROUTING, describeSubmission } from '@/lib/forms'
 import { supabaseAdmin } from '@/lib/supabase'
 import { sendEmail } from '@/lib/email'
 
@@ -24,7 +24,7 @@ export async function POST(req: Request) {
   }
   const { website: _honeypot, kind, ...payload } = parsed.data
   void _honeypot
-  const who = parsed.data.kind === 'contact' ? parsed.data.name : parsed.data.parentName
+  const who = parsed.data.kind === 'contact' ? parsed.data.name : `${parsed.data.parentFirst} ${parsed.data.parentLast}`
   const subject = kind === 'contact' ? `Website contact from ${who}` : `ELC enrollment interest from ${who}`
 
   const db = supabaseAdmin()
@@ -38,11 +38,10 @@ export async function POST(req: Request) {
     return NextResponse.json({ ok: false, error: 'Something went wrong. Please call us instead.' }, { status: 500 })
   }
 
-  const lines = Object.entries(payload).map(([k, v]) => `${k}: ${v || ''}`)
   await sendEmail({
     to: FORM_ROUTING[kind],
     subject,
-    text: `New ${kind} submission from squareonecompassion.com\n\n${lines.join('\n')}`,
+    text: `New ${kind} submission from squareonecompassion.com\n\n${describeSubmission(payload as Record<string, unknown>)}`,
     replyTo: payload.email,
   })
 
