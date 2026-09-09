@@ -73,7 +73,7 @@ SquareOne Compassion started with a simple conviction: people are physical, emot
 
 Today that campus is home to an early learning center, a primary care clinic, and a fitness and family entertainment center. Each one is run by its own director, and all three share one mission and one address at 5323 S 65th West Ave.
 
-We are a 501(c)(3) nonprofit governed by a volunteer board. `[CONFIRM: year founded]`
+We are a 501(c)(3) nonprofit founded in 2019 and governed by a volunteer board.
 
 **Our story** (from the original proposal, docs-source/business-plan.pdf)
 
@@ -260,16 +260,15 @@ Month-to-month fitness memberships, no joining fee, cancel anytime. Your phone u
 → {APP}/memberships
 
 *Rent a room*
-Gym, party rooms, and more. Pick a space and a time, book 1 to 6 hours at least 48 hours ahead, and a hold keeps your slot while you pay the deposit. Members get member pricing automatically.
+Gym, party rooms, and more. Pick a space and a time, book 1 to 6 hours at least 48 hours ahead, and a hold keeps your slot while you pay the deposit.
 → {APP}/facilities
 
 *Book a party*
 Arcade party packages with a host and setup included. Birthdays, team parties, and family nights.
 → {APP}/packages
 
-*Shop SquareOne gear*
-Tees, hoodies, and more. Every purchase supports SquareOne Compassion.
-→ {APP}/shop
+*Shop SquareOne gear* (Coming soon, no link yet)
+Tees, hoodies, and more are on the way. Every purchase will support SquareOne Compassion.
 
 **Section: Explore the Interactive Zones** (from Matt's brief, docs-source/interactive-brief.pdf; full zone copy, pricing, and photos live in content/interactive.ts)
 
@@ -292,7 +291,7 @@ Members sign in on their phone and tap Unlock door. Every unlock is logged to bu
 Yes, from your account. Your membership stays active through the end of the paid period. No cancellation fees.
 
 *Do I have to be a member to rent a room or book a party?*
-No. Anyone can book. Members get member pricing.
+No. Anyone can book.
 
 *Where do I see prices?*
 Live pricing and availability are in the app. `[CONFIRM: whether to also list the fitness membership prices here; the old site had $25 individual / $75 family, which may have changed]`
@@ -311,7 +310,7 @@ Room rentals and party packages now book directly in the Interactive app with li
 - Rent a room → {APP}/facilities
 - See party packages → {APP}/packages
 
-**Details:** Book 1 to 6 hours, at least 48 hours ahead. A hold keeps your slot for 24 hours while you pay the deposit. Members get member pricing. `[CONFIRM: are inflatables and A/V still offered, and are large events like weddings and fundraisers still handled through the app or by a person?]`
+**Details:** Book 1 to 6 hours, at least 48 hours ahead. A hold keeps your slot for 24 hours while you pay the deposit. `[CONFIRM: are inflatables and A/V still offered, and are large events like weddings and fundraisers still handled through the app or by a person?]`
 
 **Contact:** Planning something bigger or unusual? Contact Christina Barrington at 918-706-2682.
 
