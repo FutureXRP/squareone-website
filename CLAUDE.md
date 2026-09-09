@@ -115,7 +115,7 @@ Nav (same on every page): Early Learning · Medical · Interactive · Events · 
 
 ## Forms
 
-Two forms: contact and ELC enrollment interest. Event requests are not a form here; the Interactive app's booking flow handles them. Both POST to `/api/forms` with a `kind` field.
+Three forms: contact, ELC enrollment interest, and ELC tour request. Event requests are not a form here; the Interactive app's booking flow handles them. Both POST to `/api/forms` with a `kind` field.
 
 - Honeypot field named `website`, hidden via CSS; reject if filled
 - Server validates with zod, inserts into `form_submissions`, sends Resend email to the routing address below, returns 200
@@ -125,6 +125,7 @@ Two forms: contact and ELC enrollment interest. Event requests are not a form he
 Routing:
 - contact → connect@squareonecompassion.com
 - elc-enrollment → connect@squareoneelc.com
+- elc-tour → connect@squareoneelc.com (migration 0003 adds the kind)
 
 ```sql
 -- supabase/migrations/0001_forms.sql

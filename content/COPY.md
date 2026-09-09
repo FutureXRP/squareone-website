@@ -142,7 +142,7 @@ We use an emergent curriculum. Teachers watch what children are curious about an
 We respect the voice and opinion of every child. The educator's job is to make exploration possible. The child's job is to investigate everything.
 
 **Buttons (top of page):**
-- Schedule a tour (calls 918-623-4377)
+- Schedule a tour (opens the tour request form on this page)
 - Ask about enrollment (opens the enrollment interest form on this page)
 - (No summer program is offered; the old "virtual-learning-after-school" button is dropped.)
 
@@ -178,6 +178,9 @@ Yes. We accept DHS and tribal childcare reimbursement, and we offer a tuition as
 
 *How do I get started?*
 Fill out the enrollment interest form below or call 918-623-4377 to schedule a tour.
+
+**Tour request form fields:** parent or guardian name, email, phone, child's age, preferred days and times, questions or comments. Intro: Tell us when works for you and we will get back to you to set a time. You can also call 918-623-4377.
+**Tour form success:** Thanks. We'll reach out within two business days to set up your tour.
 
 **Enrollment interest form fields** (shortened per the ELC director): parent or guardian name, email, phone, child's birth date, desired start date, how will you pay (DHS, Tribal, or private pay), questions or comments.
 **Form success:** Thanks. We'll reach out within two business days to schedule a tour.
