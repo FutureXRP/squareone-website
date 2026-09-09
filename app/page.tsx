@@ -20,7 +20,7 @@ export default function HomePage() {
         <div className="mt-8 grid gap-10 md:grid-cols-3">
           <DivisionCard
             title="Early Learning Center"
-            body="Full-day care and education for children six weeks through four years old. Emergent, play-based curriculum with low ratios."
+            body="Full-day care and education for children six weeks through age five. Nature-based, Reggio-inspired curriculum with low ratios."
             linkLabel="Learn about the ELC"
             href="/early-learning"
           />
