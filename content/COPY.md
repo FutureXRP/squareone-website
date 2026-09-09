@@ -144,6 +144,25 @@ We respect the voice and opinion of every child. The educator's job is to make e
 - Ask about enrollment (opens the enrollment interest form on this page)
 - (No summer program is offered; the old "virtual-learning-after-school" button is dropped.)
 
+**What makes SquareOne exceptional** (five cards, from the ELC director; copy in content/elc.ts; each card takes a real photo from public/photos/elc/ when supplied)
+
+*Nature-based learning*
+Children learn best when they can touch, move, investigate, and experience the world around them. Nature becomes a teacher as children explore living things, changing seasons, natural materials, and the wonder found outdoors.
+
+*Reggio-inspired curriculum*
+We view every child as capable, curious, and full of ideas. Our educators observe children's interests and questions, then create meaningful projects and experiences that invite them to investigate, problem-solve, and express their thinking.
+
+*Conscious Discipline*
+Relationships and emotional safety come before rules and redirection. Through connection, encouragement, and consistent routines, children learn to recognize their emotions, regulate their bodies, solve problems, and care for others.
+
+*Outdoor classrooms*
+Our outdoor spaces are an extension of the classroom, not simply a place for recess. Children build, dig, create, climb, experiment, and take appropriate risks while developing confidence, coordination, creativity, and a lasting connection with nature.
+
+*Family partnerships*
+Families are an essential part of our School Family and each child's learning. We build strong partnerships through open communication, shared goals, classroom documentation, and meaningful opportunities for families to participate and connect.
+
+(House-style edits from the director's draft: "learning journey" shortened to "learning" since "journey" is on the banned list; an em dash replaced with a comma.)
+
 **FAQ**
 
 *Do you enroll year round?*

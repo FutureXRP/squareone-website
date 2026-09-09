@@ -2,7 +2,10 @@ import type { Metadata } from 'next'
 import { PageIntro, Section } from '@/components/Section'
 import { FAQ } from '@/components/FAQ'
 import { EnrollmentForm } from '@/components/Form/EnrollmentForm'
+import Image from 'next/image'
 import { DIVISIONS, telHref } from '@/lib/site'
+import { photo } from '@/lib/photos'
+import { ELC_PILLARS } from '@/content/elc'
 import { PageBanner } from '@/components/PageBanner'
 import faq from '@/content/faq/elc.json'
 
@@ -45,18 +48,34 @@ export default function EarlyLearningPage() {
         </div>
       </Section>
 
-      <Section tint>
+      <Section tint id="exceptional">
+        <h2 className="text-2xl">What makes SquareOne exceptional</h2>
+        <ul className="mt-10 grid gap-x-8 gap-y-12 sm:grid-cols-2 lg:grid-cols-3">
+          {ELC_PILLARS.map((p) => {
+            const src = photo(`elc/${p.photo}`)
+            return (
+              <li key={p.title} className="border-t-4 border-accent pt-5">
+                {src ? <Image src={src} alt={p.alt} width={800} height={533} sizes="(min-width: 1024px) 360px, (min-width: 640px) 50vw, 100vw" className="mb-5 aspect-[3/2] w-full object-cover" /> : null}
+                <h3 className="text-xl">{p.title}</h3>
+                <p className="mt-3 text-muted">{p.body}</p>
+              </li>
+            )
+          })}
+        </ul>
+      </Section>
+
+      <Section>
         <FAQ items={faq} />
       </Section>
 
-      <Section id="enroll">
+      <Section tint id="enroll">
         <h2 className="text-2xl">Ask about enrollment</h2>
         <div className="mt-8">
           <EnrollmentForm />
         </div>
       </Section>
 
-      <Section tint>
+      <Section>
         <p className="prose-block text-lg">
           Square One Early Learning is a nurturing community. Our commitment to a respectful, holistic environment is the foundation for everything we do, from inquiry-based exploration to hands-on projects to authentic play.
         </p>
