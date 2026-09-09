@@ -75,6 +75,24 @@ Today that campus is home to an early learning center, a primary care clinic, an
 
 We are a 501(c)(3) nonprofit governed by a volunteer board. `[CONFIRM: year founded]`
 
+**Our story** (from the original proposal, docs-source/business-plan.pdf)
+
+Our campus is the former Jane Addams Elementary School in Oakhurst, an unincorporated community in west Tulsa County and eastern Creek County. The school closed in 2011 and sat empty for years. It was named for Jane Addams, the founder of social work in the United States and the first American woman to win the Nobel Peace Prize, which turned out to be a fitting name for what came next.
+
+Matt and Jennifer Blair grew up in Berryhill, went away to Oklahoma City for their degrees, and came home to start a church that became known as a place of refuge for people in need. In November 2018, Matt wrote down a phrase that would not leave him alone: a center for care and compassion. He began gathering a team who could make it real.
+
+The building carries the name of Gene and Donna Case, known across Sand Springs and west Tulsa County for their generosity and their service to people who had little. They ran bus routes for kids and cared for children with disabilities at Hissom Memorial Center. The Gene Case Family Center for Care and Compassion is meant to carry that spirit forward.
+
+**Why we do this**
+
+When we began planning, Oakhurst was home to about 2,700 people with a median household income of $34,000, and nearly half of households earned less than $35,000 a year. A community study had found the area short on the basic services that make a decent quality of life possible. Abandoned buildings lined the streets, and most people had to leave the area for a doctor, child care, or a safe place to play.
+
+We chose to answer that with one campus rather than one program. A hub where a child can learn, a family can see a doctor, and neighbors can get active brings people together and lets relationships form, and that is where lasting change starts. The campus is built to serve everyone, from families who cannot afford to pay to families with full insurance and resources, with the same quality of care for each.
+
+The model matters as much as the mission. Services and memberships are designed to cover the cost of running the campus, so that gifts can go to families in need rather than to keeping the lights on. As the campus grows, our goal is to use surplus revenue to begin revitalizing homes, families, and neighborhoods in the Western Tulsa and Eastern Creek County areas.
+
+(Stats are from the 2018 proposal, which cited a 2013 community study. See CONFIRM.md.)
+
 **Leadership**
 - Matt Blair — Chairman of the Board and Chief Executive Officer
 - Abel Lau, MD — Medical Director, SquareOne Medical Center
