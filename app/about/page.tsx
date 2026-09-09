@@ -40,8 +40,7 @@ export default function AboutPage() {
           <StaffCard photo={photo('matt-blair')} name="Matt Blair" role="Chairman of the Board and Chief Executive Officer" />
           <StaffCard photo={photo('abel-lau')} name="Abel Lau, MD" role="Medical Director, SquareOne Medical Center" />
           <StaffCard photo={photo('stephanie-rowe')} name="Stephanie Rowe" role="Director, SquareOne Early Learning Center" />
-          <StaffCard photo={photo('christina-barrington')} name="Christina Barrington" role="Director of Community Engagement and Growth" />
-          <StaffCard name="[CONFIRM: Director of Interactive Center name]" role="Director, SquareOne Interactive" /> {/* CONFIRM */}
+          <StaffCard photo={photo('christina-barrington')} name="Christina Barrington" role="Director of SquareOne Interactive and Director of Growth and Community Engagement" />
         </div>
       </Section>
 

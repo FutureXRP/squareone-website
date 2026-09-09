@@ -77,8 +77,7 @@ We are a 501(c)(3) nonprofit governed by a volunteer board. `[CONFIRM: year foun
 - Matt Blair — Chairman of the Board and Chief Executive Officer
 - Abel Lau, MD — Medical Director, SquareOne Medical Center
 - Stephanie Rowe — Director, SquareOne Early Learning Center
-- Christina Barrington — Director of Community Engagement and Growth
-- `[CONFIRM: Director of Interactive Center name]`
+- Christina Barrington — Director of SquareOne Interactive and Director of Growth and Community Engagement
 
 **Board of Directors**
 - Matt Blair, Chairman
