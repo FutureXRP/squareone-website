@@ -58,9 +58,9 @@ See `.env.example`. Without these:
 - [x] FAQ "How do I get started?" uses 918-623-4377
 
 ### Medical Center
-- [ ] "We do not accept CommunityCare": still true?
-- [ ] Jennifer Blair: credentials, role, and bio
-- [ ] Any other providers to list, including Matt
+- [x] CommunityCare line removed
+- [x] Jennifer Blair, APRN: bio written from Matt's notes
+- [x] No other providers
 
 ### Interactive
 - [ ] Final domain for the app (e.g. interactive.squareonecompassion.com)

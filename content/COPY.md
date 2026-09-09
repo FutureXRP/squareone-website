@@ -173,7 +173,7 @@ Use the patient portal to book appointments, view results, pay a bill, or messag
 Button: Open the patient portal → https://21321.portal.athenahealth.com/
 
 **Insurance**
-We accept Medicare, Medicaid/SoonerCare, and most major private insurance. We do not accept CommunityCare `[CONFIRM: still true]`. Cash pay is welcome, and we offer a sliding scale for patients without insurance who cannot pay in full.
+We accept Medicare, Medicaid/SoonerCare, and most major private insurance. Cash pay is welcome, and we offer a sliding scale for patients without insurance who cannot pay in full.
 
 **FAQ**
 
@@ -191,10 +191,10 @@ See Insurance above.
 *Abel Lau, MD — Medical Director*
 Dr. Lau was born in Tennessee and raised in Malaysia. He graduated from Regents University Medical College in Georgia and trained in Oklahoma. With more than 25 years in practice, he focuses on finding the root causes of his patients' health challenges and treating them with compassion, kindness, patience, and competence. Outside the clinic he fixes cars and broken things, works with wood, and skis. He and his wife Emily live in the Sand Springs area.
 
-*Jennifer Blair `[CONFIRM: credentials and role]`*
-`[CONFIRM: bio. The current site shows her photo with no text.]`
+*Jennifer Blair, APRN — Primary care provider*
+Jennifer helped start SquareOne Medical Center and has been a primary care APRN for more than eight years. Her experience spans hospital medicine as a hospitalist, cardiovascular surgery, and primary care, and she brings all of it to her patients here. What she loves most is patient care: taking the time to listen, explain, and follow through. Jennifer is married and has three children.
 
-`[CONFIRM: any other providers to list, including Matt]`
+(No other providers.)
 
 ---
 

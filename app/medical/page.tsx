@@ -3,7 +3,6 @@ import { PageIntro, Section } from '@/components/Section'
 import { FAQ } from '@/components/FAQ'
 import { StaffCard } from '@/components/StaffCard'
 import { PageBanner } from '@/components/PageBanner'
-import { Confirm } from '@/components/Confirm'
 import { telHref } from '@/lib/site'
 import { photo } from '@/lib/photos'
 import faq from '@/content/faq/medical.json'
@@ -69,7 +68,7 @@ export default function MedicalPage() {
       <Section id="insurance">
         <h2 className="text-2xl">Insurance</h2>
         <p className="prose-block mt-5 text-lg">
-          We accept Medicare, Medicaid/SoonerCare, and most major private insurance. We do not accept CommunityCare <Confirm>still true</Confirm>. Cash pay is welcome, and we offer a sliding scale for patients without insurance who cannot pay in full.
+          We accept Medicare, Medicaid/SoonerCare, and most major private insurance. Cash pay is welcome, and we offer a sliding scale for patients without insurance who cannot pay in full.
         </p>
       </Section>
 
@@ -86,10 +85,7 @@ export default function MedicalPage() {
             role="Medical Director"
             bio="Dr. Lau was born in Tennessee and raised in Malaysia. He graduated from Regents University Medical College in Georgia and trained in Oklahoma. With more than 25 years in practice, he focuses on finding the root causes of his patients' health challenges and treating them with compassion, kindness, patience, and competence. Outside the clinic he fixes cars and broken things, works with wood, and skis. He and his wife Emily live in the Sand Springs area."
           />
-          <StaffCard photo={photo('jennifer-blair')} name="Jennifer Blair" role="[CONFIRM: credentials and role]" bio="[CONFIRM: bio. The current site shows her photo with no text.]" /> {/* CONFIRM */}
-          <p className="text-muted">
-            <Confirm>any other providers to list, including Matt</Confirm>
-          </p>
+          <StaffCard photo={photo('jennifer-blair')} name="Jennifer Blair, APRN" role="Primary care provider" bio="Jennifer helped start SquareOne Medical Center and has been a primary care APRN for more than eight years. Her experience spans hospital medicine as a hospitalist, cardiovascular surgery, and primary care, and she brings all of it to her patients here. What she loves most is patient care: taking the time to listen, explain, and follow through. Jennifer is married and has three children." />
         </div>
       </Section>
     </>
