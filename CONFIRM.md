@@ -48,7 +48,7 @@ See `.env.example`. Without these:
 ### About
 - [ ] Year founded
 - [ ] Director of Interactive Center name
-- [ ] Three additional board members' names and one-line affiliations
+- [x] Board of Directors listed (Matt Blair, Nick Klenovich, Wayne Davidson, Joe DeBerry)
 - [ ] Whether to name campus partners (physical therapy practice, fencing organization, American Legion Post 1776)
 - [x] Financials block links to ProPublica's Nonprofit Explorer by EIN (lists every year automatically) and the IRS Tax Exempt Organization Search.
 

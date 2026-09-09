@@ -5,6 +5,13 @@ import { Confirm } from '@/components/Confirm'
 import { photo } from '@/lib/photos'
 import { ORG } from '@/lib/site'
 
+const BOARD = [
+  { name: 'Matt Blair', role: 'Chairman' },
+  { name: 'Nick Klenovich', role: 'Secretary and Treasurer' },
+  { name: 'Wayne Davidson', role: 'Member at large' },
+  { name: 'Joe DeBerry', role: 'Member at large' },
+]
+
 export const metadata: Metadata = { title: 'About', description: 'SquareOne Compassion is a 501(c)(3) nonprofit campus in west Tulsa, home to an early learning center, a primary care clinic, and a fitness and family entertainment center.' }
 
 export default function AboutPage() {
@@ -28,7 +35,7 @@ export default function AboutPage() {
       <Section tint>
         <h2 className="text-2xl">Leadership</h2>
         <div className="mt-8 grid gap-8 md:grid-cols-2">
-          <StaffCard photo={photo('matt-blair')} name="Matt Blair, MD" role="Chairman of the Board and Chief Executive Officer" />
+          <StaffCard photo={photo('matt-blair')} name="Matt Blair" role="Chairman of the Board and Chief Executive Officer" />
           <StaffCard photo={photo('abel-lau')} name="Abel Lau, MD" role="Medical Director, SquareOne Medical Center" />
           <StaffCard photo={photo('stephanie-rowe')} name="Stephanie Rowe" role="Director, SquareOne Early Learning Center" />
           <StaffCard photo={photo('christina-barrington')} name="Christina Barrington" role="Director of Community Engagement and Growth" />
@@ -40,9 +47,15 @@ export default function AboutPage() {
         <div className="grid gap-12 md:grid-cols-3">
           <div>
             <h2 className="text-xl">Board of Directors</h2>
-            <p className="mt-3">
-              <Confirm>three additional board members&apos; names and one-line affiliations</Confirm>
-            </p>
+            <ul className="mt-3 space-y-2">
+              {BOARD.map((m) => (
+                <li key={m.name}>
+                  <span className="font-semibold text-ink">{m.name}</span>
+                  <br />
+                  <span className="text-muted">{m.role}</span>
+                </li>
+              ))}
+            </ul>
           </div>
           <div>
             <h2 className="text-xl">Campus partners</h2>
