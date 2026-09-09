@@ -47,7 +47,7 @@ See `.env.example`. Without these:
 
 ### About
 - [ ] Year founded
-- [ ] Director of Interactive Center name
+- [x] Director of Interactive Center: Christina Barrington (also Director of Growth and Community Engagement)
 - [x] Board of Directors listed (Matt Blair, Nick Klenovich, Wayne Davidson, Joe DeBerry)
 - [x] Campus partners block removed; replaced with Philanthropic Partners (grant funders)
 - [x] Financials block links to ProPublica's Nonprofit Explorer by EIN (lists every year automatically) and the IRS Tax Exempt Organization Search.
