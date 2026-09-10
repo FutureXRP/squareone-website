@@ -173,9 +173,9 @@ export const PARTY_PACKAGES: Package[] = [
 ]
 
 export const CORPORATE_PACKAGES: Package[] = [
-  { name: 'Corporate package 1', price: '$450', photo: '/photos/events/corporate-package.webp', photoAlt: 'Corporate Package: blue, gold, and white balloons with confetti', items: ['Dining Hall', 'Gym', 'Tables and chairs', 'Restrooms', 'Half-day rental period, 8 am to 3 pm or 3 pm to 10 pm'] },
-  { name: 'Corporate package 2', price: '$750', photo: '/photos/events/corporate-package.webp', photoAlt: 'Corporate Package: blue, gold, and white balloons with confetti', items: ['Dining Hall', 'Gym', 'Interactive Zones: gaming, MultiBall, billiards, MultiSport', 'Restrooms', 'Event staff on site', 'Half-day rental period, 8 am to 3 pm or 3 pm to 10 pm'] },
-  { name: 'Corporate package 3', price: '$1,000', photo: '/photos/events/corporate-package.webp', photoAlt: 'Corporate Package: blue, gold, and white balloons with confetti', items: ['Dining Hall', 'Gym', 'Interactive Zones: gaming, MultiBall, billiards, MultiSport', 'Party Arcade Room', 'Restrooms', 'Event staff on site', 'Full-day rental period, 8 am to 10 pm'] },
+  { name: 'Corporate package 1', price: '$450', photo: '/photos/events/corporate-package.webp', photoAlt: 'Corporate Package: navy, gold, and white balloons with wrapped gifts and confetti', items: ['Dining Hall', 'Gym', 'Tables and chairs', 'Restrooms', 'Half-day rental period, 8 am to 3 pm or 3 pm to 10 pm'] },
+  { name: 'Corporate package 2', price: '$750', photo: '/photos/events/corporate-package.webp', photoAlt: 'Corporate Package: navy, gold, and white balloons with wrapped gifts and confetti', items: ['Dining Hall', 'Gym', 'Interactive Zones: gaming, MultiBall, billiards, MultiSport', 'Restrooms', 'Event staff on site', 'Half-day rental period, 8 am to 3 pm or 3 pm to 10 pm'] },
+  { name: 'Corporate package 3', price: '$1,000', photo: '/photos/events/corporate-package.webp', photoAlt: 'Corporate Package: navy, gold, and white balloons with wrapped gifts and confetti', items: ['Dining Hall', 'Gym', 'Interactive Zones: gaming, MultiBall, billiards, MultiSport', 'Party Arcade Room', 'Restrooms', 'Event staff on site', 'Full-day rental period, 8 am to 10 pm'] },
 ]
 
 export const CORPORATE_CONTACT = { name: 'Christina Barrington', phone: '918-706-2682' }
