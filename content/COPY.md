@@ -128,7 +128,7 @@ Our Form 990 filings are public. See every year on ProPublica's Nonprofit Explor
 **Headline:** Play is the highest form of research.
 **Attribution:** Albert Einstein
 
-**Intro (from the ELC director):** Nature-based, Reggio-inspired early learning where relationships come first and children are encouraged to explore, create, question, and belong.
+**Intro (from the ELC director):** SquareOne Early Learning Center is a nurturing, nature-based, Reggio-inspired community where relationships come first. Our commitment to a respectful, holistic environment guides everything we do, from inquiry-based exploration and hands-on projects to authentic play that encourages children to create, question, discover, and belong.
 
 **Facts line:** Serving children six weeks through age five · Monday through Friday · 7:15 am to 5:45 pm
 
