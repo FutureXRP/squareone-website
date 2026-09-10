@@ -22,7 +22,7 @@ export const ZONES: Zone[] = [
     id: 'multiball',
     name: 'MultiBall Zone',
     photo: '/photos/interactive/multiball.webp',
-    photoAlt: 'Children throwing balls at a wall-sized interactive game screen in the MultiBall Zone',
+    photoAlt: 'Children throwing balls at a wall-sized MultiBall screen full of colorful monster targets',
     body: [
       'Get ready to move, compete, and play like never before in our MultiBall Zone. This immersive, interactive experience transforms an entire wall into a giant touch-sensitive game, combining sports, fitness, technology, and fun.',
       'With dozens of games to choose from, players can test their speed, accuracy, coordination, and teamwork through challenges that keep everyone engaged. Whether you are scoring goals, popping targets, solving interactive puzzles, or competing for the highest score, every game gets you moving.',
@@ -64,7 +64,7 @@ export const ZONES: Zone[] = [
     id: 'party',
     name: 'Party Arcade Zone',
     photo: '/photos/interactive/party-arcade.webp',
-    photoAlt: 'Arcade cabinets along the walls and a long party table in the Party Arcade Zone',
+    photoAlt: 'The Party Arcade Zone: arcade cabinets along the walls, a long party table, and neon streamers overhead',
     body: [
       'Get ready for nonstop fun in our Party Arcade Zone, the ultimate destination for birthdays, celebrations, and group events. Packed with classic arcade favorites, modern games, and exciting prize opportunities, this vibrant space is designed to bring out the kid in everyone.',
       'Challenge your friends to a game of skee-ball, compete in multiplayer arcade games, or try your luck at winning prizes from our claw machines. With dedicated party seating right in the heart of the action, your group can celebrate together while enjoying unlimited fun just steps away.',
@@ -107,7 +107,7 @@ export const ZONES: Zone[] = [
     id: 'gym',
     name: 'Fitness Zone',
     photo: '/photos/interactive/fitness.webp',
-    photoAlt: 'Strength-training equipment and cardio machines in the Fitness Zone',
+    photoAlt: 'The Fitness Zone: weight benches, racks, and machines under a black ceiling with windows along one wall',
     body: [
       'Reach your goals in the Fitness Zone, a welcoming space designed to support every stage of your fitness. Whether you are building strength, improving endurance, or simply staying active, our well-equipped facility provides everything you need for an effective workout in a comfortable, motivating environment.',
       'Featuring a variety of strength-training equipment, free weights, benches, and functional training areas, the Fitness Zone is ideal for beginners and experienced athletes alike. With plenty of room to train, you will have the freedom to work out at your own pace and focus on achieving your personal goals.',
