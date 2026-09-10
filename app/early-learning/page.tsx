@@ -26,9 +26,11 @@ export default function EarlyLearningPage() {
         width={1600}
         height={900}
       />
-      <PageIntro title="Play is the highest form of research.">
-        <p className="text-base text-muted">Albert Einstein</p>
-        <p className="mt-6 text-ink">SquareOne Early Learning Center is a nurturing, nature-based, Reggio-inspired community where relationships come first. Our commitment to a respectful, holistic environment guides everything we do, from inquiry-based exploration and hands-on projects to authentic play that encourages children to create, question, discover, and belong.</p>
+      <PageIntro title="“Play is the highest form of research.”">
+        <p className="text-base text-muted">
+          <cite className="not-italic">Albert Einstein</cite>
+        </p>
+        <p className="mt-10 border-t border-line pt-8 text-ink">SquareOne Early Learning Center is a nurturing, nature-based, Reggio-inspired community where relationships come first. Our commitment to a respectful, holistic environment guides everything we do, from inquiry-based exploration and hands-on projects to authentic play that encourages children to create, question, discover, and belong.</p>
         <p className="mt-4 text-base font-semibold text-ink">Serving children six weeks through age five · Monday through Friday · 7:15 am to 5:45 pm</p>
         <div className="mt-8 flex flex-wrap gap-4">
           <a href="#tour" className="btn-primary">
