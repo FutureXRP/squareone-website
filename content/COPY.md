@@ -81,15 +81,15 @@ Our campus is the former Jane Addams Elementary School, just north of Oakhurst a
 
 Matt and Jennifer Blair grew up in Berryhill, spent 7 years in Oklahoma City, and came home to start a church that became known as a place of refuge for people in need. In November 2018, after walking through his own personal failure, Matt wrote down a phrase that would not leave him alone: The Gene Case Center For Care and Compassion. Immediately, he began gathering a team who could make this idea come to life.
 
-The building carries the name of the Case family. Gene and Donna Case are known across Sand Springs and West Tulsa County for their generosity and their service to people who had little. They ran bus routes for kids and cared for children with disabilities at Hissom Memorial Center. The Gene Case Family Center for Care and Compassion is meant to carry that spirit forward.
+The building carries the name of the Case family. Gene and Donna Case are known across Sand Springs and West Tulsa County for their generosity and their service to people who had little. They ran bus routes for kids and cared for children with disabilities at Hissom Memorial Center. Gene passed away in 2018, the same year the idea for this center was first written down. The Gene Case Family Center for Care and Compassion is meant to carry that spirit forward in his memory.
 
 **Why we do this**
 
-When we began planning, neighboring Oakhurst was home to about 2,700 people with a median household income of $34,000, and nearly half of households earned less than $35,000 a year. A community study had found the area short on the basic services that make a decent quality of life possible. Abandoned buildings lined the streets, and most people had to leave the area for a doctor, child care, or a safe place to play.
+When we started planning, the neighboring community of Oakhurst was home to about 2,700 people. The median household income was $34,000, and nearly half of all households earned less than $35,000 a year. A community study had found the area lacking the basic services that make a decent quality of life possible. Abandoned buildings lined the streets, and most residents had to leave the area to see a doctor, find child care, or give their kids a safe place to play.
 
-We chose to answer that with one campus rather than one program. A hub where a child can learn, a family can see a doctor, and neighbors can get active brings people together and lets relationships form, and that is where lasting change starts. The campus is built to serve everyone, from families who cannot afford to pay to families with full insurance and resources, with the same quality of care for each.
+Rather than start a single program, we chose to build a single campus. When a child can learn, a family can see a doctor, and neighbors can get active all in one place, people cross paths and relationships form. That is where lasting change begins. The campus is built to serve everyone, from families who cannot afford to pay to families with full insurance and plenty of resources, and every one of them receives the same quality of care.
 
-The model matters as much as the mission. Services and memberships are designed to cover the cost of running the campus, so that gifts can go to families in need rather than to keeping the lights on. As the campus grows, our goal is to use surplus revenue to begin revitalizing homes, families, and neighborhoods in the Western Tulsa and Eastern Creek County areas.
+How we operate matters as much as why. Services and memberships are priced to cover the cost of running the campus, so gifts can go directly to families in need instead of keeping the lights on. As the campus grows, our goal is to use surplus revenue to begin revitalizing homes, families, and neighborhoods across Western Tulsa and Eastern Creek County.
 
 (Stats are from the 2018 proposal, which cited a 2013 community study. See CONFIRM.md.)
 
