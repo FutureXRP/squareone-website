@@ -129,8 +129,8 @@ Our Form 990 filings are public. See every year on ProPublica's Nonprofit Explor
 **Header:** ELC logo · connect@squareoneelc.com · 918-340-5511 (second direct line 918-623-4377, shown on Contact)
 **Social:** instagram.com/squareoneelc5323, https://www.facebook.com/profile.php?id=100063321524167
 
-**Headline:** Play is the highest form of research.
-**Attribution:** Albert Einstein
+**Headline (set in quotation marks so it reads as a quote):** “Play is the highest form of research.”
+**Attribution:** Albert Einstein (below the quote; a thin rule separates the quote from the intro paragraph)
 
 **Intro (from the ELC director):** SquareOne Early Learning Center is a nurturing, nature-based, Reggio-inspired community where relationships come first. Our commitment to a respectful, holistic environment guides everything we do, from inquiry-based exploration and hands-on projects to authentic play that encourages children to create, question, discover, and belong.
 
