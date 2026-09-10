@@ -93,11 +93,40 @@ export default function EarlyLearningPage() {
         </ul>
       </Section>
 
-      <Section tint>
+      <Section tint id="tuition">
+        <div className="grid gap-10 lg:grid-cols-2 lg:items-start">
+          <div>
+            <h2 className="text-2xl">Tuition rates</h2>
+            <p className="prose-block mt-3 text-lg">Rates for the 2026 to 2027 school year, by classroom.</p>
+            <p className="prose-block mt-4 text-muted">
+              Scholarships are available, and we accept DHS and tribal childcare reimbursement. A $150 per-family enrollment fee holds your child&apos;s place. Email{' '}
+              <a href={`mailto:${DIVISIONS.elc.email}`} className="link">
+                {DIVISIONS.elc.email}
+              </a>{' '}
+              with questions about tuition or assistance.
+            </p>
+            <div className="mt-8">
+              <a href="#enroll" className="btn-primary">
+                Ask about enrollment
+              </a>
+            </div>
+          </div>
+          <Image
+            src="/photos/elc/tuition-rates.webp"
+            alt="SquareOne Early Learning Center tuition rates for 2026 to 2027. Infants (Snapping Turtles), 6 weeks to 12 months: $1,125. Young toddlers (Scissortails), 9 to 15 months: $1,025. Toddlers (River Otters), 14 to 20 months: $1,000. Toddlers (Turtle Doves), 18 to 30 months: $965. Young preschool (Prairie Dogs), 2 to 3 years: $915. Preschool (Wood Ducks), 3 to 5 years: $810. Scholarships available. 5323 S 65th W Ave, Tulsa, OK 74107."
+            width={1102}
+            height={1427}
+            sizes="(min-width: 1024px) 540px, 100vw"
+            className="h-auto w-full max-w-xl"
+          />
+        </div>
+      </Section>
+
+      <Section>
         <FAQ items={faq} />
       </Section>
 
-      <Section id="tour">
+      <Section tint id="tour">
         <h2 className="text-2xl">Request a tour</h2>
         <p className="prose-block mt-3 text-muted">
           Tell us a little about your family and when you would like to visit, and we will be in touch to set a time. You can also call <a href={telHref(DIVISIONS.elc.phone2!)} className="link">{DIVISIONS.elc.phone2}</a>.
@@ -107,14 +136,14 @@ export default function EarlyLearningPage() {
         </div>
       </Section>
 
-      <Section tint id="enroll">
+      <Section id="enroll">
         <h2 className="text-2xl">Ask about enrollment</h2>
         <div className="mt-8">
           <EnrollmentForm />
         </div>
       </Section>
 
-      <Section>
+      <Section tint>
         <p className="prose-block text-lg">
           SquareOne Early Learning Center is a nurturing, nature-based, Reggio-inspired community where relationships come first. Our commitment to a respectful, holistic environment guides everything we do, from inquiry-based exploration and hands-on projects to authentic play that encourages children to create, question, discover, and belong.
         </p>
