@@ -142,7 +142,6 @@ export default function EarlyLearningPage() {
           <EnrollmentForm />
         </div>
       </Section>
-
     </>
   )
 }
