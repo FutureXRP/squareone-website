@@ -216,7 +216,7 @@ Request a tour or fill out the enrollment interest form below, or call 918-623-4
 **Enrollment interest form fields** (shortened per the ELC director): parent or guardian name, email, phone, child's birth date, desired start date, how tuition will be paid (DHS, Tribal, Private pay), questions or comments. Button: Ask about enrollment.
 **Form success:** Thanks. We'll reach out within two business days about enrollment.
 
-**Closing:** SquareOne Early Learning Center is a nurturing, nature-based, Reggio-inspired community where relationships come first. Our commitment to a respectful, holistic environment guides everything we do, from inquiry-based exploration and hands-on projects to authentic play that encourages children to create, question, discover, and belong.
+**Closing:** (none; the former closing paragraph now serves as the intro under the headline)
 
 ---
 

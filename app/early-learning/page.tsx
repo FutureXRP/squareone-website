@@ -142,12 +142,6 @@ export default function EarlyLearningPage() {
           <EnrollmentForm />
         </div>
       </Section>
-
-      <Section tint>
-        <p className="prose-block text-lg">
-          SquareOne Early Learning Center is a nurturing, nature-based, Reggio-inspired community where relationships come first. Our commitment to a respectful, holistic environment guides everything we do, from inquiry-based exploration and hands-on projects to authentic play that encourages children to create, question, discover, and belong.
-        </p>
-      </Section>
     </>
   )
 }
