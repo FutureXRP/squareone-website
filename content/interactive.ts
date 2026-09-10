@@ -143,11 +143,11 @@ export const EVENT_SPACES: EventSpace[] = [
   },
   {
     id: 'gym',
-    name: 'Gym and Multipurpose Room',
+    name: 'Gym/Multipurpose Room',
     photo: '/photos/interactive/gym.webp',
-    photoAlt: 'Open gym floor with court markings and a stage in the Gym and Multipurpose Room',
+    photoAlt: 'Open gym floor with court markings and a stage in the Gym/Multipurpose Room',
     body: [
-      'Our Gym and Multipurpose Room is a versatile space designed to bring people together for recreation, celebrations, and community events. With an open floor plan, stage, and flexible layout, this multipurpose venue can easily transform to fit your group’s needs.',
+      'Our Gym/Multipurpose Room is a versatile space designed to bring people together for recreation, celebrations, and community events. With an open floor plan, stage, and flexible layout, this multipurpose venue can easily transform to fit your group’s needs.',
       'Whether you are hosting a basketball or volleyball game, pickleball tournament, youth event, banquet, conference, school function, church gathering, or community celebration, this space provides the room and flexibility to make your event a success.',
       'The built-in stage is perfect for live entertainment, guest speakers, performances, award ceremonies, and presentations, while the large open court offers endless possibilities for sports, games, and activities.',
     ],
