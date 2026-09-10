@@ -74,7 +74,7 @@ See `.env.example`. Without these:
 - [ ] Final domain for the app (e.g. interactive.squareonecompassion.com)
 - [x] Hours confirmed (Mon to Sat 5:30 am to 10 pm, Sun 1 pm to 10 pm)
 - [x] Fitness membership prices are not listed here; the FAQ links to the app for live pricing
-- [ ] Interactive banner, left panel: the director says the titles in the left picture are incorrect. The banner is a single supplied image with the simulator's game titles baked in, so it needs a corrected image (upload a new banner, or a new left-panel photo to composite in).
+- [x] Interactive banner replaced with the corrected version (simulator titles fixed)
 
 ### Privacy and Terms
 - [ ] Both pages are placeholders until Matt supplies text.
