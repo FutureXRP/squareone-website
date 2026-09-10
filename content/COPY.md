@@ -132,7 +132,7 @@ Our Form 990 filings are public. See every year on ProPublica's Nonprofit Explor
 
 **Facts line:** Serving children six weeks through age five · Monday through Friday · 7:15 am to 5:45 pm
 
-**Quality bar (under the intro, from the ELC director):** APPLE Accredited · Oklahoma 5-Star Program · Certified Healthy · Nature-based · Reggio-inspired · Conscious Discipline
+**Quality bar (under the intro, from the ELC director; rendered as a solid blue band with white text so it stands out):** APPLE Accredited · Oklahoma 5-Star Program · Certified Healthy · Nature-based · Reggio-inspired · Conscious Discipline
 
 **Our approach**
 Our goal is a community of confident, capable, lifelong learners.
@@ -142,11 +142,11 @@ We use an emergent curriculum. Teachers watch what children are curious about an
 We respect the voice and opinion of every child. The educator's job is to make exploration possible. The child's job is to investigate everything.
 
 **Buttons (top of page):**
-- Schedule a tour (opens the tour request form on this page)
+- Request a tour (opens the tour request form on this page)
 - Ask about enrollment (opens the enrollment interest form on this page)
 - (No summer program is offered; the old "virtual-learning-after-school" button is dropped.)
 
-**What makes SquareOne exceptional** (five cards, from the ELC director; copy in content/elc.ts; each card takes a real photo from public/photos/elc/ when supplied)
+**What makes SquareOne exceptional** (six cards, from the ELC director; copy in content/elc.ts; each card takes a real photo from public/photos/elc/ when supplied)
 
 *Nature-based learning*
 Children learn best when they can touch, move, investigate, and experience the world around them. Nature becomes a teacher as children explore living things, changing seasons, natural materials, and the wonder found outdoors.
@@ -163,7 +163,31 @@ Our outdoor spaces are an extension of the classroom, not simply a place for rec
 *Family partnerships*
 Families are an essential part of our School Family and each child's learning. We build strong partnerships through open communication, shared goals, classroom documentation, and meaningful opportunities for families to participate and connect.
 
-(House-style edits from the director's draft: "learning journey" shortened to "learning" since "journey" is on the banned list; an em dash replaced with a comma.)
+*Educators who inspire*
+Our educators do more than supervise. They listen, observe, encourage, and learn alongside each child. Through meaningful relationships and continued professional growth, they create safe, engaging environments where every child feels known, valued, and capable.
+
+(House-style edits from the director's draft: "learning journey" shortened to "learning" since "journey" is on the banned list; em dashes replaced with a comma or a period.)
+
+**Our classrooms** (from the ELC director; copy in content/elc.ts; each card takes a photo from public/photos/elc/classrooms/ when supplied)
+Intro: A glimpse into each age group, from our youngest infants to preschool.
+
+*Snapping Turtles* (Infants)
+A peaceful, nurturing environment where our youngest learners build secure relationships and explore the world through movement, sensory experiences, and loving interactions.
+
+*Scissortails* (Mobile infants and young toddlers)
+A joyful space where young toddlers strengthen mobility, language, confidence, and curiosity through hands-on exploration and responsive relationships.
+
+*River Otters* (Older toddlers)
+A busy, engaging classroom where growing toddlers develop communication, independence, problem-solving skills, and meaningful connections through play.
+
+*Turtle Doves* (Younger twos)
+A supportive environment where children practice making choices, expressing emotions, building friendships, and developing important self-help skills.
+
+*Prairie Dogs* (Older twos and threes)
+A playful community where children grow in independence, cooperation, creativity, and confidence through open-ended experiences and shared discoveries.
+
+*Wood Ducks* (Preschool)
+An inquiry-filled classroom where capable young learners investigate big ideas, build life skills, collaborate with others, and develop a lasting love of learning.
 
 **FAQ**
 
@@ -174,18 +198,18 @@ Yes, based on availability. We accept children until classroom ratios are met an
 Yes. We accept DHS and tribal childcare reimbursement, and we offer a tuition assistance program. Email connect@squareoneelc.com for details.
 
 *What are your tuition rates?*
-`[CONFIRM: publish rates, or keep "Contact us for current rates"]`. A $100 per-family enrollment fee holds your child's place. We accept check or cash at the front desk during business hours or at your tour.
+`[CONFIRM: publish rates, or keep "Contact us for current rates"]`. A $150 per-family enrollment fee holds your child's place. We accept check or cash at the front desk during business hours or at your tour.
 
 *How do I get started?*
-Fill out the enrollment interest form below or call 918-623-4377 to schedule a tour.
+Request a tour or fill out the enrollment interest form below, or call 918-623-4377.
 
-**Tour request form fields:** parent or guardian name, email, phone, child's age, preferred days and times, questions or comments. Intro: Tell us when works for you and we will get back to you to set a time. You can also call 918-623-4377.
-**Tour form success:** Thanks. We'll reach out within two business days to set up your tour.
+**Tour request form fields** (per the ELC director: same as enrollment plus a preferred tour date and time): parent or guardian name, email, phone, child's birth date, desired start date, how tuition will be paid (DHS, Tribal, Private pay), preferred tour date and time, questions or comments. Section heading: Request a tour. Intro: Tell us a little about your family and when you would like to visit, and we will be in touch to set a time. You can also call 918-623-4377. Button: Request a tour.
+**Tour form success:** Thank you for requesting a tour of SquareOne Early Learning Center! We look forward to meeting your family, learning about your child, and showing you what makes our School Family so special. We will contact you shortly to schedule your tour time.
 
-**Enrollment interest form fields** (the longer form, restored per Matt; matches the old site's enrollment wait list form and supports several children): parent or guardian first and last name, email, phone, street address, city, ZIP code, "Will you be needing any assistance?" (No, DHS, Tribal), number of children to enroll (1 to 4), then per child: name, date of birth, gender (Male, Female); desired enrollment date; days of interest (Monday to Friday); additional comments.
-**Form success:** Thanks. We'll reach out within two business days to schedule a tour.
+**Enrollment interest form fields** (shortened per the ELC director): parent or guardian name, email, phone, child's birth date, desired start date, how tuition will be paid (DHS, Tribal, Private pay), questions or comments. Button: Ask about enrollment.
+**Form success:** Thanks. We'll reach out within two business days about enrollment.
 
-**Closing:** Square One Early Learning is a nurturing community. Our commitment to a respectful, holistic environment is the foundation for everything we do, from inquiry-based exploration to hands-on projects to authentic play.
+**Closing:** SquareOne Early Learning Center is a nurturing, nature-based, Reggio-inspired community where relationships come first. Our commitment to a respectful, holistic environment guides everything we do, from inquiry-based exploration and hands-on projects to authentic play that encourages children to create, question, discover, and belong.
 
 ---
 

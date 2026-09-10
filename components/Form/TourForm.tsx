@@ -1,6 +1,7 @@
 'use client'
 
 import { Honeypot } from './Honeypot'
+import { ElcFamilyFields } from './ElcFamilyFields'
 import { formToObject, useFormSubmit } from './useFormSubmit'
 import { FORM_SUCCESS } from '@/lib/forms'
 
@@ -24,37 +25,12 @@ export function TourForm() {
       }}
     >
       <Honeypot />
-      <div className="grid gap-5 sm:grid-cols-2">
-        <div className="sm:col-span-2">
-          <label className="label" htmlFor="t-parent">
-            Parent or guardian name
-          </label>
-          <input className="field" id="t-parent" name="parentName" type="text" required autoComplete="name" />
-        </div>
-        <div>
-          <label className="label" htmlFor="t-email">
-            Email
-          </label>
-          <input className="field" id="t-email" name="email" type="email" required autoComplete="email" />
-        </div>
-        <div>
-          <label className="label" htmlFor="t-phone">
-            Phone
-          </label>
-          <input className="field" id="t-phone" name="phone" type="tel" required autoComplete="tel" />
-        </div>
-        <div>
-          <label className="label" htmlFor="t-age">
-            Child&apos;s age
-          </label>
-          <input className="field" id="t-age" name="childAge" type="text" placeholder="For example, 18 months" />
-        </div>
-        <div>
-          <label className="label" htmlFor="t-times">
-            Preferred days and times
-          </label>
-          <input className="field" id="t-times" name="preferredTimes" type="text" required placeholder="For example, weekday mornings" />
-        </div>
+      <ElcFamilyFields prefix="t" />
+      <div>
+        <label className="label" htmlFor="t-when">
+          Preferred tour date and time
+        </label>
+        <input className="field" id="t-when" name="tourDateTime" type="text" required placeholder="For example, Tuesday morning next week" />
       </div>
       <div>
         <label className="label" htmlFor="t-comments">
