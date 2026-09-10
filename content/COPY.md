@@ -345,7 +345,7 @@ Room rentals and party packages now book directly in the Interactive app with li
 
 **Section: Event rental spaces** (from Matt's brief; copy in content/interactive.ts)
 - Dining Hall: $125 for a 2-hour event, $150 for a 3-hour event
-- Gym and Multipurpose Room: $125 for a 2-hour event, $150 for a 3-hour event
+- Gym/Multipurpose Room: $125 for a 2-hour event, $150 for a 3-hour event
 
 **Section: Party packages** (six, from the brief; each books in {APP}/packages)
 1. $350: 3-hour party, Gym/Multipurpose Room, large inflatable, Gaming Zone, 20 roller coaster VR experiences, up to 75 guests, 1 hour setup and 30 minute clean-up included
