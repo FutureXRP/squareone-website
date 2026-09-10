@@ -3,6 +3,7 @@ import { z } from 'zod'
 const phone = z.string().trim().max(40)
 const email = z.string().trim().email().max(200)
 const optionalText = (max: number) => z.string().trim().max(max).optional().or(z.literal(''))
+const isoDate = z.string().trim().regex(/^\d{4}-\d{2}-\d{2}$/, 'Use YYYY-MM-DD')
 
 export const contactSchema = z.object({
   kind: z.literal('contact'),
@@ -13,45 +14,33 @@ export const contactSchema = z.object({
   message: z.string().trim().min(1).max(5000),
 })
 
-export const ASSISTANCE_OPTIONS = ['No', 'DHS', 'Tribal'] as const
-export const GENDER_OPTIONS = ['Male', 'Female'] as const
-export const DAY_OPTIONS = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'] as const
-export const MAX_CHILDREN = 4
+// How tuition will be paid. Shown as radios on both ELC forms.
+export const PAYMENT_OPTIONS = ['DHS', 'Tribal', 'Private pay'] as const
 
-export const childSchema = z.object({
-  name: z.string().trim().min(1).max(120),
-  dob: z.string().trim().regex(/^\d{4}-\d{2}-\d{2}$/, 'Use YYYY-MM-DD'),
-  gender: z.enum(GENDER_OPTIONS).optional().or(z.literal('')),
-})
-
-// Matches the enrollment wait list form on the old site.
-export const elcEnrollmentSchema = z.object({
-  kind: z.literal('elc-enrollment'),
-  website: z.string().max(0).optional().or(z.literal('')), // honeypot
-  parentFirst: z.string().trim().min(1).max(80),
-  parentLast: z.string().trim().min(1).max(80),
-  email,
-  phone: phone.min(7),
-  street: optionalText(200),
-  city: optionalText(100),
-  zip: optionalText(20),
-  assistance: z.array(z.enum(ASSISTANCE_OPTIONS)).max(3).default([]),
-  children: z.array(childSchema).min(1).max(MAX_CHILDREN),
-  desiredStart: z.string().trim().min(1).max(60),
-  days: z.array(z.enum(DAY_OPTIONS)).max(5).default([]),
-  comments: optionalText(5000),
-})
-
-// Tour request, from the Schedule a tour button on the ELC page.
-export const elcTourSchema = z.object({
-  kind: z.literal('elc-tour'),
+// Shared fields for the two ELC forms, per the ELC director:
+// parent or guardian name, email, phone, child's birth date, desired start date,
+// DHS / Tribal / private pay, questions or comments.
+const elcFamilyFields = {
   website: z.string().max(0).optional().or(z.literal('')), // honeypot
   parentName: z.string().trim().min(1).max(120),
   email,
   phone: phone.min(7),
-  childAge: optionalText(60),
-  preferredTimes: z.string().trim().min(1).max(300),
+  childDob: isoDate,
+  desiredStart: z.string().trim().min(1).max(60),
+  payment: z.enum(PAYMENT_OPTIONS),
   comments: optionalText(5000),
+}
+
+export const elcEnrollmentSchema = z.object({
+  kind: z.literal('elc-enrollment'),
+  ...elcFamilyFields,
+})
+
+// Tour request: the enrollment fields plus a preferred tour date and time.
+export const elcTourSchema = z.object({
+  kind: z.literal('elc-tour'),
+  ...elcFamilyFields,
+  tourDateTime: z.string().trim().min(1).max(300),
 })
 
 export const formSchema = z.discriminatedUnion('kind', [contactSchema, elcEnrollmentSchema, elcTourSchema])
@@ -66,8 +55,9 @@ export const FORM_ROUTING: Record<FormKind, string> = {
 
 export const FORM_SUCCESS: Record<FormKind, string> = {
   contact: "Message sent. We'll reply within one business day.",
-  'elc-enrollment': "Thanks. We'll reach out within two business days to schedule a tour.",
-  'elc-tour': "Thanks. We'll reach out within two business days to set up your tour.",
+  'elc-enrollment': "Thanks. We'll reach out within two business days about enrollment.",
+  'elc-tour':
+    'Thank you for requesting a tour of SquareOne Early Learning Center! We look forward to meeting your family, learning about your child, and showing you what makes our School Family so special. We will contact you shortly to schedule your tour time.',
 }
 
 /** Plain-text rendering of a submission for the notification email. */
