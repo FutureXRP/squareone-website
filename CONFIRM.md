@@ -73,7 +73,7 @@ See `.env.example`. Without these:
 ### Interactive
 - [ ] Final domain for the app (e.g. interactive.squareonecompassion.com)
 - [x] Hours confirmed (Mon to Sat 5:30 am to 10 pm, Sun 1 pm to 10 pm)
-- [ ] Whether to list fitness membership prices here (old site: $25 individual / $75 family)
+- [x] Fitness membership prices are not listed here; the FAQ links to the app for live pricing
 
 ### Privacy and Terms
 - [ ] Both pages are placeholders until Matt supplies text.

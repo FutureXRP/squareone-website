@@ -325,7 +325,7 @@ Yes, from your account. Your membership stays active through the end of the paid
 No. Anyone can book.
 
 *Where do I see prices?*
-Live pricing and availability are in the app. `[CONFIRM: whether to also list the fitness membership prices here; the old site had $25 individual / $75 family, which may have changed]`
+Live pricing and availability are in the app. ("app" links to {APP}. FAQ answers may carry inline links written as [text](href).)
 
 ---
 

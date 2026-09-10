@@ -1,6 +1,33 @@
+import { appUrl } from '@/lib/site'
+
 export interface FaqItem {
   q: string
   a: string
+}
+
+/**
+ * Answers are plain text with optional inline links written as [text](href).
+ * A href of {APP} or {APP}/path points at the Interactive app.
+ */
+function renderAnswer(text: string) {
+  const parts: React.ReactNode[] = []
+  const re = /\[([^\]]+)\]\(([^)\s]+)\)/g
+  let last = 0
+  let m: RegExpExecArray | null
+  while ((m = re.exec(text)) !== null) {
+    if (m.index > last) parts.push(text.slice(last, m.index))
+    const raw = m[2]
+    const href = raw.startsWith('{APP}') ? appUrl(raw.slice('{APP}'.length) || '/') : raw
+    const external = /^https?:\/\//.test(href)
+    parts.push(
+      <a key={m.index} href={href} className="link" {...(external ? { rel: 'noopener' } : {})}>
+        {m[1]}
+      </a>,
+    )
+    last = m.index + m[0].length
+  }
+  if (last < text.length) parts.push(text.slice(last))
+  return parts
 }
 
 /** Accessible accordion built on native details/summary. No JS, no motion beyond open/close. */
@@ -17,7 +44,7 @@ export function FAQ({ items, title = 'Questions' }: { items: FaqItem[]; title?: 
                 +
               </span>
             </summary>
-            <p className="mt-3 text-muted">{item.a}</p>
+            <p className="mt-3 text-muted">{renderAnswer(item.a)}</p>
           </details>
         ))}
       </div>
