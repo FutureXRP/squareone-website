@@ -23,7 +23,7 @@ See `.env.example`. Without these:
 - `SUPABASE_URL` + `SUPABASE_SERVICE_ROLE_KEY` (optional): also stores every submission in `form_submissions`. Run `supabase/migrations/0001_forms.sql`, `0002_donations.sql`, and `0003_elc_tour.sql` in that project first.
 - `INTERACTIVE_SUPABASE_URL` + `INTERACTIVE_SUPABASE_ANON_KEY`: "What's on the floor" and the Events room list are hidden and only the four static tiles show. RLS in the app already allows anon reads of active facilities and packages, so no policy change is needed.
 - `STRIPE_SECRET_KEY` + `STRIPE_WEBHOOK_SECRET`: without them, `/give` shows the PayPal button (live) instead of the Stripe form. PayPal gifts are not recorded in this site's database and get PayPal's receipt rather than ours. Webhook endpoint: `/api/stripe/webhook`, event `checkout.session.completed`.
-- `NEXT_PUBLIC_INTERACTIVE_APP_URL`: defaults to `https://square-one-interactive.vercel.app`.
+- `NEXT_PUBLIC_INTERACTIVE_APP_URL`: defaults to `https://store.squareoneinteractive.com` (the store's own address; the old square-one-interactive.vercel.app keeps working as a fallback).
 
 ## From the Interactive brief (docs-source/interactive-brief.pdf)
 - [ ] **Prices now live in two places.** The zone, room, and package prices from the brief are typed into this site (`content/interactive.ts`). The Interactive app's database holds its own prices for the same rooms and packages, and the app is where people actually pay. Keep them in sync, or set `INTERACTIVE_SUPABASE_URL` and `INTERACTIVE_SUPABASE_ANON_KEY` so the app's live per-hour price shows above the static lines on each zone.
