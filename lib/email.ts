@@ -3,6 +3,11 @@ import { Resend } from 'resend'
 
 const FROM = process.env.RESEND_FROM || 'SquareOne Compassion <onboarding@resend.dev>'
 
+/** True when Resend can send: RESEND_API_KEY is set. */
+export function emailConfigured(): boolean {
+  return Boolean(process.env.RESEND_API_KEY)
+}
+
 function escapeHtml(s: string): string {
   return s.replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[c] as string)
 }

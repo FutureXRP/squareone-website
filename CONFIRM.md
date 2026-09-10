@@ -19,8 +19,8 @@ The build environment could not reach squareonecompassion.com (network policy), 
 
 ### Environment variables (Vercel > Settings > Environment Variables)
 See `.env.example`. Without these:
-- `SUPABASE_URL` + `SUPABASE_SERVICE_ROLE_KEY`: contact and enrollment forms return a "not available" error. Run `supabase/migrations/0001_forms.sql`, `0002_donations.sql`, and `0003_elc_tour.sql` in that project first.
-- `RESEND_API_KEY` + `RESEND_FROM`: submissions are stored but no notification email is sent.
+- **Forms need at least one of Resend or Supabase.** With neither set, the contact, tour, and enrollment forms are replaced on the page by a "not available right now, email or call" note. The simplest path is Resend alone (free tier): set `RESEND_API_KEY` and `RESEND_FROM`, and verify squareonecompassion.com in Resend by adding the DNS records it gives you (they sit on their own subdomains and do not touch the Microsoft 365 mail records). Submissions are then emailed to the routing address for each form with no database at all.
+- `SUPABASE_URL` + `SUPABASE_SERVICE_ROLE_KEY` (optional): also stores every submission in `form_submissions`. Run `supabase/migrations/0001_forms.sql`, `0002_donations.sql`, and `0003_elc_tour.sql` in that project first.
 - `INTERACTIVE_SUPABASE_URL` + `INTERACTIVE_SUPABASE_ANON_KEY`: "What's on the floor" and the Events room list are hidden and only the four static tiles show. RLS in the app already allows anon reads of active facilities and packages, so no policy change is needed.
 - `STRIPE_SECRET_KEY` + `STRIPE_WEBHOOK_SECRET`: without them, `/give` shows the PayPal button (live) instead of the Stripe form. PayPal gifts are not recorded in this site's database and get PayPal's receipt rather than ours. Webhook endpoint: `/api/stripe/webhook`, event `checkout.session.completed`.
 - `NEXT_PUBLIC_INTERACTIVE_APP_URL`: defaults to `https://square-one-interactive.vercel.app`.

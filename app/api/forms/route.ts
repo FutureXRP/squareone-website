@@ -1,10 +1,16 @@
 import { NextResponse } from 'next/server'
 import { formSchema, FORM_ROUTING, describeSubmission } from '@/lib/forms'
 import { supabaseAdmin } from '@/lib/supabase'
-import { sendEmail } from '@/lib/email'
+import { sendEmail, emailConfigured } from '@/lib/email'
 
 export const runtime = 'nodejs'
 
+/**
+ * Form submissions go to whichever backends are configured:
+ * - Supabase (SUPABASE_URL + SUPABASE_SERVICE_ROLE_KEY): stored in form_submissions
+ * - Resend (RESEND_API_KEY): emailed to the routing address for the form kind
+ * Either one is enough. With neither, the form reports itself unavailable.
+ */
 export async function POST(req: Request) {
   let body: unknown
   try {
@@ -28,22 +34,31 @@ export async function POST(req: Request) {
   const subject = kind === 'contact' ? `Website contact from ${who}` : kind === 'elc-tour' ? `ELC tour request from ${who}` : `ELC enrollment interest from ${who}`
 
   const db = supabaseAdmin()
-  if (!db) {
-    console.error('[forms] SUPABASE_URL / SUPABASE_SERVICE_ROLE_KEY not set')
+  const canEmail = emailConfigured()
+  if (!db && !canEmail) {
+    console.error('[forms] neither Supabase nor Resend is configured')
     return NextResponse.json({ ok: false, error: 'This form is not available right now. Please call us instead.' }, { status: 503 })
   }
-  const { error } = await db.from('form_submissions').insert({ kind, payload })
-  if (error) {
-    console.error('[forms] insert failed', error)
-    return NextResponse.json({ ok: false, error: 'Something went wrong. Please call us instead.' }, { status: 500 })
+
+  let stored = false
+  if (db) {
+    const { error } = await db.from('form_submissions').insert({ kind, payload })
+    if (error) console.error('[forms] insert failed', error)
+    else stored = true
   }
 
-  await sendEmail({
-    to: FORM_ROUTING[kind],
-    subject,
-    text: `New ${kind} submission from squareonecompassion.com\n\n${describeSubmission(payload as Record<string, unknown>)}`,
-    replyTo: payload.email,
-  })
+  let emailed = false
+  if (canEmail) {
+    emailed = await sendEmail({
+      to: FORM_ROUTING[kind],
+      subject,
+      text: `New ${kind} submission from squareonecompassion.com\n\n${describeSubmission(payload as Record<string, unknown>)}`,
+      replyTo: payload.email,
+    })
+  }
 
+  if (!stored && !emailed) {
+    return NextResponse.json({ ok: false, error: 'Something went wrong. Please call us instead.' }, { status: 500 })
+  }
   return NextResponse.json({ ok: true })
 }

@@ -3,6 +3,8 @@ import { PageIntro, Section } from '@/components/Section'
 import { FAQ } from '@/components/FAQ'
 import { EnrollmentForm } from '@/components/Form/EnrollmentForm'
 import { TourForm } from '@/components/Form/TourForm'
+import { FormUnavailable } from '@/components/Form/FormUnavailable'
+import { formsEnabled } from '@/lib/forms-server'
 import Image from 'next/image'
 import { DIVISIONS, telHref } from '@/lib/site'
 import { photo } from '@/lib/photos'
@@ -13,6 +15,7 @@ import faq from '@/content/faq/elc.json'
 export const metadata: Metadata = { title: 'Early Learning Center', description: 'Nature-based, Reggio-inspired early learning in west Tulsa for children six weeks through age five. Monday through Friday, 7:15 am to 5:45 pm.' }
 
 export default function EarlyLearningPage() {
+  const forms = formsEnabled()
   return (
     <>
       <PageBanner
@@ -132,14 +135,14 @@ export default function EarlyLearningPage() {
           Tell us a little about your family and when you would like to visit, and we will be in touch to set a time. You can also call <a href={telHref(DIVISIONS.elc.phone2!)} className="link">{DIVISIONS.elc.phone2}</a>.
         </p>
         <div className="mt-8">
-          <TourForm />
+          {forms ? <TourForm /> : <FormUnavailable email={DIVISIONS.elc.email!} phone={DIVISIONS.elc.phone2!} what="Our tour request form" />}
         </div>
       </Section>
 
       <Section id="enroll">
         <h2 className="text-2xl">Ask about enrollment</h2>
         <div className="mt-8">
-          <EnrollmentForm />
+          {forms ? <EnrollmentForm /> : <FormUnavailable email={DIVISIONS.elc.email!} phone={DIVISIONS.elc.phone2!} what="Our enrollment form" />}
         </div>
       </Section>
     </>
