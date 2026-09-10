@@ -1,7 +1,6 @@
 import type { Metadata } from 'next'
 import Image from 'next/image'
 import { PageIntro, Section } from '@/components/Section'
-import { Confirm } from '@/components/Confirm'
 import { ZoneCard } from '@/components/ZoneCard'
 import { PageBanner } from '@/components/PageBanner'
 import { appUrl, telHref, EVENTS_CONTACT } from '@/lib/site'
@@ -54,12 +53,6 @@ export default async function EventsPage() {
             See party packages
           </a>
         </div>
-        <p className="prose-block mt-8 text-lg">
-          Book 1 to 6 hours, at least 48 hours ahead. A hold keeps your slot for 24 hours while you pay the deposit.
-        </p>
-        <p className="prose-block mt-3 text-base">
-          <Confirm>are inflatables and A/V still offered, and are large events like weddings and fundraisers still handled through the app or by a person?</Confirm>
-        </p>
       </Section>
 
       <Section tint id="spaces">

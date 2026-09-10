@@ -310,8 +310,6 @@ Room rentals and party packages now book directly in the Interactive app with li
 - Rent a room → {APP}/facilities
 - See party packages → {APP}/packages
 
-**Details:** Book 1 to 6 hours, at least 48 hours ahead. A hold keeps your slot for 24 hours while you pay the deposit. `[CONFIRM: are inflatables and A/V still offered, and are large events like weddings and fundraisers still handled through the app or by a person?]`
-
 **Contact:** Planning something bigger or unusual? Contact Christina Barrington at 918-706-2682.
 
 **Section: Event rental spaces** (from Matt's brief; copy in content/interactive.ts)
