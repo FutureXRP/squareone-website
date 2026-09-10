@@ -115,7 +115,7 @@ export const NAV = [
 ] as const
 
 /** The Interactive app's base URL, referenced in copy as {APP}. */
-export const APP = (process.env.NEXT_PUBLIC_INTERACTIVE_APP_URL || 'https://square-one-interactive.vercel.app').replace(/\/$/, '')
+export const APP = (process.env.NEXT_PUBLIC_INTERACTIVE_APP_URL || 'https://store.squareoneinteractive.com').replace(/\/$/, '')
 
 export const EVENTS_CONTACT = { name: 'Christina Barrington', phone: '918-706-2682' }
 

@@ -4,7 +4,7 @@ Public website for SquareOne Compassion, a Tulsa 501(c)(3) campus with three ope
 
 Owner: Matt Blair (Chairman/CEO). Solo builder. Ship first, iterate.
 
-Sibling app: the SquareOne Interactive store (`square-one-interactive.vercel.app`, separate repo) already handles memberships, room booking, event packages, door access, and merch on Next.js/Supabase/Stripe. This site does not duplicate any of that. Interactive and Events pages are front doors that hand off to it. Its URL is the `NEXT_PUBLIC_INTERACTIVE_APP_URL` env var, referenced in copy as `{APP}`.
+Sibling app: the SquareOne Interactive store (`store.squareoneinteractive.com`, separate repo) already handles memberships, room booking, event packages, door access, and merch on Next.js/Supabase/Stripe. This site does not duplicate any of that. Interactive and Events pages are front doors that hand off to it. Its URL is the `NEXT_PUBLIC_INTERACTIVE_APP_URL` env var, referenced in copy as `{APP}`.
 
 ## Read this first
 
