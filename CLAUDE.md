@@ -118,7 +118,7 @@ Nav (same on every page): Early Learning · Medical · Interactive · Events · 
 Three forms: contact, ELC enrollment interest, and ELC tour request. Event requests are not a form here; the Interactive app's booking flow handles them. Both POST to `/api/forms` with a `kind` field.
 
 - Honeypot field named `website`, hidden via CSS; reject if filled
-- Server validates with zod, inserts into `form_submissions`, sends Resend email to the routing address below, returns 200
+- Server validates with zod, then delivers to whatever is configured: inserts into `form_submissions` when Supabase env vars are set, emails the routing address below when `RESEND_API_KEY` is set. Either alone is enough; with neither, pages render a call-or-email note instead of the form (`lib/forms-server.ts`)
 - Never expose Supabase service key client-side
 - Success state replaces the form in place with the confirmation copy from COPY.md
 

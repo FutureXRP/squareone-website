@@ -1,6 +1,8 @@
 import type { Metadata } from 'next'
 import { PageIntro, Section } from '@/components/Section'
 import { ContactForm } from '@/components/Form/ContactForm'
+import { FormUnavailable } from '@/components/Form/FormUnavailable'
+import { formsEnabled } from '@/lib/forms-server'
 import { ORG, DIVISIONS, EVENTS_CONTACT, telHref } from '@/lib/site'
 
 export const metadata: Metadata = { title: 'Contact', description: 'Call, email, or stop by SquareOne Compassion at 5323 S 65th West Ave, Tulsa, OK 74107. We reply within one business day.' }
@@ -8,6 +10,7 @@ export const metadata: Metadata = { title: 'Contact', description: 'Call, email,
 const MAP_SRC = `https://www.google.com/maps?q=${encodeURIComponent(ORG.addressLine)}&output=embed`
 
 export default function ContactPage() {
+  const forms = formsEnabled()
   return (
     <>
       <PageIntro title="Call, email, or stop by.">
@@ -19,7 +22,7 @@ export default function ContactPage() {
           <div>
             <h2 className="text-2xl">Send a message</h2>
             <div className="mt-6">
-              <ContactForm />
+              {forms ? <ContactForm /> : <FormUnavailable email={ORG.email} phone={ORG.phone} what="Our contact form" />}
             </div>
           </div>
           <div>
