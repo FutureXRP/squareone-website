@@ -111,6 +111,10 @@ We are grateful for the grant support of these partners.
 - George Kaiser Family Foundation
 - Cherokee Nation
 - Creek Nation
+- Ottawa Nation
+- Shawnee Nation
+- Miami Nation
+- Tulsa Educare
 - Tulsa County ARPA
 
 (Campus partners block removed: no partner organizations are in the building at this time.)
