@@ -1,6 +1,83 @@
 {
   "redirects": [
     {
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "squareoneelc.com"
+        }
+      ],
+      "destination": "https://squareonecompassion.com/early-learning",
+      "permanent": true
+    },
+    {
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.squareoneelc.com"
+        }
+      ],
+      "destination": "https://squareonecompassion.com/early-learning",
+      "permanent": true
+    },
+    {
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "squareonemedicalcenter.com"
+        }
+      ],
+      "destination": "https://squareonecompassion.com/medical",
+      "permanent": true
+    },
+    {
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.squareonemedicalcenter.com"
+        }
+      ],
+      "destination": "https://squareonecompassion.com/medical",
+      "permanent": true
+    },
+    {
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "squareoneinteractive.com"
+        }
+      ],
+      "destination": "https://squareonecompassion.com/interactive",
+      "permanent": true
+    },
+    {
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.squareoneinteractive.com"
+        }
+      ],
+      "destination": "https://squareonecompassion.com/interactive",
+      "permanent": true
+    },
+    {
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.squareonecompassion.com"
+        }
+      ],
+      "destination": "https://squareonecompassion.com/:path*",
+      "permanent": true
+    },
+    {
       "source": "/docs/assignment-of-benefits.pdf",
       "destination": "/medical",
       "permanent": true
