@@ -1,7 +1,7 @@
 'use client'
 
 import { Honeypot } from './Honeypot'
-import { ElcFamilyFields } from './ElcFamilyFields'
+import { ElcEnrollmentFields } from './ElcEnrollmentFields'
 import { formToObject, useFormSubmit } from './useFormSubmit'
 import { FORM_SUCCESS } from '@/lib/forms'
 
@@ -25,7 +25,7 @@ export function EnrollmentForm() {
       }}
     >
       <Honeypot />
-      <ElcFamilyFields prefix="e" />
+      <ElcEnrollmentFields prefix="e" />
       <div>
         <label className="label" htmlFor="e-comments">
           Questions or comments

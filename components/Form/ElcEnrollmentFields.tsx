@@ -3,11 +3,11 @@
 import { PAYMENT_OPTIONS } from '@/lib/forms'
 
 /**
- * The fields shared by the ELC enrollment and tour forms, per the ELC director:
+ * The ELC enrollment interest fields, per the ELC director:
  * parent or guardian name, email, phone, child's birth date, desired start date,
- * and how tuition will be paid. Each form adds its own extras and the comments box.
+ * and how tuition will be paid. The form adds the comments box.
  */
-export function ElcFamilyFields({ prefix }: { prefix: string }) {
+export function ElcEnrollmentFields({ prefix }: { prefix: string }) {
   const id = (s: string) => `${prefix}-${s}`
   return (
     <div className="grid gap-5 sm:grid-cols-2">

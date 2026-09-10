@@ -62,7 +62,7 @@ See `.env.example`. Without these:
 - [x] Tuition rates: published as the 2026 to 2027 flyer in a Tuition rates section
 - [x] Enrollment fee is $150 per family
 - [ ] Scholarships: the director says the scholarship information needs updating. The site currently says only "we offer a tuition assistance program" in the FAQ. Send the current scholarship details (who qualifies, how to apply) and they will replace that line.
-- [x] Tour and enrollment forms shortened per the director; tour form adds preferred date and time; "Schedule a tour" is now "Request a tour"
+- [x] Enrollment form shortened per the director; tour form keeps its original fields (name, email, phone, child's age, preferred days and times, comments); "Schedule a tour" is now "Request a tour"
 - [x] FAQ "How do I get started?" uses 918-623-4377
 
 ### Medical Center
