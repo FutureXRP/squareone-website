@@ -11,7 +11,7 @@ const BOARD = [
   { name: 'Joe DeBerry', role: 'Member at large' },
 ]
 
-const PARTNERS = ['Case and Associates', 'George Kaiser Family Foundation', 'Cherokee Nation', 'Creek Nation', 'Tulsa County ARPA']
+const PARTNERS = ['Case and Associates', 'George Kaiser Family Foundation', 'Cherokee Nation', 'Creek Nation', 'Ottawa Nation', 'Shawnee Nation', 'Miami Nation', 'Tulsa Educare', 'Tulsa County ARPA']
 
 export const metadata: Metadata = { title: 'About', description: 'SquareOne Compassion is a 501(c)(3) nonprofit campus in west Tulsa, home to an early learning center, a primary care clinic, and a fitness and family entertainment center.' }
 
