@@ -77,7 +77,7 @@ export default function EarlyLearningPage() {
 
       <Section id="classrooms">
         <h2 className="text-2xl">Our classrooms</h2>
-        <p className="prose-block mt-3 text-muted">A glimpse into each age group, from our youngest infants to preschool.</p>
+        <p className="prose-block mt-3 text-muted">A glimpse into each age group, from our youngest infants through preschool. Our classrooms are thoughtfully designed as multi-age communities, allowing children to learn alongside one another while growing at their own pace. When determining classroom placement, we consider each child’s age, development, readiness, individual needs, and relationships to ensure they are in the environment where they can feel secure, confident, and successful.</p>
         <ul className="mt-10 grid gap-x-8 gap-y-12 sm:grid-cols-2 lg:grid-cols-3">
           {ELC_CLASSROOMS.map((c) => {
             const src = photo(`elc/classrooms/${c.photo}`)

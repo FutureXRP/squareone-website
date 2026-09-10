@@ -169,7 +169,7 @@ Our educators do more than supervise. They listen, observe, encourage, and learn
 (House-style edits from the director's draft: "learning journey" shortened to "learning" since "journey" is on the banned list; em dashes replaced with a comma or a period.)
 
 **Our classrooms** (from the ELC director; copy in content/elc.ts; each card takes a photo from public/photos/elc/classrooms/ when supplied)
-Intro: A glimpse into each age group, from our youngest infants to preschool.
+Intro: A glimpse into each age group, from our youngest infants through preschool. Our classrooms are thoughtfully designed as multi-age communities, allowing children to learn alongside one another while growing at their own pace. When determining classroom placement, we consider each child’s age, development, readiness, individual needs, and relationships to ensure they are in the environment where they can feel secure, confident, and successful.
 
 *Snapping Turtles* (Infants)
 A peaceful, nurturing environment where our youngest learners build secure relationships and explore the world through movement, sensory experiences, and loving interactions.
