@@ -1,6 +1,7 @@
 import 'server-only'
 import { appUrl } from '@/lib/site'
 import { formatCents } from '@/lib/donations'
+import { env } from '@/lib/env'
 
 // Reads the Interactive app's catalog through its Supabase REST endpoint with
 // the app's public anon key. Table and column names come from the app's
@@ -33,8 +34,8 @@ interface PackageRow {
 }
 
 async function rest<T>(path: string): Promise<T[] | null> {
-  const url = process.env.INTERACTIVE_SUPABASE_URL
-  const key = process.env.INTERACTIVE_SUPABASE_ANON_KEY
+  const url = env('INTERACTIVE_SUPABASE_URL')
+  const key = env('INTERACTIVE_SUPABASE_ANON_KEY')
   if (!url || !key) return null
   try {
     const res = await fetch(`${url.replace(/\/$/, '')}/rest/v1/${path}`, {
