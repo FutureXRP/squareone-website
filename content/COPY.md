@@ -81,7 +81,7 @@ Our campus is the former Jane Addams Elementary School, just north of Oakhurst a
 
 Matt and Jennifer Blair grew up in Berryhill, spent 7 years in Oklahoma City, and came home to start a church that became known as a place of refuge for people in need. In November 2018, after walking through his own personal failure, Matt wrote down a phrase that would not leave him alone: The Gene Case Center For Care and Compassion. Immediately, he began gathering a team who could make this idea come to life.
 
-The building carries the name of the Case family. Gene and Donna Case are known across Sand Springs and West Tulsa County for their generosity and their service to people who had little. They ran bus routes for kids and cared for children with disabilities at Hissom Memorial Center. The Gene Case Family Center for Care and Compassion is meant to carry that spirit forward.
+The building carries the name of the Case family. Gene and Donna Case are known across Sand Springs and West Tulsa County for their generosity and their service to people who had little. They ran bus routes for kids and cared for children with disabilities at Hissom Memorial Center. Gene passed away in 2018, the same year the idea for this center was first written down. The Gene Case Family Center for Care and Compassion is meant to carry that spirit forward in his memory.
 
 **Why we do this**
 
