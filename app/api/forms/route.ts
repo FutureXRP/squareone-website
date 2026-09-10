@@ -1,5 +1,5 @@
 import { NextResponse } from 'next/server'
-import { formSchema, FORM_ROUTING, describeSubmission } from '@/lib/forms'
+import { formSchema, FORM_ROUTING, FORM_TITLES, renderSubmissionText, renderSubmissionHtml } from '@/lib/forms'
 import { supabaseAdmin } from '@/lib/supabase'
 import { sendEmail, emailConfigured } from '@/lib/email'
 
@@ -31,7 +31,7 @@ export async function POST(req: Request) {
   const { website: _honeypot, kind, ...payload } = parsed.data
   void _honeypot
   const who = parsed.data.kind === 'contact' ? parsed.data.name : parsed.data.parentName
-  const subject = kind === 'contact' ? `Website contact from ${who}` : kind === 'elc-tour' ? `ELC tour request from ${who}` : `ELC enrollment interest from ${who}`
+  const subject = `New submission from ${FORM_TITLES[kind]}: ${who}`
 
   const db = supabaseAdmin()
   const canEmail = emailConfigured()
@@ -52,7 +52,8 @@ export async function POST(req: Request) {
     emailed = await sendEmail({
       to: FORM_ROUTING[kind],
       subject,
-      text: `New ${kind} submission from squareonecompassion.com\n\n${describeSubmission(payload as Record<string, unknown>)}`,
+      text: renderSubmissionText(kind, payload as Record<string, unknown>),
+      html: renderSubmissionHtml(kind, payload as Record<string, unknown>),
       replyTo: payload.email,
     })
   }

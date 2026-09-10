@@ -13,7 +13,7 @@ function escapeHtml(s: string): string {
   return s.replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[c] as string)
 }
 
-export async function sendEmail(opts: { to: string; subject: string; text: string; replyTo?: string }): Promise<boolean> {
+export async function sendEmail(opts: { to: string; subject: string; text: string; html?: string; replyTo?: string }): Promise<boolean> {
   const key = env('RESEND_API_KEY')
   if (!key) {
     console.warn('[email] RESEND_API_KEY not set; skipping', opts.subject)
@@ -25,7 +25,7 @@ export async function sendEmail(opts: { to: string; subject: string; text: strin
     to: opts.to,
     subject: opts.subject,
     text: opts.text,
-    html: `<pre style="font-family:system-ui,sans-serif;white-space:pre-wrap">${escapeHtml(opts.text)}</pre>`,
+    html: opts.html ?? `<pre style="font-family:system-ui,sans-serif;white-space:pre-wrap">${escapeHtml(opts.text)}</pre>`,
     replyTo: opts.replyTo,
   })
   if (error) {
