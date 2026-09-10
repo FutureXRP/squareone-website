@@ -5,12 +5,13 @@ import { formatCents } from '@/lib/donations'
 import { supabaseAdmin } from '@/lib/supabase'
 import { sendEmail } from '@/lib/email'
 import { ORG } from '@/lib/site'
+import { env } from '@/lib/env'
 
 export const runtime = 'nodejs'
 
 export async function POST(req: Request) {
   const client = stripe()
-  const secret = process.env.STRIPE_WEBHOOK_SECRET
+  const secret = env('STRIPE_WEBHOOK_SECRET')
   if (!client || !secret) return NextResponse.json({ error: 'Stripe not configured' }, { status: 503 })
 
   const sig = req.headers.get('stripe-signature')

@@ -1,4 +1,5 @@
 import 'server-only'
+import { env } from '@/lib/env'
 
 /**
  * Whether /api/forms has somewhere to deliver a submission: Supabase storage,
@@ -6,7 +7,7 @@ import 'server-only'
  * a form that would fail on submit.
  */
 export function formsEnabled(): boolean {
-  const hasDb = Boolean(process.env.SUPABASE_URL && process.env.SUPABASE_SERVICE_ROLE_KEY)
-  const hasEmail = Boolean(process.env.RESEND_API_KEY)
+  const hasDb = Boolean(env('SUPABASE_URL') && env('SUPABASE_SERVICE_ROLE_KEY'))
+  const hasEmail = Boolean(env('RESEND_API_KEY'))
   return hasDb || hasEmail
 }

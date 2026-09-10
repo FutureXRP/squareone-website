@@ -1,11 +1,12 @@
 import 'server-only'
 import { Resend } from 'resend'
+import { env } from '@/lib/env'
 
-const FROM = process.env.RESEND_FROM || 'SquareOne Compassion <onboarding@resend.dev>'
+const FROM = env('RESEND_FROM') || 'SquareOne Compassion <onboarding@resend.dev>'
 
 /** True when Resend can send: RESEND_API_KEY is set. */
 export function emailConfigured(): boolean {
-  return Boolean(process.env.RESEND_API_KEY)
+  return Boolean(env('RESEND_API_KEY'))
 }
 
 function escapeHtml(s: string): string {
@@ -13,7 +14,7 @@ function escapeHtml(s: string): string {
 }
 
 export async function sendEmail(opts: { to: string; subject: string; text: string; replyTo?: string }): Promise<boolean> {
-  const key = process.env.RESEND_API_KEY
+  const key = env('RESEND_API_KEY')
   if (!key) {
     console.warn('[email] RESEND_API_KEY not set; skipping', opts.subject)
     return false
