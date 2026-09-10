@@ -189,6 +189,13 @@ A playful community where children grow in independence, cooperation, creativity
 *Wood Ducks* (Preschool)
 An inquiry-filled classroom where capable young learners investigate big ideas, build life skills, collaborate with others, and develop a lasting love of learning.
 
+**Tuition rates** (section between Our classrooms and the FAQ; the flyer Matt supplied is shown as an image at public/photos/elc/tuition-rates.webp with the rates in its alt text)
+Heading: Tuition rates
+Intro: Rates for the 2026 to 2027 school year, by classroom.
+Note: Scholarships are available, and we accept DHS and tribal childcare reimbursement. A $150 per-family enrollment fee holds your child's place. Email connect@squareoneelc.com with questions about tuition or assistance.
+Button: Ask about enrollment
+Flyer figures (2026 to 2027): Infants (Snapping Turtles) 6 weeks to 12 months $1,125 · Young toddlers (Scissortails) 9 to 15 months $1,025 · Toddlers (River Otters) 14 to 20 months $1,000 · Toddlers (Turtle Doves) 18 to 30 months $965 · Young preschool (Prairie Dogs) 2 to 3 years $915 · Preschool (Wood Ducks) 3 to 5 years $810.
+
 **FAQ**
 
 *Do you enroll year round?*
@@ -198,7 +205,7 @@ Yes, based on availability. We accept children until classroom ratios are met an
 Yes. We accept DHS and tribal childcare reimbursement, and we offer a tuition assistance program. Email connect@squareoneelc.com for details.
 
 *What are your tuition rates?*
-`[CONFIRM: publish rates, or keep "Contact us for current rates"]`. A $150 per-family enrollment fee holds your child's place. We accept check or cash at the front desk during business hours or at your tour.
+Current rates for every classroom are listed under Tuition rates above. A $150 per-family enrollment fee holds your child's place. We accept check or cash at the front desk during business hours or at your tour.
 
 *How do I get started?*
 Request a tour or fill out the enrollment interest form below, or call 918-623-4377.
