@@ -348,12 +348,12 @@ Room rentals and party packages now book directly in the Interactive app with li
 - Gym and Multipurpose Room: $125 for a 2-hour event, $150 for a 3-hour event
 
 **Section: Party packages** (six, from the brief; each books in {APP}/packages)
-1. $350: 3-hour party, Gym and Multipurpose Room, large inflatable, Gaming Zone, 20 roller coaster VR experiences, up to 75 guests, 1 hour setup and 30 minute clean-up included
-2. $350: 3-hour party, Gym and Multipurpose Room, large and small inflatable, up to 125 guests, 1 hour setup and 30 minute clean-up included
+1. $350: 3-hour party, Gym/Multipurpose Room, large inflatable, Gaming Zone, 20 roller coaster VR experiences, up to 75 guests, 1 hour setup and 30 minute clean-up included
+2. $350: 3-hour party, Gym/Multipurpose Room, large and small inflatable, up to 125 guests, 1 hour setup and 30 minute clean-up included
 3. $250: 3-hour party, Dining Hall, Gaming Zone, 20 roller coaster VR experiences, up to 100 guests, 1 hour setup and 30 minute clean-up included
 4. $300: 3-hour party, Dining Hall, Gaming Zone, MultiBall Zone, up to 100 guests, 1 hour setup and 30 minute clean-up included
-5. $200: 2-hour party, Arcade Party Room, 25 photo booth prints, game led by party host, up to 40 guests, 30 minute setup and 30 minute clean-up included
-6. $225: 2-hour party, Arcade Party Room, 25 photo booth prints, up to 40 guests, 30 minute setup and 30 minute clean-up included
+5. $200: 2-hour party, Arcade Party Room, 25 photo booth prints, up to 40 guests, 30 minute setup and 30 minute clean-up included
+6. $225: 2-hour party, Arcade Party Room, 25 photo booth prints, game led by party host, up to 40 guests, 30 minute setup and 30 minute clean-up included
 
 **Section: Corporate events** (from the brief)
 Looking for a unique space for your next company gathering? SquareOne Interactive offers a private, flexible facility designed for corporate events, employee appreciation, team building, trainings, meetings, and celebrations. Enjoy interactive gaming experiences, team challenges and activities, a private event space, and a unique environment designed for connection. When you host your event at SquareOne Interactive, you are helping fuel the mission of SquareOne Compassion. Revenue generated through our facility helps us invest back into our surrounding communities through programs that provide support, resources, and opportunities for those in need.
