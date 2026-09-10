@@ -210,7 +210,7 @@ Current rates for every classroom are listed under Tuition rates above. A $150 p
 *How do I get started?*
 Request a tour or fill out the enrollment interest form below, or call 918-623-4377.
 
-**Tour request form fields** (per the ELC director: same as enrollment plus a preferred tour date and time): parent or guardian name, email, phone, child's birth date, desired start date, how tuition will be paid (DHS, Tribal, Private pay), preferred tour date and time, questions or comments. Section heading: Request a tour. Intro: Tell us a little about your family and when you would like to visit, and we will be in touch to set a time. You can also call 918-623-4377. Button: Request a tour.
+**Tour request form fields:** parent or guardian name, email, phone, child's age, preferred days and times, questions or comments. Section heading: Request a tour. Intro: Tell us a little about your family and when you would like to visit, and we will be in touch to set a time. You can also call 918-623-4377. Button: Request a tour.
 **Tour form success:** Thank you for requesting a tour of SquareOne Early Learning Center! We look forward to meeting your family, learning about your child, and showing you what makes our School Family so special. We will contact you shortly to schedule your tour time.
 
 **Enrollment interest form fields** (shortened per the ELC director): parent or guardian name, email, phone, child's birth date, desired start date, how tuition will be paid (DHS, Tribal, Private pay), questions or comments. Button: Ask about enrollment.

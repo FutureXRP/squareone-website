@@ -14,13 +14,13 @@ export const contactSchema = z.object({
   message: z.string().trim().min(1).max(5000),
 })
 
-// How tuition will be paid. Shown as radios on both ELC forms.
+// How tuition will be paid. Shown as radios on the enrollment form.
 export const PAYMENT_OPTIONS = ['DHS', 'Tribal', 'Private pay'] as const
 
-// Shared fields for the two ELC forms, per the ELC director:
+// Enrollment interest fields, per the ELC director:
 // parent or guardian name, email, phone, child's birth date, desired start date,
 // DHS / Tribal / private pay, questions or comments.
-const elcFamilyFields = {
+const elcEnrollmentFields = {
   website: z.string().max(0).optional().or(z.literal('')), // honeypot
   parentName: z.string().trim().min(1).max(120),
   email,
@@ -33,14 +33,19 @@ const elcFamilyFields = {
 
 export const elcEnrollmentSchema = z.object({
   kind: z.literal('elc-enrollment'),
-  ...elcFamilyFields,
+  ...elcEnrollmentFields,
 })
 
-// Tour request: the enrollment fields plus a preferred tour date and time.
+// Tour request, from the Request a tour button on the ELC page.
 export const elcTourSchema = z.object({
   kind: z.literal('elc-tour'),
-  ...elcFamilyFields,
-  tourDateTime: z.string().trim().min(1).max(300),
+  website: z.string().max(0).optional().or(z.literal('')), // honeypot
+  parentName: z.string().trim().min(1).max(120),
+  email,
+  phone: phone.min(7),
+  childAge: optionalText(60),
+  preferredTimes: z.string().trim().min(1).max(300),
+  comments: optionalText(5000),
 })
 
 export const formSchema = z.discriminatedUnion('kind', [contactSchema, elcEnrollmentSchema, elcTourSchema])
