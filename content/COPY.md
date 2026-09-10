@@ -295,7 +295,7 @@ Gym, party rooms, and more. Pick a space and a time, book 1 to 6 hours at least 
 → {APP}/facilities
 
 *Book a party*
-Arcade party packages with a host and setup included. Birthdays, team parties, and family nights.
+Arcade party packages for birthdays, team parties, and family nights.
 → {APP}/packages
 
 *Shop SquareOne gear* (Coming soon, no link yet)
@@ -315,13 +315,13 @@ Edits from the brief for house style: "cutting-edge" and "journey" removed, em d
 
 **FAQ**
 
-*How do I get in?*
+*How do I get in to the fitness center?*
 Members sign in on their phone and tap Unlock door. Every unlock is logged to building security under your name.
 
-*Can I cancel?*
+*Can I cancel my fitness center membership?*
 Yes, from your account. Your membership stays active through the end of the paid period. No cancellation fees.
 
-*Do I have to be a member to rent a room or book a party?*
+*Do I have to be a fitness center member to rent a room or book a party?*
 No. Anyone can book.
 
 *Where do I see prices?*
@@ -335,7 +335,7 @@ Room rentals and party packages now book directly in the Interactive app with li
 
 **Headline:** Host it at SquareOne.
 
-**Intro:** Our gym, party rooms, and event spaces host birthday parties, showers, indoor practices, meetings, weddings, and fundraisers. Book online with live availability, or start with a party package that includes a host and setup.
+**Intro:** Our gym, party rooms, and event spaces host birthday parties, showers, indoor practices, meetings, weddings, and fundraisers. Book online with live availability, or start with a party package.
 
 **Two buttons:**
 - Rent a room → {APP}/facilities
