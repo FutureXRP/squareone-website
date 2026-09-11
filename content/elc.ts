@@ -96,3 +96,28 @@ export const ELC_CLASSROOMS: ElcClassroom[] = [
     body: 'An inquiry-filled classroom where capable young learners investigate big ideas, build life skills, collaborate with others, and develop a lasting love of learning.',
   },
 ]
+
+// Gallery section and page, from the ELC director. Photos live in
+// public/photos/elc/gallery/ and are picked up automatically; name each file
+// for what it shows, since the alt text is built from the filename.
+export const ELC_GALLERY = {
+  title: 'See wonder in action',
+  body: 'From muddy boots and outdoor discoveries to quiet connections, creative projects, and joyful School Family moments, our photographs offer a glimpse into everyday life at SquareOne. Explore our gallery and see how children learn, grow, create, and belong.',
+  cta: 'Explore life at SquareOne',
+}
+
+// "Stories from our School Family", from the ELC director. The section shows
+// once at least one story is here. Add entries as the ELC collects them.
+export interface ElcStory {
+  quote: string
+  name: string
+  /** For example: "Parent of a Wood Duck" */
+  detail?: string
+}
+
+export const ELC_STORIES_INTRO = {
+  title: 'Stories from our School Family',
+  body: 'The heart of SquareOne is found in the relationships we build with children and families. Hear from members of our School Family as they share how their children have grown, gained confidence, built meaningful relationships, and developed a love of learning at SquareOne.',
+}
+
+export const ELC_STORIES: ElcStory[] = []

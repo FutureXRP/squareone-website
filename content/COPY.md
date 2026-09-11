@@ -193,6 +193,13 @@ A playful community where children grow in independence, cooperation, creativity
 *Wood Ducks* (Preschool)
 An inquiry-filled classroom where capable young learners investigate big ideas, build life skills, collaborate with others, and develop a lasting love of learning.
 
+**See wonder in action** (gallery section after Our classrooms, from the ELC director; shows the first three photos from public/photos/elc/gallery/ and a button to the full gallery page at /early-learning/gallery)
+From muddy boots and outdoor discoveries to quiet connections, creative projects, and joyful School Family moments, our photographs offer a glimpse into everyday life at SquareOne. Explore our gallery and see how children learn, grow, create, and belong.
+Button: Explore life at SquareOne
+
+**Stories from our School Family** (section after Tuition rates, from the ELC director; renders once at least one story is in content/elc.ts ELC_STORIES)
+The heart of SquareOne is found in the relationships we build with children and families. Hear from members of our School Family as they share how their children have grown, gained confidence, built meaningful relationships, and developed a love of learning at SquareOne.
+
 **Tuition rates** (section between Our classrooms and the FAQ; the flyer Matt supplied is shown as an image at public/photos/elc/tuition-rates.webp with the rates in its alt text)
 Heading: Tuition rates
 Intro: Rates for the 2026 to 2027 school year, by classroom.
