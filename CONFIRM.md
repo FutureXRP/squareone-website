@@ -12,8 +12,8 @@ The build environment could not reach squareonecompassion.com (network policy), 
 - [ ] **Photos.** Drop files into `public/photos/` with these names (`.jpg`, `.jpeg`, `.png`, or `.webp`) and redeploy; each page picks them up automatically and shows nothing if the file is missing:
   - Done: `campus.webp` (hero), `abel-lau.webp`, `jennifer-blair.webp` (Medical providers, and Dr. Lau on About).
   - Still wanted: `matt-blair`, `stephanie-rowe`, `christina-barrington` for About leadership.
-  - ELC "What makes SquareOne exceptional" cards take a photo each, in `public/photos/elc/`: `nature-based-learning`, `reggio-inspired-curriculum`, `conscious-discipline`, `outdoor-classrooms`, `family-partnerships`, `educators-who-inspire`. Cards render without a photo until the file exists.
-  - ELC "Our classrooms" cards take a photo each, in `public/photos/elc/classrooms/`: `snapping-turtles`, `scissortails`, `river-otters`, `turtle-doves`, `prairie-dogs`, `wood-ducks`. Cards render without a photo until the file exists.
+  - [x] ELC "What makes SquareOne exceptional" cards: all six photos supplied and cropped to 3:2 in `public/photos/elc/`.
+  - [x] ELC "Our classrooms" cards: all six photos supplied and cropped to 3:2 in `public/photos/elc/classrooms/`.
 - [x] **Medical intake PDFs.** Per medical staff, only `privacy-practices.pdf` stays online; the other four were outdated and are removed, with their old URLs redirecting to /medical. The `vercel.json` redirect from the old `/wp-content/uploads/2021/10/<name>.pdf` paths maps by filename; if the old filenames differed, add five explicit redirects.
 - [ ] **Event photos.** games.jpg, bounce.jpg, event-rental-space.jpg, event-rental-1.jpg, event-rental-2.jpg: reuse on `/events` if they still reflect the rooms. The page currently has no photos.
 
