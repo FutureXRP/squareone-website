@@ -61,6 +61,8 @@ See `.env.example`. Without these:
 - [x] No summer program; button dropped.
 - [x] Tuition rates: published as the 2026 to 2027 flyer in a Tuition rates section
 - [x] Enrollment fee is $150 per family
+- [ ] Gallery photos: `public/photos/elc/gallery/` is seeded with the twelve card photos at full size. Add more any time; name each file for what it shows (for example `painting-at-the-art-table.jpg`) because the alt text comes from the filename. A leading number like `13-` controls order.
+- [ ] Family stories: the "Stories from our School Family" section appears once the ELC supplies quotes. For each, send the quote, the name to show, and an optional detail line such as "Parent of a Wood Duck".
 - [ ] Scholarships: the director says the scholarship information needs updating. The site currently says only "we offer a tuition assistance program" in the FAQ. Send the current scholarship details (who qualifies, how to apply) and they will replace that line.
 - [x] Enrollment form shortened per the director; tour form keeps its original fields (name, email, phone, child's age, preferred days and times, comments); "Schedule a tour" is now "Request a tour"
 - [x] FAQ "How do I get started?" uses 918-623-4377

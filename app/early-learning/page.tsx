@@ -8,14 +8,18 @@ import { formsEnabled } from '@/lib/forms-server'
 import Image from 'next/image'
 import { DIVISIONS, telHref } from '@/lib/site'
 import { photo } from '@/lib/photos'
-import { ELC_PILLARS, ELC_CREDENTIALS, ELC_CLASSROOMS } from '@/content/elc'
+import Link from 'next/link'
+import { ELC_PILLARS, ELC_CREDENTIALS, ELC_CLASSROOMS, ELC_GALLERY, ELC_STORIES, ELC_STORIES_INTRO } from '@/content/elc'
+import { galleryPhotos } from '@/lib/photos'
 import { PageBanner } from '@/components/PageBanner'
 import faq from '@/content/faq/elc.json'
 
 export const metadata: Metadata = { title: 'Early Learning Center', description: 'Nature-based, Reggio-inspired early learning in west Tulsa for children six weeks through age five. Monday through Friday, 7:15 am to 5:45 pm.' }
 
-export default function EarlyLearningPage() {
+export default async function EarlyLearningPage() {
   const forms = formsEnabled()
+  const gallery = (await galleryPhotos('elc/gallery')).slice(0, 3)
+  const hasStories = ELC_STORIES.length > 0
   return (
     <>
       <PageBanner
@@ -98,7 +102,26 @@ export default function EarlyLearningPage() {
         </ul>
       </Section>
 
-      <Section tint id="tuition">
+      {gallery.length ? (
+        <Section tint id="gallery">
+          <h2 className="text-2xl">{ELC_GALLERY.title}</h2>
+          <p className="prose-block mt-3 text-muted">{ELC_GALLERY.body}</p>
+          <ul className="mt-10 grid gap-6 sm:grid-cols-3">
+            {gallery.map((p) => (
+              <li key={p.src}>
+                <Image src={p.src} alt={p.alt} width={800} height={533} sizes="(min-width: 1024px) 360px, (min-width: 640px) 33vw, 100vw" className="aspect-[3/2] w-full object-cover" />
+              </li>
+            ))}
+          </ul>
+          <div className="mt-8">
+            <Link href="/early-learning/gallery" className="btn-primary">
+              {ELC_GALLERY.cta}
+            </Link>
+          </div>
+        </Section>
+      ) : null}
+
+      <Section id="tuition">
         <div className="grid gap-10 lg:grid-cols-2 lg:items-start">
           <div>
             <h2 className="text-2xl">Tuition rates</h2>
@@ -127,7 +150,25 @@ export default function EarlyLearningPage() {
         </div>
       </Section>
 
-      <Section>
+      {hasStories ? (
+        <Section tint id="stories">
+          <h2 className="text-2xl">{ELC_STORIES_INTRO.title}</h2>
+          <p className="prose-block mt-3 text-muted">{ELC_STORIES_INTRO.body}</p>
+          <ul className="mt-10 grid gap-x-8 gap-y-10 md:grid-cols-2">
+            {ELC_STORIES.map((story) => (
+              <li key={story.name + story.quote.slice(0, 20)} className="border-l-4 border-accent pl-5">
+                <blockquote className="text-lg text-ink">“{story.quote}”</blockquote>
+                <p className="mt-3 font-semibold text-accent-ink">
+                  {story.name}
+                  {story.detail ? <span className="font-normal text-muted"> · {story.detail}</span> : null}
+                </p>
+              </li>
+            ))}
+          </ul>
+        </Section>
+      ) : null}
+
+      <Section tint={!hasStories}>
         <FAQ items={faq} />
       </Section>
 
