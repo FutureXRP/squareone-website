@@ -1,4 +1,5 @@
 import type { Metadata, Viewport } from 'next'
+import Script from 'next/script'
 import { Plus_Jakarta_Sans, Source_Sans_3 } from 'next/font/google'
 import { Shell } from '@/components/Shell'
 import { ORG, SITE_URL } from '@/lib/site'
@@ -28,6 +29,18 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="en" className={`${body.variable} ${display.variable}`}>
       <body>
         <Shell>{children}</Shell>
+        {/* Old-site cleanup: unregister any service worker the WordPress site left behind and clear its caches. */}
+        <Script id="old-site-cleanup" strategy="afterInteractive">{`
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.getRegistrations().then(function (rs) {
+    var had = rs.length > 0;
+    Promise.all(rs.map(function (r) { return r.unregister(); })).then(function () {
+      if ('caches' in window) caches.keys().then(function (ks) { ks.forEach(function (k) { caches.delete(k); }); });
+      if (had && navigator.serviceWorker.controller) location.reload();
+    });
+  });
+}
+`}</Script>
       </body>
     </html>
   )
