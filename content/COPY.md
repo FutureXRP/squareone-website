@@ -434,3 +434,21 @@ Embedded map.
 ## Privacy and Terms
 
 `[CONFIRM: Matt supplies text. The Medical page must also link the HIPAA Notice of Privacy Practices PDF from the Privacy page.]`
+
+---
+
+## Home: What's new at SquareOne
+
+Three cards after Why it matters, newest first, from content/news.ts. Add an item whenever something on the campus changes.
+
+- October 2026 · Party packages book online · Six party packages and three corporate packages are listed on the Events page, and the request form in our store sends your date straight to the front desk. → /events
+- September 2026 · Early Learning Center photo gallery · From muddy boots to the light table, a new gallery shows everyday life in each of our six classrooms, along with tuition rates for the 2026 to 2027 school year. → /early-learning/gallery
+- September 2026 · A new website for the whole campus · squareonecompassion.com now brings the Early Learning Center, the Medical Center, and Interactive together in one place, with tour requests, enrollment interest, and giving all online. → /about
+
+## Nonprofit disclosure (Interactive and Events pages, under the intro)
+
+SquareOne Interactive is owned and operated by SquareOne Compassion, a 501(c)(3) nonprofit. Memberships, room rentals, party packages, and shop purchases are priced to cover the cost of running the campus, and any surplus supports the Early Learning Center, the Medical Center, and our work in west Tulsa. Read about our mission (link to /about).
+
+## Privacy policy and Terms of use
+
+Full text lives in app/privacy/page.tsx and app/terms/page.tsx (drafted 2026-10-19; contact matt@squareonecompassion.com). Update the "Last updated" date in each file when the text changes.
