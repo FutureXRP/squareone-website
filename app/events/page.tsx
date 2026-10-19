@@ -3,6 +3,7 @@ import Image from 'next/image'
 import { PageIntro, Section } from '@/components/Section'
 import { ZoneCard } from '@/components/ZoneCard'
 import { PageBanner } from '@/components/PageBanner'
+import { NonprofitNote } from '@/components/NonprofitNote'
 import { appUrl, telHref, EVENTS_CONTACT } from '@/lib/site'
 import { getActiveFacilities } from '@/lib/interactive'
 import { EVENT_SPACES, PARTY_PACKAGES, CORPORATE_PACKAGES, CORPORATE_CONTACT, type Package } from '@/content/interactive'
@@ -42,6 +43,7 @@ export default async function EventsPage() {
         <p className="text-ink">
           Our gym, party rooms, and event spaces host birthday parties, showers, indoor practices, meetings, weddings, and fundraisers. Book online with live availability, or start with a party package.
         </p>
+        <NonprofitNote className="mt-6" />
       </PageIntro>
 
       <Section>

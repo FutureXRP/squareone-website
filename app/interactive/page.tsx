@@ -3,6 +3,7 @@ import { PageIntro, Section } from '@/components/Section'
 import { FAQ } from '@/components/FAQ'
 import { ZoneCard } from '@/components/ZoneCard'
 import { PageBanner } from '@/components/PageBanner'
+import { NonprofitNote } from '@/components/NonprofitNote'
 import { appUrl } from '@/lib/site'
 import { getActiveFacilities } from '@/lib/interactive'
 import { ZONES } from '@/content/interactive'
@@ -34,6 +35,7 @@ export default async function InteractivePage() {
         <p className="mt-4 text-base">
           Hours: Monday through Saturday 5:30 am to 10 pm. Sunday 1 pm to 10 pm.
         </p>
+        <NonprofitNote className="mt-6" />
       </PageIntro>
 
       <Section>

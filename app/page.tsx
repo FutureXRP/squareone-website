@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import { Hero } from '@/components/Hero'
+import { NEWS } from '@/content/news'
 import { Section } from '@/components/Section'
 import { DivisionCard } from '@/components/DivisionCard'
 import { appUrl, ORG } from '@/lib/site'
@@ -49,7 +50,25 @@ export default function HomePage() {
         </div>
       </Section>
 
-      <Section>
+      <Section id="news">
+        <h2 className="text-2xl">What&apos;s new at SquareOne</h2>
+        <ul className="mt-8 grid gap-x-8 gap-y-10 md:grid-cols-3">
+          {NEWS.map((n) => (
+            <li key={n.title} className="border-t-4 border-accent pt-5">
+              <p className="text-base text-muted">{n.date}</p>
+              <h3 className="mt-1 text-xl">{n.title}</h3>
+              <p className="mt-3 text-muted">{n.body}</p>
+              <p className="mt-4">
+                <Link href={n.href} className="link">
+                  {n.linkLabel}
+                </Link>
+              </p>
+            </li>
+          ))}
+        </ul>
+      </Section>
+
+      <Section tint>
         <div className="grid gap-12 md:grid-cols-2">
           <div>
             <h2 className="text-2xl">Rent the space</h2>

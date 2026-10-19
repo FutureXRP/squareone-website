@@ -80,7 +80,15 @@ See `.env.example`. Without these:
 - [x] Interactive banner replaced with the corrected version (simulator titles fixed)
 
 ### Privacy and Terms
-- [ ] Both pages are placeholders until Matt supplies text.
+- [x] Both pages now carry real text, drafted 2026-10-19 from how the site actually works (forms to staff email, PayPal gifts, Stripe in the store, no trackers, HIPAA notice for patients). Contact address on both is matt@squareonecompassion.com. Matt should read them once; they are plain-language policies, not legal advice.
+
+### Google Ad Grants website policy (audit 2026-10-19)
+- [x] Placeholder pages replaced (Privacy, Terms)
+- [x] Nonprofit disclosure next to commercial activity: `components/NonprofitNote.tsx` on the Interactive and Events pages
+- [x] Favicon and Apple touch icon (`app/icon.svg`, `app/apple-icon.png`); the 404 was showing as a console error in PageSpeed
+- [x] "What's new at SquareOne" on the home page (`content/news.ts`); add an item whenever something changes so the site shows ongoing activity
+- [ ] Resubmit with `https://squareonecompassion.com` exactly. The www and division domains redirect, which the policy rejects.
+- [ ] Run PageSpeed Insights on the live home page, mobile; local build scored 85 performance, 100 accessibility.
 
 ## Not done in this pass
 - Lighthouse was not run (no Chrome DevTools in the build environment). Run it on the Vercel preview: Home, mobile, target performance 90+ and accessibility 100.
