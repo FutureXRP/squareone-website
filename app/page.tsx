@@ -53,7 +53,7 @@ export default function HomePage() {
       <Section id="news">
         <h2 className="text-2xl">What&apos;s new at SquareOne</h2>
         <ul className="mt-8 grid gap-x-8 gap-y-10 md:grid-cols-3">
-          {NEWS.map((n) => (
+          {NEWS.slice(0, 3).map((n) => (
             <li key={n.title} className="border-t-4 border-accent pt-5">
               <p className="text-base text-muted">{n.date}</p>
               <h3 className="mt-1 text-xl">{n.title}</h3>

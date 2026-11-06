@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import { DIVISIONS, ORG, telHref, type DivisionKey } from '@/lib/site'
+import { CandidSeal } from '@/components/CandidSeal'
 
 export function Footer({ division }: { division: DivisionKey }) {
   const d = DIVISIONS[division]
@@ -21,6 +22,7 @@ export function Footer({ division }: { division: DivisionKey }) {
               <br />
               <a href={`mailto:${ORG.email}`}>{ORG.email}</a>
             </p>
+            <CandidSeal size="sm" className="mt-5" />
           </div>
 
           <nav aria-label="Footer">

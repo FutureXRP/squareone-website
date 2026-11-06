@@ -11,6 +11,13 @@ export interface NewsItem {
 
 export const NEWS: NewsItem[] = [
   {
+    date: 'November 2026',
+    title: 'Gold Seal of Transparency from Candid',
+    body: 'SquareOne Compassion has earned Candid\'s Gold Seal of Transparency. Our finances, leadership, and goals are published on our Candid profile, alongside our public Form 990 filings.',
+    href: '/about#financials',
+    linkLabel: 'See our financials',
+  },
+  {
     date: 'October 2026',
     title: 'Party packages book online',
     body: 'Six party packages and three corporate packages are listed on the Events page, and the request form in our store sends your date straight to the front desk.',

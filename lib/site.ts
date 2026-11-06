@@ -32,6 +32,10 @@ export const ORG = {
   // Form 990 filings by EIN. ProPublica's Nonprofit Explorer lists every year and updates itself as the IRS releases new filings.
   financialsUrl: 'https://projects.propublica.org/nonprofits/organizations/834697894',
   irsSearchUrl: 'https://apps.irs.gov/app/eos/',
+  // Candid (GuideStar) nonprofit profile. The Gold Seal of Transparency badge on the site is Candid's own
+  // widget image for this organization id, so it updates itself when the seal year or level changes.
+  candidUrl: 'https://app.candid.org/profile/9820908/squareone-compassion-inc-83-4697894',
+  candidOrgId: '9820908',
   // PayPal Donate button (public; only lets people send money to SquareOne). Donors choose one-time or monthly on PayPal's page.
   paypalUrl: 'https://www.paypal.com/donate/?hosted_button_id=9S8TBZ2Q3A8VU',
   instagram: 'https://instagram.com/squareonecompassion',
