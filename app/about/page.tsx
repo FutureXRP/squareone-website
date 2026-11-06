@@ -3,6 +3,7 @@ import { PageIntro, Section } from '@/components/Section'
 import { StaffCard } from '@/components/StaffCard'
 import { photo } from '@/lib/photos'
 import { ORG } from '@/lib/site'
+import { CandidSeal } from '@/components/CandidSeal'
 
 const BOARD = [
   { name: 'Matt Blair', role: 'Chairman' },
@@ -99,7 +100,7 @@ export default function AboutPage() {
             </ul>
           </div>
           <div>
-            <h2 className="text-xl">Financials</h2>
+            <h2 id="financials" className="scroll-mt-24 text-xl">Financials</h2>
             <p className="mt-3">
               Our Form 990 filings are public.{' '}
               <a href={ORG.financialsUrl} className="link" rel="noopener">
@@ -111,6 +112,14 @@ export default function AboutPage() {
               </a>{' '}
               by our EIN, {ORG.ein}.
             </p>
+            <p className="mt-3">
+              SquareOne Compassion has earned Candid&apos;s Gold Seal of Transparency, which means we share our finances, leadership, and goals openly on{' '}
+              <a href={ORG.candidUrl} className="link" rel="noopener">
+                our Candid profile
+              </a>
+              .
+            </p>
+            <CandidSeal size="lg" className="mt-5" />
           </div>
         </div>
       </Section>

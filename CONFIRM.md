@@ -56,6 +56,7 @@ See `.env.example`. Without these:
 - [x] Board of Directors listed (Matt Blair, Nick Klenovich, Wayne Davidson, Joe DeBerry)
 - [x] Campus partners block removed; replaced with Philanthropic Partners (grant funders)
 - [x] Financials block links to ProPublica's Nonprofit Explorer by EIN (lists every year automatically) and the IRS Tax Exempt Organization Search.
+- [x] Candid Gold Seal of Transparency (2026-11-06): badge and profile link on About (Financials), Give, and the footer. The badge is Candid's own seal widget image (`components/CandidSeal.tsx`), so it updates itself when the seal is renewed. Candid's hosts could not be reached from the build sandbox, so check the live site once: if the badge does not render, download the seal PNG from Candid's "Share your seal" page, save it as `public/candid-seal.png`, and point the component at it.
 
 ### Early Learning Center
 - [x] No summer program; button dropped.

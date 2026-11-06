@@ -14,6 +14,7 @@ Things deliberately removed from the old site because they are not current opera
 **Main email:** connect@squareonecompassion.com
 **Social:** instagram.com/squareonecompassion, https://www.facebook.com/squareonecompassion
 **Footer:** © 2026 SquareOne Compassion. SquareOne Compassion is a 501(c)(3) nonprofit. EIN 83-4697894 `[CONFIRM: derived from the IRS 990 URL Matt supplied; confirm]`. Privacy · Terms
+The footer's first column also shows the small Candid Gold Seal of Transparency badge, linked to the Candid profile.
 **Tagline:** Rebuilding lives. Revitalizing communities.
 
 ---
@@ -121,6 +122,8 @@ We are grateful for the grant support of these partners.
 
 **Financials**
 Our Form 990 filings are public. See every year on ProPublica's Nonprofit Explorer (https://projects.propublica.org/nonprofits/organizations/834697894), or search the IRS Tax Exempt Organization Search (https://apps.irs.gov/app/eos/) by our EIN, 83-4697894.
+SquareOne Compassion has earned Candid's Gold Seal of Transparency, which means we share our finances, leadership, and goals openly on our Candid profile (https://app.candid.org/profile/9820908/squareone-compassion-inc-83-4697894).
+[Candid Gold Seal of Transparency badge, Candid's own widget image, linked to the profile]
 
 ---
 
@@ -394,6 +397,10 @@ SquareOne Compassion
 5323 S 65th West Ave
 Tulsa, OK 74107
 
+**Give with confidence**
+We have earned Candid's Gold Seal of Transparency. Our finances, leadership, and goals are published on our Candid profile (https://app.candid.org/profile/9820908/squareone-compassion-inc-83-4697894) and our Form 990 filings are public.
+[Candid Gold Seal of Transparency badge]
+
 **Receipt copy (email):** Thank you for your gift of {amount} to SquareOne Compassion, a 501(c)(3) nonprofit, EIN 83-4697894. No goods or services were provided in exchange for this contribution. Keep this email for your records.
 
 **Thank-you page:** Thank you. Your gift is already at work on our campus. A receipt is on its way to your inbox.
@@ -439,8 +446,9 @@ Embedded map.
 
 ## Home: What's new at SquareOne
 
-Three cards after Why it matters, newest first, from content/news.ts. Add an item whenever something on the campus changes.
+The three newest items from content/news.ts, after Why it matters. Add an item whenever something on the campus changes.
 
+- November 2026 · Gold Seal of Transparency from Candid · SquareOne Compassion has earned Candid's Gold Seal of Transparency. Our finances, leadership, and goals are published on our Candid profile, alongside our public Form 990 filings. → /about#financials
 - October 2026 · Party packages book online · Six party packages and three corporate packages are listed on the Events page, and the request form in our store sends your date straight to the front desk. → /events
 - September 2026 · Early Learning Center photo gallery · From muddy boots to the light table, a new gallery shows everyday life in each of our six classrooms, along with tuition rates for the 2026 to 2027 school year. → /early-learning/gallery
 - September 2026 · A new website for the whole campus · squareonecompassion.com now brings the Early Learning Center, the Medical Center, and Interactive together in one place, with tour requests, enrollment interest, and giving all online. → /about

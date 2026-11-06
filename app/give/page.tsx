@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import { PageIntro, Section } from '@/components/Section'
 import { DonateForm } from '@/components/Form/DonateForm'
 import { ORG } from '@/lib/site'
+import { CandidSeal } from '@/components/CandidSeal'
 import { stripeConfigured } from '@/lib/stripe'
 
 export const metadata: Metadata = { title: 'Give', description: 'Your gift keeps a doctor available to families on Medicare and Medicaid in west Tulsa and keeps tuition assistance available at the Early Learning Center.' }
@@ -70,6 +71,15 @@ export default function GivePage() {
             <p className="mt-6 text-sm text-muted">
               SquareOne Compassion is a 501(c)(3) nonprofit. EIN {ORG.ein}.
             </p>
+            <h2 className="mt-10 text-2xl">Give with confidence</h2>
+            <p className="mt-3 text-muted">
+              We have earned Candid&apos;s Gold Seal of Transparency. Our finances, leadership, and goals are published on{' '}
+              <a href={ORG.candidUrl} className="link" rel="noopener">
+                our Candid profile
+              </a>{' '}
+              and our Form 990 filings are public.
+            </p>
+            <CandidSeal className="mt-5" />
           </div>
         </div>
       </Section>
